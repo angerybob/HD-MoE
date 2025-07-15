@@ -1,0 +1,64 @@
+/data/home/haochenhuang/deployment/node_allocation.py:66: TqdmMonitorWarning: tqdm:disabling monitor support (monitor_interval = 0) due to:
+can't start new thread
+  for k in tqdm(range(2, self.e+1)):
+Begin to group pruning:
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:03<00:14,  3.71s/it]100%|██████████| 5/5 [00:25<00:00,  5.22s/it]100%|██████████| 5/5 [00:25<00:00,  5.13s/it]
+EP_communication: 9.47 us
+EP_computation: 44.30 us
+EP_latency: 53.77 us
+Set parameter LicenseID to value 2632967
+Begin to add constraint for expert placement...
+Begin to add constraint for computation node-balance...
+Begin to add constraint for communication node-balance...
+Set parameter TimeLimit to value 600
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  600
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 110016 rows, 113794 columns and 869504 nonzeros
+Model fingerprint: 0x2ebc0d9a
+Variable types: 4098 continuous, 109696 integer (109696 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+Presolve removed 64 rows and 0 columns (presolve time = 5s)...
+Presolve removed 64 rows and 0 columns
+Presolve time: 5.41s
+Presolved: 109952 rows, 113794 columns, 865280 nonzeros
+Variable types: 4098 continuous, 109696 integer (109696 binary)
+
+Explored 0 nodes (0 simplex iterations) in 7.91 seconds (2.57 work units)
+Thread count was 1 (of 48 available processors)
+
+Solution count 0
+
+Solve interrupted (error code 10001)
+Best objective -, best bound -, gap -
+Gurobi error: Out of memory
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/deployment/simulator.py", line 140, in <module>
+    main()
+  File "/data/home/haochenhuang/deployment/simulator.py", line 96, in main
+    comp=optimizer.compute_time(P)[layer_id]
+  File "/data/home/haochenhuang/deployment/node_allocation.py", line 106, in compute_time
+    compute_load = np.sum(P * self.f[:,:, None] * self.B * 8 * self.h**2, axis=1)
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'
+Exception ignored in atexit callback: <bound method TMonitor.exit of <TMonitor(Thread-1, initial daemon)>>
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/tqdm/_monitor.py", line 44, in exit
+    self.join()
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/threading.py", line 1091, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started

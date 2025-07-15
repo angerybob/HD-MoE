@@ -1,0 +1,828 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1160.88.1.el7.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc 
+      Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/data/home/haochenhuang/.conda/envs/mcts/include;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/data/home/haochenhuang/.conda/envs/mcts/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/4.0.0/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/data/home/haochenhuang/.conda/envs/mcts/include;-fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/data/home/haochenhuang/.conda/envs/mcts/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/4.0.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b2685/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b2685.dir/build.make CMakeFiles/cmTC_b2685.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF'
+        Building C object CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include    -v -o CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -c /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_b2685.dir/'
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1 -quiet -v -iprefix /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot -isystem /data/home/haochenhuang/.conda/envs/mcts/include -isystem /data/home/haochenhuang/.conda/envs/mcts/include /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b2685.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -O2 -version -fstack-protector-strong -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o /tmp/cczDx7QI.s
+        GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/include"
+        ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"
+        ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"
+        ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /data/home/haochenhuang/.conda/envs/mcts/include
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 45c9999e2ad87e1c830bdf7115b006ca
+        COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_b2685.dir/'
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o /tmp/cczDx7QI.s
+        GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40
+        COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_b2685
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2685.dir/link.txt --verbose=1
+        Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-v' '-o' 'cmTC_b2685' '-dumpdir' 'cmTC_b2685.'
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIsUk4N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b2685 /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib
+        collect2 version 11.4.0
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIsUk4N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b2685 /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib
+        GNU ld (Anaconda binutils) 2.40
+        COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-v' '-o' 'cmTC_b2685' '-dumpdir' 'cmTC_b2685.'
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -v -Wl,-v CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -o cmTC_b2685
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/data/home/haochenhuang/.conda/envs/mcts/include]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/include] ==> [/data/home/haochenhuang/.conda/envs/mcts/include]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/data/home/haochenhuang/.conda/envs/mcts/include;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b2685/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b2685.dir/build.make CMakeFiles/cmTC_b2685.dir/build]
+        ignore line: [gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-MGWMrF']
+        ignore line: [Building C object CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include    -v -o CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -c /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_b2685.dir/']
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1 -quiet -v -iprefix /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot -isystem /data/home/haochenhuang/.conda/envs/mcts/include -isystem /data/home/haochenhuang/.conda/envs/mcts/include /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b2685.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -O2 -version -fstack-protector-strong -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o /tmp/cczDx7QI.s]
+        ignore line: [GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/include"]
+        ignore line: [ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/include]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 45c9999e2ad87e1c830bdf7115b006ca]
+        ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_b2685.dir/']
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o /tmp/cczDx7QI.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40]
+        ignore line: [COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_b2685]
+        ignore line: [/data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2685.dir/link.txt --verbose=1]
+        ignore line: [Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-v' '-o' 'cmTC_b2685' '-dumpdir' 'cmTC_b2685.']
+        link line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIsUk4N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b2685 /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIsUk4N.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b2685] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIsUk4N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b2685 /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_b2685.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib]
+        linker tool for 'C': /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/data/home/haochenhuang/.conda/envs/mcts/lib;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/lib;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/lib;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Running the C compiler's linker: "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld" "-v"
+      GNU ld (Anaconda binutils) 2.40
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4758f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4758f.dir/build.make CMakeFiles/cmTC_4758f.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z'
+        Building CXX object CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include    -v -o CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -c /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_4758f.dir/'
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1plus -quiet -v -iprefix /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /data/home/haochenhuang/.conda/envs/mcts/include -isystem /data/home/haochenhuang/.conda/envs/mcts/include /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4758f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -O2 -version -fmessage-length=0 -fstack-protector-strong -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o /tmp/ccNJyq61.s
+        GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/include"
+        ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"
+        ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"
+        ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /data/home/haochenhuang/.conda/envs/mcts/include
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: b752247fe42c4276663fdd6348116302
+        COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_4758f.dir/'
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNJyq61.s
+        GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40
+        COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4758f
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4758f.dir/link.txt --verbose=1
+        Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-v' '-o' 'cmTC_4758f' '-shared-libgcc' '-dumpdir' 'cmTC_4758f.'
+         /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGeE4xa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4758f /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib
+        collect2 version 11.4.0
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGeE4xa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4758f /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib
+        GNU ld (Anaconda binutils) 2.40
+        COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-v' '-o' 'cmTC_4758f' '-shared-libgcc' '-dumpdir' 'cmTC_4758f.'
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -v -Wl,-v CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4758f
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/data/home/haochenhuang/.conda/envs/mcts/include]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+          add: [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/include] ==> [/data/home/haochenhuang/.conda/envs/mcts/include]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        collapse include dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/data/home/haochenhuang/.conda/envs/mcts/include;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z']
+        ignore line: []
+        ignore line: [Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4758f/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_4758f.dir/build.make CMakeFiles/cmTC_4758f.dir/build]
+        ignore line: [gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-8uE87z']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /data/home/haochenhuang/.conda/envs/mcts/include    -v -o CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -c /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_4758f.dir/']
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1plus -quiet -v -iprefix /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /data/home/haochenhuang/.conda/envs/mcts/include -isystem /data/home/haochenhuang/.conda/envs/mcts/include /data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4758f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -O2 -version -fmessage-length=0 -fstack-protector-strong -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o /tmp/ccNJyq61.s]
+        ignore line: [GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/include"]
+        ignore line: [ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/include]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: b752247fe42c4276663fdd6348116302]
+        ignore line: [COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_4758f.dir/']
+        ignore line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNJyq61.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40]
+        ignore line: [COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-v' '-o' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4758f]
+        ignore line: [/data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4758f.dir/link.txt --verbose=1]
+        ignore line: [Reading specs from /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COMPILER_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fmessage-length=0' '-fstack-protector-strong' '-O2' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/data/home/haochenhuang/.conda/envs/mcts/include' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-L/data/home/haochenhuang/.conda/envs/mcts/lib' '-v' '-o' 'cmTC_4758f' '-shared-libgcc' '-dumpdir' 'cmTC_4758f.']
+        link line: [ /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGeE4xa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4758f /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGeE4xa.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4758f] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+          arg [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> ignore
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld -plugin /data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/data/home/haochenhuang/.conda/envs/mcts/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGeE4xa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4758f /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /data/home/haochenhuang/.conda/envs/mcts/lib -rpath-link /data/home/haochenhuang/.conda/envs/mcts/lib -v CMakeFiles/cmTC_4758f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /data/home/haochenhuang/.conda/envs/mcts/lib]
+        linker tool for 'CXX': /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+        collapse obj [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib/gcc]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> [/data/home/haochenhuang/.conda/envs/mcts/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/data/home/haochenhuang/.conda/envs/mcts/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/data/home/haochenhuang/.conda/envs/mcts/lib;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc/x86_64-conda-linux-gnu/11.4.0;/data/home/haochenhuang/.conda/envs/mcts/lib/gcc;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/lib;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/lib;/data/home/haochenhuang/.conda/envs/mcts/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Running the CXX compiler's linker: "/data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld" "-v"
+      GNU ld (Anaconda binutils) 2.40
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/Internal/CheckLinkerFlag.cmake:34 (cmake_check_source_compiles)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:145 (check_linker_flag)"
+    checks:
+      - "Performing Test protobuf_HAVE_LD_VERSION_SCRIPT"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-yafBvv"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-yafBvv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "protobuf_HAVE_LD_VERSION_SCRIPT"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-yafBvv'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_00305/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_00305.dir/build.make CMakeFiles/cmTC_00305.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-yafBvv'
+        Building CXX object CMakeFiles/cmTC_00305.dir/src.cxx.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++ -Dprotobuf_HAVE_LD_VERSION_SCRIPT  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include  -o CMakeFiles/cmTC_00305.dir/src.cxx.o -c /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-yafBvv/src.cxx
+        Linking CXX executable cmTC_00305
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00305.dir/link.txt --verbose=1
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib  -Wl,--version-script=/data/home/haochenhuang/deployment/protobuf-30.2/build/cmaketest.map CMakeFiles/cmTC_00305.dir/src.cxx.o -o cmTC_00305
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-yafBvv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:159 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-iLT6pr"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-iLT6pr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-iLT6pr'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70f21/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70f21.dir/build.make CMakeFiles/cmTC_70f21.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-iLT6pr'
+        Building C object CMakeFiles/cmTC_70f21.dir/src.c.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc -DCMAKE_HAVE_LIBC_PTHREAD  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include  -o CMakeFiles/cmTC_70f21.dir/src.c.o -c /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-iLT6pr/src.c
+        Linking C executable cmTC_70f21
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70f21.dir/link.txt --verbose=1
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: CMakeFiles/cmTC_70f21.dir/src.c.o: in function `main':
+        src.c:(.text.startup.main+0x24): undefined reference to `pthread_create'
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x2e): undefined reference to `pthread_detach'
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x38): undefined reference to `pthread_cancel'
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x44): undefined reference to `pthread_join'
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x50): undefined reference to `pthread_atfork'
+        collect2: error: ld returned 1 exit status
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib  CMakeFiles/cmTC_70f21.dir/src.c.o -o cmTC_70f21
+        gmake[1]: *** [cmTC_70f21] Error 1
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-iLT6pr'
+        gmake: *** [cmTC_70f21/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "CMakeLists.txt:159 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-KOwMQn"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-KOwMQn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-KOwMQn'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c68c7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c68c7.dir/build.make CMakeFiles/cmTC_c68c7.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-KOwMQn'
+        Building C object CMakeFiles/cmTC_c68c7.dir/CheckFunctionExists.c.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_c68c7.dir/CheckFunctionExists.c.o -c /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-KOwMQn/CheckFunctionExists.c
+        Linking C executable cmTC_c68c7
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c68c7.dir/link.txt --verbose=1
+        /data/home/haochenhuang/.conda/envs/mcts/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: cannot find -lpthreads: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib  CMakeFiles/cmTC_c68c7.dir/CheckFunctionExists.c.o -o cmTC_c68c7  -lpthreads
+        gmake[1]: *** [cmTC_c68c7] Error 1
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-KOwMQn'
+        gmake: *** [cmTC_c68c7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "CMakeLists.txt:159 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-ulrkIk"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-ulrkIk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-ulrkIk'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f6982/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f6982.dir/build.make CMakeFiles/cmTC_f6982.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-ulrkIk'
+        Building C object CMakeFiles/cmTC_f6982.dir/CheckFunctionExists.c.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_f6982.dir/CheckFunctionExists.c.o -c /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-ulrkIk/CheckFunctionExists.c
+        Linking C executable cmTC_f6982
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6982.dir/link.txt --verbose=1
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib  CMakeFiles/cmTC_f6982.dir/CheckFunctionExists.c.o -o cmTC_f6982  -lpthread
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-ulrkIk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/data/home/haochenhuang/.conda/envs/ep/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:190 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test protobuf_HAVE_BUILTIN_ATOMICS"
+    directories:
+      source: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-uoQKhi"
+      binary: "/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-uoQKhi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib"
+    buildResult:
+      variable: "protobuf_HAVE_BUILTIN_ATOMICS"
+      cached: true
+      stdout: |
+        Change Dir: '/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-uoQKhi'
+        
+        Run Build Command(s): /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9c89f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9c89f.dir/build.make CMakeFiles/cmTC_9c89f.dir/build
+        gmake[1]: Entering directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-uoQKhi'
+        Building CXX object CMakeFiles/cmTC_9c89f.dir/src.cxx.o
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++ -Dprotobuf_HAVE_BUILTIN_ATOMICS  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -std=c++17 -o CMakeFiles/cmTC_9c89f.dir/src.cxx.o -c /data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-uoQKhi/src.cxx
+        Linking CXX executable cmTC_9c89f
+        /data/home/haochenhuang/.conda/envs/ep/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c89f.dir/link.txt --verbose=1
+        /data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /data/home/haochenhuang/.conda/envs/mcts/include -std=c++17 -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/data/home/haochenhuang/.conda/envs/mcts/lib -Wl,-rpath-link,/data/home/haochenhuang/.conda/envs/mcts/lib -L/data/home/haochenhuang/.conda/envs/mcts/lib  CMakeFiles/cmTC_9c89f.dir/src.cxx.o -o cmTC_9c89f
+        gmake[1]: Leaving directory `/data/home/haochenhuang/deployment/protobuf-30.2/build/CMakeFiles/CMakeScratch/TryCompile-uoQKhi'
+        
+      exitCode: 0
+...

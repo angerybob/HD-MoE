@@ -1,0 +1,14 @@
+computation throughput (TFLOPS): 10.00
+communication bandwidth (GB/s): 25.00
+Begin to sampling activation data...
+  0%|          | 0/26 [00:00<?, ?it/s] 23%|██▎       | 6/26 [00:00<00:00, 51.67it/s] 50%|█████     | 13/26 [00:00<00:00, 57.19it/s] 77%|███████▋  | 20/26 [00:00<00:00, 58.84it/s]100%|██████████| 26/26 [00:00<00:00, 58.60it/s]
+Begin to sampling communication latency...
+  0%|          | 0/192 [00:00<?, ?it/s]  0%|          | 0/192 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/deployment/simulator.py", line 285, in <module>
+    main()
+  File "/data/home/haochenhuang/deployment/simulator.py", line 131, in main
+    comm_acc=optimizer.comm_time_acc_dynamic(M_rand,P_init,layer_id,random_samples)
+  File "/data/home/haochenhuang/deployment/node_allocation.py", line 471, in comm_time_acc_dynamic
+    devices = np.sum(P[layer_id][group]>0,axis=0)
+IndexError: index 64 is out of bounds for axis 0 with size 64

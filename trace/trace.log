@@ -1,0 +1,17 @@
+nohup: ignoring input
+启动任务: model-id=10002 (问题 51-56)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+启动任务: model-id=10003 (问题 61-66)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 2)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+等待GPU资源释放... (当前运行任务: 1)
+启动任务: model-id=10004 (问题 71-76)
+所有任务完成！日志保存在 /data/home/haochenhuang/deployment/trace/logs/ trace文件保存在 /data/home/haochenhuang/deployment/evaluation/

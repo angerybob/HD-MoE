@@ -1,0 +1,98 @@
+Begin to group pruning:
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:02<00:11,  2.80s/it]100%|██████████| 5/5 [00:28<00:00,  5.82s/it]100%|██████████| 5/5 [00:28<00:00,  5.64s/it]
+EP_communication: 7.99 us
+EP_computation: 348.83 us
+EP_latency: 356.81 us
+Set parameter LicenseID to value 2632967
+Begin to add constraint for expert placement...
+Begin to add constraint for computation node-balance...
+Begin to add constraint for communication node-balance...
+Set parameter TimeLimit to value 600
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  600
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 120576 rows, 124354 columns and 953984 nonzeros
+Model fingerprint: 0xddb09dba
+Variable types: 4098 continuous, 120256 integer (120256 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Presolve removed 64 rows and 0 columns
+Presolve time: 4.91s
+Presolved: 120512 rows, 124354 columns, 949760 nonzeros
+Variable types: 4098 continuous, 120256 integer (120256 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.6280432e-04   0.000000e+00   0.000000e+00      9s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+     188 DPushes remaining with DInf 0.0000000e+00                 9s
+       0 DPushes remaining with DInf 0.0000000e+00                 9s
+
+    4032 PPushes remaining with PInf 0.0000000e+00                 9s
+      56 PPushes remaining with PInf 0.0000000e+00                 9s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 3.3881318e-21      9s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4102    1.6106127e-04   6.307130e-01   0.000000e+00      9s
+    4108    1.6332128e-04   0.000000e+00   0.000000e+00      9s
+    4108    1.6332128e-04   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 1.633213e-04, 4108 iterations, 1.89 seconds (2.03 work units)
+Total elapsed time = 11.45s (DegenMoves)
+Total elapsed time = 41.07s (DegenMoves)
+Total elapsed time = 51.39s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00016    0 18656          -    0.00016      -     -   56s
+H    0     0                       0.0002146    0.00016  23.9%     -   57s
+     0     0    0.00016    0 23025    0.00021    0.00016  23.3%     -   84s
+H    0     0                       0.0002037    0.00016  19.2%     -   87s
+H    0     0                       0.0002002    0.00016  17.8%     -   87s
+H    0     0                       0.0001965    0.00016  16.2%     -   87s
+     0     0    0.00016    0 23369    0.00020    0.00016  16.1%     -  105s
+     0     0    0.00017    0 23589    0.00020    0.00017  16.0%     -  133s
+     0     0    0.00017    0 27976    0.00020    0.00017  15.6%     -  176s
+     0     0    0.00017    0 26141    0.00020    0.00017  14.2%     -  253s
+     0     0    0.00017    0 25034    0.00020    0.00017  14.2%     -  292s
+
+Explored 0 nodes (0 simplex iterations) in 322.48 seconds (195.59 work units)
+Thread count was 1 (of 48 available processors)
+
+Solution count 0
+
+Solve interrupted (error code 10001)
+Best objective -, best bound -, gap -
+Gurobi error: Out of memory
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/deployment/simulator.py", line 147, in <module>
+    #dis_rand=optimizer.evaluate_placement(M_rand,Z_tp,layer_id)
+  File "/data/home/haochenhuang/deployment/simulator.py", line 103, in main
+    #layer_id=1
+  File "/data/home/haochenhuang/deployment/node_allocation.py", line 106, in compute_time
+    compute_load = np.sum(P * self.f[:,:, None] * self.B * 8 * self.h**2, axis=1)
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'

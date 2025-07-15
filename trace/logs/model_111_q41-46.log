@@ -1,0 +1,30 @@
+nohup: ignoring input
+Output to data/mt_bench/model_answer/111.jsonl
+Loading checkpoint shards:   0%|          | 0/29 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/29 [00:23<10:50, 23.23s/it]Loading checkpoint shards:   7%|▋         | 2/29 [01:00<14:08, 31.43s/it]Loading checkpoint shards:  10%|█         | 3/29 [01:25<12:19, 28.45s/it]Loading checkpoint shards:  14%|█▍        | 4/29 [01:55<12:07, 29.10s/it]Loading checkpoint shards:  17%|█▋        | 5/29 [02:23<11:27, 28.63s/it]Loading checkpoint shards:  21%|██        | 6/29 [02:54<11:15, 29.38s/it]Loading checkpoint shards:  24%|██▍       | 7/29 [03:31<11:45, 32.06s/it]Loading checkpoint shards:  28%|██▊       | 8/29 [04:10<11:59, 34.24s/it]Loading checkpoint shards:  31%|███       | 9/29 [04:50<12:01, 36.06s/it]Loading checkpoint shards:  34%|███▍      | 10/29 [05:28<11:36, 36.68s/it]Loading checkpoint shards:  38%|███▊      | 11/29 [06:07<11:10, 37.25s/it]Loading checkpoint shards:  41%|████▏     | 12/29 [06:47<10:48, 38.13s/it]Loading checkpoint shards:  45%|████▍     | 13/29 [07:25<10:09, 38.07s/it]Loading checkpoint shards:  48%|████▊     | 14/29 [08:04<09:36, 38.42s/it]Loading checkpoint shards:  52%|█████▏    | 15/29 [08:44<09:04, 38.90s/it]Loading checkpoint shards:  55%|█████▌    | 16/29 [09:22<08:20, 38.48s/it]Loading checkpoint shards:  59%|█████▊    | 17/29 [10:04<07:54, 39.55s/it]Loading checkpoint shards:  62%|██████▏   | 18/29 [10:45<07:21, 40.17s/it]Loading checkpoint shards:  66%|██████▌   | 19/29 [11:22<06:30, 39.07s/it]Loading checkpoint shards:  69%|██████▉   | 20/29 [12:03<05:56, 39.60s/it]Loading checkpoint shards:  72%|███████▏  | 21/29 [12:41<05:13, 39.17s/it]Loading checkpoint shards:  76%|███████▌  | 22/29 [13:14<04:21, 37.42s/it]Loading checkpoint shards:  79%|███████▉  | 23/29 [13:49<03:40, 36.78s/it]Loading checkpoint shards:  83%|████████▎ | 24/29 [14:25<03:02, 36.50s/it]Loading checkpoint shards:  86%|████████▌ | 25/29 [14:57<02:19, 34.97s/it]Loading checkpoint shards:  90%|████████▉ | 26/29 [15:23<01:36, 32.29s/it]Loading checkpoint shards:  93%|█████████▎| 27/29 [15:50<01:01, 30.73s/it]Loading checkpoint shards:  97%|█████████▋| 28/29 [16:23<00:31, 31.48s/it]Loading checkpoint shards: 100%|██████████| 29/29 [16:37<00:00, 26.12s/it]Loading checkpoint shards: 100%|██████████| 29/29 [16:37<00:00, 34.38s/it]
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/FastChat/fastchat/llm_judge/gen_model_answer.py", line 309, in <module>
+    run_eval(
+  File "/data/home/haochenhuang/FastChat/fastchat/llm_judge/gen_model_answer.py", line 60, in run_eval
+    get_answers_func(
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/home/haochenhuang/FastChat/fastchat/llm_judge/gen_model_answer.py", line 93, in get_model_answers
+    model, tokenizer = load_model(
+  File "/data/home/haochenhuang/FastChat/fastchat/model/model_adapter.py", line 410, in load_model
+    model.to(device)
+  File "/data/home/haochenhuang/transformers/src/transformers/modeling_utils.py", line 3162, in to
+    return super().to(*args, **kwargs)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343, in to
+    return self._apply(convert)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  [Previous line repeated 4 more times]
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930, in _apply
+    param_applied = fn(param)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329, in convert
+    return t.to(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 18.00 MiB. GPU 0 has a total capacity of 47.53 GiB of which 10.44 MiB is free. Including non-PyTorch memory, this process has 44.30 GiB memory in use. Process 91340 has 3.21 GiB memory in use. Of the allocated memory 44.00 GiB is allocated by PyTorch, and 53.79 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

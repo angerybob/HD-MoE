@@ -1,0 +1,127 @@
+[
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 512
+        },
+        "static_deployment": {
+            "communication_us": 845.91,
+            "computation_us": 3513.83,
+            "latency_us": 4359.73
+        },
+        "dynamic_deployment": {
+            "communication_us": 850.9,
+            "computation_us": 3407.48,
+            "latency_us": 4258.39,
+            "speedup": 1.02
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "math",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 512
+        },
+        "static_deployment": {
+            "communication_us": 815.43,
+            "computation_us": 5086.88,
+            "latency_us": 5902.31
+        },
+        "dynamic_deployment": {
+            "communication_us": 817.32,
+            "computation_us": 4287.34,
+            "latency_us": 5104.66,
+            "speedup": 1.16
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "coding",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 512
+        },
+        "static_deployment": {
+            "communication_us": 778.65,
+            "computation_us": 5216.58,
+            "latency_us": 5995.23
+        },
+        "dynamic_deployment": {
+            "communication_us": 768.41,
+            "computation_us": 4127.17,
+            "latency_us": 4895.58,
+            "speedup": 1.22
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "writing",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 512
+        },
+        "static_deployment": {
+            "communication_us": 903.5,
+            "computation_us": 4051.03,
+            "latency_us": 4954.52
+        },
+        "dynamic_deployment": {
+            "communication_us": 892.27,
+            "computation_us": 3718.09,
+            "latency_us": 4610.37,
+            "speedup": 1.07
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 512
+        },
+        "static_deployment": {
+            "communication_us": 857.29,
+            "computation_us": 4086.11,
+            "latency_us": 4943.4
+        },
+        "dynamic_deployment": {
+            "communication_us": 826.41,
+            "computation_us": 3866.94,
+            "latency_us": 4693.35,
+            "speedup": 1.05
+        }
+    }
+]

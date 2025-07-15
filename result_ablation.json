@@ -1,0 +1,222 @@
+[
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0
+        },
+        "TP": {
+            "communication_us": 2181.04,
+            "computation_us": 359.87,
+            "latency_us": 2540.91
+        },
+        "EP": {
+            "communication_us": 238.29,
+            "computation_us": 761.42,
+            "latency_us": 999.7
+        },
+        "compute_balancing": {
+            "communication_us": 1179.36,
+            "computation_us": 367.23,
+            "latency_us": 1546.59
+        },
+        "node_balancing": {
+            "communication_us": 451.32,
+            "computation_us": 385.61,
+            "latency_us": 836.92,
+            "speedup_EP": 1.19,
+            "speedup_TP": 3.04,
+            "speedup_comp": 1.85
+        },
+        "link_balancing": {
+            "communication_us": 378.4,
+            "computation_us": 385.61,
+            "latency_us": 764.01,
+            "speedup": 1.19,
+            "speedup_EP": 1.31,
+            "speedup_TP": 3.33,
+            "speedup_comp": 2.02
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 719.74,
+            "latency_us": 1810.26
+        },
+        "EP": {
+            "communication_us": 118.78,
+            "computation_us": 1516.76,
+            "latency_us": 1635.54
+        },
+        "compute_balancing": {
+            "communication_us": 677.22,
+            "computation_us": 743.01,
+            "latency_us": 1420.23
+        },
+        "node_balancing": {
+            "communication_us": 253.06,
+            "computation_us": 730.17,
+            "latency_us": 983.23,
+            "speedup_EP": 1.66,
+            "speedup_TP": 1.84,
+            "speedup_comp": 1.44
+        },
+        "link_balancing": {
+            "communication_us": 218.92,
+            "computation_us": 730.17,
+            "latency_us": 949.09,
+            "speedup": 1.16,
+            "speedup_EP": 1.72,
+            "speedup_TP": 1.91,
+            "speedup_comp": 1.5
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0
+        },
+        "TP": {
+            "communication_us": 727.01,
+            "computation_us": 1439.49,
+            "latency_us": 2166.5
+        },
+        "EP": {
+            "communication_us": 81.93,
+            "computation_us": 3060.22,
+            "latency_us": 3142.15
+        },
+        "compute_balancing": {
+            "communication_us": 474.98,
+            "computation_us": 1496.66,
+            "latency_us": 1971.65
+        },
+        "node_balancing": {
+            "communication_us": 195.33,
+            "computation_us": 1447.19,
+            "latency_us": 1642.52,
+            "speedup_EP": 1.91,
+            "speedup_TP": 1.32,
+            "speedup_comp": 1.2
+        },
+        "link_balancing": {
+            "communication_us": 164.95,
+            "computation_us": 1447.19,
+            "latency_us": 1612.14,
+            "speedup": 1.18,
+            "speedup_EP": 1.95,
+            "speedup_TP": 1.34,
+            "speedup_comp": 1.22
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 1439.49,
+            "latency_us": 2530.0
+        },
+        "EP": {
+            "communication_us": 114.58,
+            "computation_us": 2371.3,
+            "latency_us": 2485.88
+        },
+        "compute_balancing": {
+            "communication_us": 771.94,
+            "computation_us": 1486.02,
+            "latency_us": 2257.96
+        },
+        "node_balancing": {
+            "communication_us": 160.78,
+            "computation_us": 1442.74,
+            "latency_us": 1603.53,
+            "speedup_EP": 1.55,
+            "speedup_TP": 1.58,
+            "speedup_comp": 1.41
+        },
+        "link_balancing": {
+            "communication_us": 149.66,
+            "computation_us": 1442.74,
+            "latency_us": 1592.41,
+            "speedup": 1.07,
+            "speedup_EP": 1.56,
+            "speedup_TP": 1.59,
+            "speedup_comp": 1.42
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 359.87,
+            "latency_us": 1450.39
+        },
+        "EP": {
+            "communication_us": 88.56,
+            "computation_us": 1139.92,
+            "latency_us": 1228.49
+        },
+        "compute_balancing": {
+            "communication_us": 656.34,
+            "computation_us": 371.5,
+            "latency_us": 1027.84
+        },
+        "node_balancing": {
+            "communication_us": 291.46,
+            "computation_us": 373.6,
+            "latency_us": 665.06,
+            "speedup_EP": 1.85,
+            "speedup_TP": 2.18,
+            "speedup_comp": 1.55
+        },
+        "link_balancing": {
+            "communication_us": 253.74,
+            "computation_us": 373.6,
+            "latency_us": 627.34,
+            "speedup": 1.15,
+            "speedup_EP": 1.96,
+            "speedup_TP": 2.31,
+            "speedup_comp": 1.64
+        }
+    }
+]

@@ -1,0 +1,74 @@
+computation throughput (TFLOPS): 2.50
+communication bandwidth (GB/s): 75.00
+Begin to sampling activation data...
+  0%|          | 0/26 [00:00<?, ?it/s]  8%|▊         | 2/26 [00:00<00:01, 14.56it/s] 15%|█▌        | 4/26 [00:00<00:01, 16.54it/s] 23%|██▎       | 6/26 [00:00<00:01, 14.91it/s] 31%|███       | 8/26 [00:00<00:01, 14.48it/s] 38%|███▊      | 10/26 [00:00<00:01, 13.19it/s] 46%|████▌     | 12/26 [00:00<00:01, 13.29it/s] 54%|█████▍    | 14/26 [00:01<00:00, 12.93it/s] 62%|██████▏   | 16/26 [00:01<00:00, 12.30it/s] 69%|██████▉   | 18/26 [00:01<00:00, 11.71it/s] 77%|███████▋  | 20/26 [00:01<00:00, 10.48it/s] 85%|████████▍ | 22/26 [00:01<00:00, 10.98it/s] 92%|█████████▏| 24/26 [00:01<00:00, 10.94it/s]100%|██████████| 26/26 [00:02<00:00, 10.86it/s]100%|██████████| 26/26 [00:02<00:00, 12.00it/s]
+results saved at /data/home/haochenhuang/deployment/results/comp_balance_only/reasoning_ds_2.5_TFLOPS_75.0_GBPS_for_4*8_mesh_128_batches/arrays_2.5_TFLOPS_75.0_GBPS_in_layer_24.npz
+TP_communication: 27.96 us
+TP_computation: 55.36 us
+TP_latency: 83.33 us
+EP_communication: 3.43 us
+EP_computation: 128.70 us
+EP_latency: 132.13 us
+TP_communication_dynamic: 27.96 us
+TP_computation_dynamic: 55.36 us
+TP_latency_dynamic: 83.33 us
+EP_communication_dynamic: 3.17 us
+EP_computation_dynamic: 154.56 us
+EP_latency_dynamic: 157.73 us
+Set parameter LicenseID to value 2632967
+Set parameter TimeLimit to value 60
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  60
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 80 rows, 513 columns and 1544 nonzeros
+Model fingerprint: 0xea5e08c8
+Variable types: 1 continuous, 512 integer (512 binary)
+Coefficient statistics:
+  Matrix range     [4e-06, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0004779
+Presolve removed 8 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 72 rows, 513 columns, 1032 nonzeros
+Variable types: 1 continuous, 512 integer (512 binary)
+
+Root relaxation: objective 2.214593e-04, 139 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00022    0    8    0.00048    0.00022  53.7%     -    0s
+H    0     0                       0.0002380    0.00022  6.94%     -    0s
+H    0     0                       0.0002280    0.00022  2.85%     -    0s
+
+Explored 1 nodes (553 simplex iterations) in 0.14 seconds (0.01 work units)
+Thread count was 8 (of 48 available processors)
+
+Solution count 3: 0.00022795 0.000237975 0.00047791 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 2.279501657773e-04, best bound 2.214592512000e-04, gap 2.8475%
+Comp Balance Finished.
+comp_balancing_communication: 21.99 us
+comp_balancing_computation: 56.99 us
+comp_balancing_latency: 78.97 us
+comp_balancing_speedup_EP:1.67
+comp_balancing_speedup_TP:1.06
+comp_balancing_communication_dynamic: 4.31 us
+comp_balancing_computation_dynamic: 59.98 us
+comp_balancing_latency_dynamic: 64.29 us
+comp_balancing_speedup_EP_dynamic:2.45
+comp_balancing_speedup_TP_dynamic:1.30

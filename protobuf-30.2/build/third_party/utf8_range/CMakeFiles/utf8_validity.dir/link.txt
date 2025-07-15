@@ -1,0 +1,2 @@
+/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-ar qc libutf8_validity.a CMakeFiles/utf8_validity.dir/utf8_validity.cc.o CMakeFiles/utf8_validity.dir/utf8_range.c.o
+/data/home/haochenhuang/.conda/envs/mcts/bin/x86_64-conda-linux-gnu-ranlib libutf8_validity.a

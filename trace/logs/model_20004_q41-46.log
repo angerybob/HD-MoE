@@ -1,0 +1,27 @@
+Output to data/mt_bench/model_answer/20004.jsonl
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/19 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/19 [00:04<01:15,  4.17s/it]Loading checkpoint shards:  11%|█         | 2/19 [00:08<01:11,  4.20s/it]Loading checkpoint shards:  16%|█▌        | 3/19 [00:13<01:11,  4.49s/it]Loading checkpoint shards:  21%|██        | 4/19 [00:17<01:07,  4.47s/it]Loading checkpoint shards:  26%|██▋       | 5/19 [00:21<01:01,  4.42s/it]Loading checkpoint shards:  32%|███▏      | 6/19 [00:26<00:59,  4.59s/it]Loading checkpoint shards:  37%|███▋      | 7/19 [00:31<00:54,  4.53s/it]Loading checkpoint shards:  42%|████▏     | 8/19 [00:36<00:50,  4.59s/it]Loading checkpoint shards:  47%|████▋     | 9/19 [00:40<00:46,  4.69s/it]Loading checkpoint shards:  53%|█████▎    | 10/19 [00:45<00:41,  4.60s/it]Loading checkpoint shards:  58%|█████▊    | 11/19 [00:49<00:36,  4.56s/it]Loading checkpoint shards:  63%|██████▎   | 12/19 [00:54<00:31,  4.56s/it]Loading checkpoint shards:  68%|██████▊   | 13/19 [00:58<00:27,  4.54s/it]Loading checkpoint shards:  74%|███████▎  | 14/19 [01:03<00:22,  4.44s/it]Loading checkpoint shards:  79%|███████▉  | 15/19 [01:07<00:18,  4.51s/it]Loading checkpoint shards:  84%|████████▍ | 16/19 [01:12<00:13,  4.45s/it]Loading checkpoint shards:  89%|████████▉ | 17/19 [01:16<00:08,  4.41s/it]Loading checkpoint shards:  95%|█████████▍| 18/19 [01:21<00:04,  4.48s/it]Loading checkpoint shards: 100%|██████████| 19/19 [01:25<00:00,  4.35s/it]Loading checkpoint shards: 100%|██████████| 19/19 [01:25<00:00,  4.48s/it]
+  0%|          | 0/5 [00:00<?, ?it/s]/data/home/haochenhuang/transformers/src/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+ 20%|██        | 1/5 [02:29<09:58, 149.72s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+ 40%|████      | 2/5 [03:54<05:35, 111.69s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+ 60%|██████    | 3/5 [05:17<03:17, 98.55s/it] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+ 80%|████████  | 4/5 [07:34<01:53, 113.80s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+100%|██████████| 5/5 [09:12<00:00, 107.97s/it]100%|██████████| 5/5 [09:12<00:00, 110.50s/it]

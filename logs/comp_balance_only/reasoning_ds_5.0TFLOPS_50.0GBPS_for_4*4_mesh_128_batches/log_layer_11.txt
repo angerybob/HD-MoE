@@ -1,0 +1,80 @@
+computation throughput (TFLOPS): 5.00
+communication bandwidth (GB/s): 50.00
+Begin to sampling activation data...
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:03,  7.06it/s]  8%|▊         | 2/26 [00:00<00:03,  7.79it/s] 12%|█▏        | 3/26 [00:00<00:03,  7.47it/s] 15%|█▌        | 4/26 [00:00<00:02,  7.81it/s] 19%|█▉        | 5/26 [00:00<00:02,  7.40it/s] 23%|██▎       | 6/26 [00:00<00:02,  7.87it/s] 27%|██▋       | 7/26 [00:00<00:02,  7.21it/s] 31%|███       | 8/26 [00:01<00:02,  7.70it/s] 35%|███▍      | 9/26 [00:01<00:02,  7.47it/s] 38%|███▊      | 10/26 [00:01<00:02,  7.95it/s] 42%|████▏     | 11/26 [00:01<00:01,  7.56it/s] 46%|████▌     | 12/26 [00:01<00:01,  7.74it/s] 50%|█████     | 13/26 [00:01<00:01,  7.93it/s] 54%|█████▍    | 14/26 [00:01<00:01,  8.37it/s] 58%|█████▊    | 15/26 [00:01<00:01,  8.38it/s] 62%|██████▏   | 16/26 [00:02<00:01,  8.55it/s] 65%|██████▌   | 17/26 [00:02<00:01,  8.37it/s] 73%|███████▎  | 19/26 [00:02<00:00,  8.85it/s] 77%|███████▋  | 20/26 [00:02<00:00,  8.64it/s] 85%|████████▍ | 22/26 [00:02<00:00,  8.79it/s] 88%|████████▊ | 23/26 [00:02<00:00,  9.02it/s] 92%|█████████▏| 24/26 [00:02<00:00,  8.77it/s] 96%|█████████▌| 25/26 [00:03<00:00,  8.73it/s]100%|██████████| 26/26 [00:03<00:00,  8.27it/s]
+results saved at /data/home/haochenhuang/deployment/results/comp_balance_only/reasoning_ds_5.0_TFLOPS_50.0_GBPS_for_4*4_mesh_128_batches/arrays_5.0_TFLOPS_50.0_GBPS_in_layer_11.npz
+TP_communication: 41.94 us
+TP_computation: 55.36 us
+TP_latency: 97.31 us
+EP_communication: 4.31 us
+EP_computation: 86.97 us
+EP_latency: 91.28 us
+TP_communication_dynamic: 41.94 us
+TP_computation_dynamic: 55.36 us
+TP_latency_dynamic: 97.31 us
+EP_communication_dynamic: 5.41 us
+EP_computation_dynamic: 83.05 us
+EP_latency_dynamic: 88.45 us
+Set parameter LicenseID to value 2632967
+Set parameter TimeLimit to value 60
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  60
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 80 rows, 513 columns and 1544 nonzeros
+Model fingerprint: 0x24ccae7c
+Variable types: 1 continuous, 512 integer (512 binary)
+Coefficient statistics:
+  Matrix range     [3e-06, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0002076
+Presolve removed 8 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 72 rows, 513 columns, 1032 nonzeros
+Variable types: 1 continuous, 512 integer (512 binary)
+
+Root relaxation: objective 1.107296e-04, 113 iterations, 0.03 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00011    0   13    0.00021    0.00011  46.7%     -    0s
+H    0     0                       0.0001207    0.00011  8.29%     -    0s
+H    0     0                       0.0001193    0.00011  7.15%     -    0s
+     0     0    0.00011    0   17    0.00012    0.00011  7.15%     -    0s
+H    0     0                       0.0001173    0.00011  5.60%     -    0s
+H    0     0                       0.0001160    0.00011  4.55%     -    0s
+
+Cutting planes:
+  Cover: 3
+
+Explored 1 nodes (319 simplex iterations) in 0.17 seconds (0.01 work units)
+Thread count was 8 (of 48 available processors)
+
+Solution count 5: 0.000116011 0.000117297 0.000119256 ... 0.000207558
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 1.160106951525e-04, best bound 1.107296256000e-04, gap 4.5522%
+Comp Balance Finished.
+comp_balancing_communication: 31.63 us
+comp_balancing_computation: 58.01 us
+comp_balancing_latency: 89.63 us
+comp_balancing_speedup_EP:1.02
+comp_balancing_speedup_TP:1.09
+comp_balancing_communication_dynamic: 6.31 us
+comp_balancing_computation_dynamic: 59.40 us
+comp_balancing_latency_dynamic: 65.71 us
+comp_balancing_speedup_EP_dynamic:1.35
+comp_balancing_speedup_TP_dynamic:1.48

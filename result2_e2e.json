@@ -1,0 +1,1402 @@
+[
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 272.63,
+            "computation_us": 44.98,
+            "latency_us": 934.0
+        },
+        "EP": {
+            "communication_us": 29.82,
+            "computation_us": 91.75,
+            "latency_us": 737.95
+        },
+        "compute_balancing": {
+            "communication_us": 147.51,
+            "computation_us": 45.9,
+            "latency_us": 809.8
+        },
+        "node_link_balancing": {
+            "communication_us": 47.79,
+            "computation_us": 48.2,
+            "latency_us": 712.38,
+            "speedup_EP": 1.04,
+            "speedup_TP": 1.31
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 545.26,
+            "computation_us": 89.97,
+            "latency_us": 1366.36
+        },
+        "EP": {
+            "communication_us": 59.6,
+            "computation_us": 184.21,
+            "latency_us": 974.94
+        },
+        "compute_balancing": {
+            "communication_us": 294.99,
+            "computation_us": 91.81,
+            "latency_us": 1117.93
+        },
+        "node_link_balancing": {
+            "communication_us": 94.36,
+            "computation_us": 96.4,
+            "latency_us": 921.89,
+            "speedup_EP": 1.06,
+            "speedup_TP": 1.48
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 179.94,
+            "latency_us": 2231.08
+        },
+        "EP": {
+            "communication_us": 115.34,
+            "computation_us": 372.11,
+            "latency_us": 1448.08
+        },
+        "compute_balancing": {
+            "communication_us": 587.81,
+            "computation_us": 183.61,
+            "latency_us": 1732.05
+        },
+        "node_link_balancing": {
+            "communication_us": 184.53,
+            "computation_us": 192.8,
+            "latency_us": 1337.96,
+            "speedup_EP": 1.08,
+            "speedup_TP": 1.67
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 2181.04,
+            "computation_us": 359.87,
+            "latency_us": 3960.52
+        },
+        "EP": {
+            "communication_us": 238.75,
+            "computation_us": 773.23,
+            "latency_us": 2431.6
+        },
+        "compute_balancing": {
+            "communication_us": 1178.04,
+            "computation_us": 367.23,
+            "latency_us": 2964.88
+        },
+        "node_link_balancing": {
+            "communication_us": 379.63,
+            "computation_us": 385.61,
+            "latency_us": 2184.85,
+            "speedup_EP": 1.11,
+            "speedup_TP": 1.81
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 136.31,
+            "computation_us": 89.97,
+            "latency_us": 869.93
+        },
+        "EP": {
+            "communication_us": 14.71,
+            "computation_us": 186.77,
+            "latency_us": 845.13
+        },
+        "compute_balancing": {
+            "communication_us": 84.03,
+            "computation_us": 92.88,
+            "latency_us": 820.55
+        },
+        "node_link_balancing": {
+            "communication_us": 27.68,
+            "computation_us": 91.27,
+            "latency_us": 762.6,
+            "speedup_EP": 1.11,
+            "speedup_TP": 1.14
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 272.63,
+            "computation_us": 179.94,
+            "latency_us": 1238.22
+        },
+        "EP": {
+            "communication_us": 29.85,
+            "computation_us": 381.16,
+            "latency_us": 1196.67
+        },
+        "compute_balancing": {
+            "communication_us": 168.05,
+            "computation_us": 185.75,
+            "latency_us": 1139.46
+        },
+        "node_link_balancing": {
+            "communication_us": 55.24,
+            "computation_us": 182.54,
+            "latency_us": 1023.44,
+            "speedup_EP": 1.17,
+            "speedup_TP": 1.21
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 545.26,
+            "computation_us": 359.87,
+            "latency_us": 1974.81
+        },
+        "EP": {
+            "communication_us": 59.33,
+            "computation_us": 739.49,
+            "latency_us": 1868.5
+        },
+        "compute_balancing": {
+            "communication_us": 336.63,
+            "computation_us": 371.5,
+            "latency_us": 1777.81
+        },
+        "node_link_balancing": {
+            "communication_us": 110.75,
+            "computation_us": 365.09,
+            "latency_us": 1545.51,
+            "speedup_EP": 1.21,
+            "speedup_TP": 1.28
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 719.74,
+            "latency_us": 3447.98
+        },
+        "EP": {
+            "communication_us": 120.5,
+            "computation_us": 1545.74,
+            "latency_us": 3303.96
+        },
+        "compute_balancing": {
+            "communication_us": 673.25,
+            "computation_us": 743.01,
+            "latency_us": 3053.98
+        },
+        "node_link_balancing": {
+            "communication_us": 230.94,
+            "computation_us": 730.17,
+            "latency_us": 2598.83,
+            "speedup_EP": 1.27,
+            "speedup_TP": 1.33
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 90.88,
+            "computation_us": 179.94,
+            "latency_us": 968.99
+        },
+        "EP": {
+            "communication_us": 9.93,
+            "computation_us": 376.15,
+            "latency_us": 1084.25
+        },
+        "compute_balancing": {
+            "communication_us": 59.37,
+            "computation_us": 187.08,
+            "latency_us": 944.63
+        },
+        "node_link_balancing": {
+            "communication_us": 20.22,
+            "computation_us": 180.9,
+            "latency_us": 899.29,
+            "speedup_EP": 1.21,
+            "speedup_TP": 1.08
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 181.75,
+            "computation_us": 359.87,
+            "latency_us": 1436.33
+        },
+        "EP": {
+            "communication_us": 19.74,
+            "computation_us": 740.67,
+            "latency_us": 1655.12
+        },
+        "compute_balancing": {
+            "communication_us": 119.42,
+            "computation_us": 374.17,
+            "latency_us": 1388.3
+        },
+        "node_link_balancing": {
+            "communication_us": 40.09,
+            "computation_us": 361.8,
+            "latency_us": 1296.59,
+            "speedup_EP": 1.28,
+            "speedup_TP": 1.11
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 363.51,
+            "computation_us": 719.74,
+            "latency_us": 2371.03
+        },
+        "EP": {
+            "communication_us": 39.59,
+            "computation_us": 1535.62,
+            "latency_us": 2862.99
+        },
+        "compute_balancing": {
+            "communication_us": 237.65,
+            "computation_us": 748.33,
+            "latency_us": 2273.77
+        },
+        "node_link_balancing": {
+            "communication_us": 80.15,
+            "computation_us": 723.59,
+            "latency_us": 2091.52,
+            "speedup_EP": 1.37,
+            "speedup_TP": 1.13
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 727.01,
+            "computation_us": 1439.49,
+            "latency_us": 4240.42
+        },
+        "EP": {
+            "communication_us": 81.25,
+            "computation_us": 3097.01,
+            "latency_us": 5252.19
+        },
+        "compute_balancing": {
+            "communication_us": 475.35,
+            "computation_us": 1496.66,
+            "latency_us": 4045.94
+        },
+        "node_link_balancing": {
+            "communication_us": 158.3,
+            "computation_us": 1447.19,
+            "latency_us": 3679.42,
+            "speedup_EP": 1.43,
+            "speedup_TP": 1.15
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 136.31,
+            "computation_us": 179.94,
+            "latency_us": 1603.55
+        },
+        "EP": {
+            "communication_us": 13.89,
+            "computation_us": 296.71,
+            "latency_us": 1597.89
+        },
+        "compute_balancing": {
+            "communication_us": 96.57,
+            "computation_us": 185.75,
+            "latency_us": 1569.62
+        },
+        "node_link_balancing": {
+            "communication_us": 18.46,
+            "computation_us": 180.34,
+            "latency_us": 1486.1,
+            "speedup_EP": 1.08,
+            "speedup_TP": 1.08
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 272.63,
+            "computation_us": 359.87,
+            "latency_us": 2203.82
+        },
+        "EP": {
+            "communication_us": 28.05,
+            "computation_us": 568.89,
+            "latency_us": 2168.26
+        },
+        "compute_balancing": {
+            "communication_us": 192.8,
+            "computation_us": 371.5,
+            "latency_us": 2135.62
+        },
+        "node_link_balancing": {
+            "communication_us": 36.62,
+            "computation_us": 360.69,
+            "latency_us": 1968.62,
+            "speedup_EP": 1.1,
+            "speedup_TP": 1.12
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 545.26,
+            "computation_us": 719.74,
+            "latency_us": 3404.36
+        },
+        "EP": {
+            "communication_us": 57.03,
+            "computation_us": 1150.34,
+            "latency_us": 3346.73
+        },
+        "compute_balancing": {
+            "communication_us": 385.51,
+            "computation_us": 743.01,
+            "latency_us": 3267.87
+        },
+        "node_link_balancing": {
+            "communication_us": 74.66,
+            "computation_us": 721.37,
+            "latency_us": 2935.38,
+            "speedup_EP": 1.14,
+            "speedup_TP": 1.16
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 1439.49,
+            "latency_us": 5805.44
+        },
+        "EP": {
+            "communication_us": 114.48,
+            "computation_us": 2325.28,
+            "latency_us": 5715.2
+        },
+        "compute_balancing": {
+            "communication_us": 771.06,
+            "computation_us": 1486.02,
+            "latency_us": 5532.51
+        },
+        "node_link_balancing": {
+            "communication_us": 150.36,
+            "computation_us": 1442.74,
+            "latency_us": 4868.54,
+            "speedup_EP": 1.17,
+            "speedup_TP": 1.19
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 136.31,
+            "computation_us": 44.98,
+            "latency_us": 503.12
+        },
+        "EP": {
+            "communication_us": 10.88,
+            "computation_us": 142.49,
+            "latency_us": 475.19
+        },
+        "compute_balancing": {
+            "communication_us": 81.71,
+            "computation_us": 46.44,
+            "latency_us": 449.97
+        },
+        "node_link_balancing": {
+            "communication_us": 29.95,
+            "computation_us": 46.7,
+            "latency_us": 398.48,
+            "speedup_EP": 1.19,
+            "speedup_TP": 1.26
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 272.63,
+            "computation_us": 89.97,
+            "latency_us": 755.43
+        },
+        "EP": {
+            "communication_us": 22.26,
+            "computation_us": 284.98,
+            "latency_us": 700.07
+        },
+        "compute_balancing": {
+            "communication_us": 164.71,
+            "computation_us": 92.88,
+            "latency_us": 650.41
+        },
+        "node_link_balancing": {
+            "communication_us": 62.05,
+            "computation_us": 93.4,
+            "latency_us": 548.28,
+            "speedup_EP": 1.28,
+            "speedup_TP": 1.38
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 545.26,
+            "computation_us": 179.94,
+            "latency_us": 1260.03
+        },
+        "EP": {
+            "communication_us": 44.35,
+            "computation_us": 569.96,
+            "latency_us": 1149.15
+        },
+        "compute_balancing": {
+            "communication_us": 326.64,
+            "computation_us": 185.75,
+            "latency_us": 1047.23
+        },
+        "node_link_balancing": {
+            "communication_us": 125.8,
+            "computation_us": 186.8,
+            "latency_us": 847.43,
+            "speedup_EP": 1.36,
+            "speedup_TP": 1.49
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 1090.52,
+            "computation_us": 359.87,
+            "latency_us": 2269.25
+        },
+        "EP": {
+            "communication_us": 83.83,
+            "computation_us": 1139.92,
+            "latency_us": 2042.62
+        },
+        "compute_balancing": {
+            "communication_us": 654.08,
+            "computation_us": 371.5,
+            "latency_us": 1844.44
+        },
+        "node_link_balancing": {
+            "communication_us": 256.94,
+            "computation_us": 373.6,
+            "latency_us": 1449.4,
+            "speedup_EP": 1.41,
+            "speedup_TP": 1.57
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 671.09,
+            "computation_us": 375.94,
+            "latency_us": 2994.08
+        },
+        "EP": {
+            "communication_us": 287.89,
+            "computation_us": 523.12,
+            "latency_us": 2758.05
+        },
+        "compute_balancing": {
+            "communication_us": 355.01,
+            "computation_us": 385.45,
+            "latency_us": 2687.52
+        },
+        "node_link_balancing": {
+            "communication_us": 267.83,
+            "computation_us": 404.78,
+            "latency_us": 2619.66,
+            "speedup_EP": 1.05,
+            "speedup_TP": 1.14
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 1342.18,
+            "computation_us": 751.89,
+            "latency_us": 4377.55
+        },
+        "EP": {
+            "communication_us": 577.38,
+            "computation_us": 1046.24,
+            "latency_us": 3907.1
+        },
+        "compute_balancing": {
+            "communication_us": 703.63,
+            "computation_us": 770.91,
+            "latency_us": 3758.02
+        },
+        "node_link_balancing": {
+            "communication_us": 570.02,
+            "computation_us": 809.57,
+            "latency_us": 3663.07,
+            "speedup_EP": 1.07,
+            "speedup_TP": 1.2
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 2684.35,
+            "computation_us": 1503.78,
+            "latency_us": 7144.49
+        },
+        "EP": {
+            "communication_us": 1113.28,
+            "computation_us": 2092.47,
+            "latency_us": 6162.11
+        },
+        "compute_balancing": {
+            "communication_us": 1406.18,
+            "computation_us": 1541.81,
+            "latency_us": 5904.35
+        },
+        "node_link_balancing": {
+            "communication_us": 1156.3,
+            "computation_us": 1619.13,
+            "latency_us": 5731.79,
+            "speedup_EP": 1.08,
+            "speedup_TP": 1.25
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 10.0,
+            "BW_GBPS": 25.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 5368.71,
+            "computation_us": 3007.55,
+            "latency_us": 12678.36
+        },
+        "EP": {
+            "communication_us": 2179.67,
+            "computation_us": 4184.95,
+            "latency_us": 10666.71
+        },
+        "compute_balancing": {
+            "communication_us": 2788.99,
+            "computation_us": 3083.62,
+            "latency_us": 10174.71
+        },
+        "node_link_balancing": {
+            "communication_us": 2294.97,
+            "computation_us": 3238.26,
+            "latency_us": 9835.33,
+            "speedup_EP": 1.08,
+            "speedup_TP": 1.29
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 335.54,
+            "computation_us": 751.89,
+            "latency_us": 3155.28
+        },
+        "EP": {
+            "communication_us": 137.69,
+            "computation_us": 1046.24,
+            "latency_us": 3251.77
+        },
+        "compute_balancing": {
+            "communication_us": 208.91,
+            "computation_us": 769.62,
+            "latency_us": 3046.37
+        },
+        "node_link_balancing": {
+            "communication_us": 153.94,
+            "computation_us": 760.05,
+            "latency_us": 2981.83,
+            "speedup_EP": 1.09,
+            "speedup_TP": 1.06
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 671.09,
+            "computation_us": 1503.78,
+            "latency_us": 4699.94
+        },
+        "EP": {
+            "communication_us": 305.27,
+            "computation_us": 2092.47,
+            "latency_us": 4922.82
+        },
+        "compute_balancing": {
+            "communication_us": 416.95,
+            "computation_us": 1539.24,
+            "latency_us": 4481.26
+        },
+        "node_link_balancing": {
+            "communication_us": 301.51,
+            "computation_us": 1520.1,
+            "latency_us": 4346.68,
+            "speedup_EP": 1.13,
+            "speedup_TP": 1.08
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 1342.18,
+            "computation_us": 3007.55,
+            "latency_us": 7789.27
+        },
+        "EP": {
+            "communication_us": 617.65,
+            "computation_us": 4184.95,
+            "latency_us": 8242.14
+        },
+        "compute_balancing": {
+            "communication_us": 835.81,
+            "computation_us": 3078.47,
+            "latency_us": 7353.82
+        },
+        "node_link_balancing": {
+            "communication_us": 613.69,
+            "computation_us": 3040.21,
+            "latency_us": 7093.44,
+            "speedup_EP": 1.16,
+            "speedup_TP": 1.1
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 2684.35,
+            "computation_us": 6015.11,
+            "latency_us": 13967.93
+        },
+        "EP": {
+            "communication_us": 1162.7,
+            "computation_us": 8369.9,
+            "latency_us": 14801.06
+        },
+        "compute_balancing": {
+            "communication_us": 1679.6,
+            "computation_us": 6156.94,
+            "latency_us": 13105.0
+        },
+        "node_link_balancing": {
+            "communication_us": 1210.06,
+            "computation_us": 6080.41,
+            "latency_us": 12558.94,
+            "speedup_EP": 1.18,
+            "speedup_TP": 1.11
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 223.7,
+            "computation_us": 1503.78,
+            "latency_us": 4036.91
+        },
+        "EP": {
+            "communication_us": 91.71,
+            "computation_us": 2092.47,
+            "latency_us": 4493.62
+        },
+        "compute_balancing": {
+            "communication_us": 157.75,
+            "computation_us": 1538.49,
+            "latency_us": 4005.67
+        },
+        "node_link_balancing": {
+            "communication_us": 109.07,
+            "computation_us": 1505.43,
+            "latency_us": 3923.93,
+            "speedup_EP": 1.15,
+            "speedup_TP": 1.03
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 447.39,
+            "computation_us": 3007.55,
+            "latency_us": 6463.2
+        },
+        "EP": {
+            "communication_us": 192.4,
+            "computation_us": 4184.95,
+            "latency_us": 7385.61
+        },
+        "compute_balancing": {
+            "communication_us": 315.85,
+            "computation_us": 3076.98,
+            "latency_us": 6401.09
+        },
+        "node_link_balancing": {
+            "communication_us": 211.87,
+            "computation_us": 3010.85,
+            "latency_us": 6230.98,
+            "speedup_EP": 1.19,
+            "speedup_TP": 1.04
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 894.78,
+            "computation_us": 6015.11,
+            "latency_us": 11315.8
+        },
+        "EP": {
+            "communication_us": 366.41,
+            "computation_us": 8369.9,
+            "latency_us": 13142.22
+        },
+        "compute_balancing": {
+            "communication_us": 630.69,
+            "computation_us": 6153.96,
+            "latency_us": 11190.55
+        },
+        "node_link_balancing": {
+            "communication_us": 459.14,
+            "computation_us": 6021.71,
+            "latency_us": 10886.76,
+            "speedup_EP": 1.21,
+            "speedup_TP": 1.04
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 1789.57,
+            "computation_us": 12030.21,
+            "latency_us": 21020.98
+        },
+        "EP": {
+            "communication_us": 760.75,
+            "computation_us": 16739.8,
+            "latency_us": 24701.75
+        },
+        "compute_balancing": {
+            "communication_us": 1262.8,
+            "computation_us": 12307.92,
+            "latency_us": 20771.92
+        },
+        "node_link_balancing": {
+            "communication_us": 827.3,
+            "computation_us": 12043.41,
+            "latency_us": 20071.91,
+            "speedup_EP": 1.23,
+            "speedup_TP": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 335.54,
+            "computation_us": 1503.78,
+            "latency_us": 5975.01
+        },
+        "EP": {
+            "communication_us": 61.92,
+            "computation_us": 2092.47,
+            "latency_us": 6290.08
+        },
+        "compute_balancing": {
+            "communication_us": 241.94,
+            "computation_us": 1539.24,
+            "latency_us": 5916.86
+        },
+        "node_link_balancing": {
+            "communication_us": 83.07,
+            "computation_us": 1509.12,
+            "latency_us": 5727.88,
+            "speedup_EP": 1.1,
+            "speedup_TP": 1.04
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 671.09,
+            "computation_us": 3007.55,
+            "latency_us": 8728.79
+        },
+        "EP": {
+            "communication_us": 121.3,
+            "computation_us": 4184.95,
+            "latency_us": 9356.4
+        },
+        "compute_balancing": {
+            "communication_us": 488.32,
+            "computation_us": 3078.47,
+            "latency_us": 8616.94
+        },
+        "node_link_balancing": {
+            "communication_us": 174.15,
+            "computation_us": 3018.23,
+            "latency_us": 8242.53,
+            "speedup_EP": 1.14,
+            "speedup_TP": 1.06
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 1342.18,
+            "computation_us": 6015.11,
+            "latency_us": 14236.36
+        },
+        "EP": {
+            "communication_us": 244.9,
+            "computation_us": 8369.9,
+            "latency_us": 15493.88
+        },
+        "compute_balancing": {
+            "communication_us": 968.49,
+            "computation_us": 6156.94,
+            "latency_us": 14004.51
+        },
+        "node_link_balancing": {
+            "communication_us": 364.92,
+            "computation_us": 6036.46,
+            "latency_us": 13280.46,
+            "speedup_EP": 1.17,
+            "speedup_TP": 1.07
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                4
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 2684.35,
+            "computation_us": 12030.21,
+            "latency_us": 25251.5
+        },
+        "EP": {
+            "communication_us": 514.07,
+            "computation_us": 16739.8,
+            "latency_us": 27790.8
+        },
+        "compute_balancing": {
+            "communication_us": 1936.2,
+            "computation_us": 12313.88,
+            "latency_us": 24787.01
+        },
+        "node_link_balancing": {
+            "communication_us": 684.8,
+            "computation_us": 12072.92,
+            "latency_us": 23294.66,
+            "speedup_EP": 1.19,
+            "speedup_TP": 1.08
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 335.54,
+            "computation_us": 375.94,
+            "latency_us": 1745.41
+        },
+        "EP": {
+            "communication_us": 271.31,
+            "computation_us": 523.12,
+            "latency_us": 1828.35
+        },
+        "compute_balancing": {
+            "communication_us": 169.85,
+            "computation_us": 384.81,
+            "latency_us": 1588.58
+        },
+        "node_link_balancing": {
+            "communication_us": 223.04,
+            "computation_us": 394.8,
+            "latency_us": 1651.76,
+            "speedup_EP": 1.11,
+            "speedup_TP": 1.06
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 671.09,
+            "computation_us": 751.89,
+            "latency_us": 2685.51
+        },
+        "EP": {
+            "communication_us": 531.68,
+            "computation_us": 1046.24,
+            "latency_us": 2840.45
+        },
+        "compute_balancing": {
+            "communication_us": 346.76,
+            "computation_us": 769.62,
+            "latency_us": 2378.92
+        },
+        "node_link_balancing": {
+            "communication_us": 493.45,
+            "computation_us": 789.6,
+            "latency_us": 2545.58,
+            "speedup_EP": 1.12,
+            "speedup_TP": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 1342.18,
+            "computation_us": 1503.78,
+            "latency_us": 4565.72
+        },
+        "EP": {
+            "communication_us": 1009.65,
+            "computation_us": 2092.47,
+            "latency_us": 4821.89
+        },
+        "compute_balancing": {
+            "communication_us": 695.89,
+            "computation_us": 1539.24,
+            "latency_us": 3954.89
+        },
+        "node_link_balancing": {
+            "communication_us": 992.33,
+            "computation_us": 1579.19,
+            "latency_us": 4291.29,
+            "speedup_EP": 1.12,
+            "speedup_TP": 1.06
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                8,
+                8
+            ],
+            "model": "mixtral",
+            "dataset": "reasoning",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 2684.35,
+            "computation_us": 3007.55,
+            "latency_us": 8326.14
+        },
+        "EP": {
+            "communication_us": 2173.49,
+            "computation_us": 4184.95,
+            "latency_us": 8992.67
+        },
+        "compute_balancing": {
+            "communication_us": 1390.31,
+            "computation_us": 3078.47,
+            "latency_us": 7103.01
+        },
+        "node_link_balancing": {
+            "communication_us": 1843.71,
+            "computation_us": 3158.38,
+            "latency_us": 7636.32,
+            "speedup_EP": 1.18,
+            "speedup_TP": 1.09
+        }
+    }
+]

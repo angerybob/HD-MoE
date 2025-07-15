@@ -1,0 +1,3 @@
+usage: simulator.py [-h] [--layer-id LAYER_ID] [--comp COMP] [--comm COMM]
+                    [--batch BATCH]
+simulator.py: error: argument --layer-id: invalid int value: '{1}'

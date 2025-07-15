@@ -1,0 +1,265 @@
+OpenBLAS blas_thread_init: pthread_create failed for thread 1 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 2 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 3 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 4 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 5 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 6 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 7 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 8 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 9 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 10 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 11 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 12 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 13 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 14 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 15 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 16 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 17 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 18 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 19 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 20 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 21 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 22 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 23 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 24 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 25 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+O 53%|█████▎    | 80/150 [16:07<15:23, 13.19s/it] 54%|█████▍    | 81/150 [16:24<16:21, 14.23s/it] 55%|█████▍    | 82/150 [16:41<17:01, 15.02s/it] 55%|█████▌    | 83/150 [16:57<17:02, 15.26s/it] 56%|█████▌    | 84/150 [17:14<17:27, 15.87s/it] 57%|█████▋    | 85/150 [17:29<16:53, 15.60s/it] 57%|█████▋    | 86/150 [17:45<16:48, 15.76s/it] 58%|█████▊    | 87/150 [18:02<17:04, 16.27s/it] 59%|█████▊    | 88/150 [18:19<16:55, 16.38s/it] 59%|█████▉    | 89/150 [18:35<16:39, 16.38s/it] 60%|██████    | 90/150 [18:51<16:04, 16.08s/it] 61%|██████    | 91/150 [19:07<15:50, 16.12s/it] 61%|██████▏   | 92/150 [19:24<15:42, 16.26s/it] 62%|██████▏   | 93/150 [19:40<15:35, 16.42s/it] 63%|██████▎   | 94/150 [19:58<15:34, 16.69s/it] 63%|██████▎   | 95/150 [20:15<15:32, 16.95s/it] 64%|██████▍   | 96/150 [20:33<15:22, 17.07s/it] 65%|██████▍   | 97/150 [20:51<15:29, 17.54s/it] 65%|██████▌   | 98/150 [21:09<15:14, 17.58s/it] 66%|██████▌   | 99/150 [21:27<15:10, 17.85s/it] 67%|██████▋   | 100/150 [21:45<14:46, 17.72s/it] 67%|██████▋   | 101/150 [22:03<14:30, 17.76s/it] 68%|██████▊   | 102/150 [22:20<14:06, 17.64s/it] 69%|██████▊   | 103/150 [22:38<13:55, 17.78s/it] 69%|██████▉   | 104/150 [22:56<13:32, 17.66s/it] 70%|███████   | 105/150 [23:13<13:09, 17.54s/it] 71%|███████   | 106/150 [23:30<12:43, 17.35s/it] 71%|███████▏  | 107/150 [23:49<12:49, 17.90s/it] 72%|███████▏  | 108/150 [24:08<12:50, 18.35s/it] 73%|███████▎  | 109/150 [24:28<12:49, 18.77s/it] 73%|███████▎  | 110/150 [24:47<12:27, 18.68s/it] 74%|███████▍  | 111/150 [25:04<11:48, 18.16s/it] 75%|███████▍  | 112/150 [25:22<11:31, 18.19s/it] 75%|███████▌  | 113/150 [25:40<11:18, 18.35s/it] 76%|███████▌  | 114/150 [25:59<11:05, 18.48s/it] 77%|███████▋  | 115/150 [26:17<10:39, 18.26s/it] 77%|███████▋  | 116/150 [26:34<10:02, 17.72s/it] 78%|███████▊  | 117/150 [26:50<09:34, 17.40s/it] 79%|███████▊  | 118/150 [27:08<09:16, 17.40s/it] 79%|███████▉  | 119/150 [27:26<09:07, 17.67s/it] 80%|████████  | 120/150 [27:44<08:51, 17.71s/it] 81%|████████  | 121/150 [28:01<08:29, 17.59s/it] 81%|████████▏ | 122/150 [28:18<08:12, 17.57s/it] 82%|████████▏ | 123/150 [28:36<07:56, 17.64s/it] 83%|████████▎ | 124/150 [28:52<07:26, 17.16s/it] 83%|████████▎ | 125/150 [29:08<06:55, 16.61s/it] 84%|████████▍ | 126/150 [29:23<06:28, 16.20s/it] 85%|████████▍ | 127/150 [29:38<06:06, 15.92s/it] 85%|████████▌ | 128/150 [29:55<05:53, 16.08s/it] 86%|████████▌ | 129/150 [30:10<05:34, 15.91s/it] 87%|████████▋ | 130/150 [30:27<05:23, 16.16s/it] 87%|████████▋ | 131/150 [30:43<05:06, 16.13s/it] 88%|████████▊ | 132/150 [30:59<04:49, 16.08s/it] 89%|████████▊ | 133/150 [31:15<04:34, 16.17s/it] 89%|████████▉ | 134/150 [31:31<04:15, 15.95s/it] 90%|█████████ | 135/150 [31:45<03:52, 15.50s/it] 91%|█████████ | 136/150 [32:00<03:34, 15.33s/it] 91%|█████████▏| 137/150 [32:15<03:17, 15.18s/it] 92%|█████████▏| 138/150 [32:30<03:00, 15.03s/it] 93%|█████████▎| 139/150 [32:44<02:42, 14.78s/it] 93%|█████████▎| 140/150 [32:58<02:25, 14.58s/it] 94%|█████████▍| 141/150 [33:12<02:09, 14.37s/it] 95%|█████████▍| 142/150 [33:25<01:53, 14.17s/it] 95%|█████████▌| 143/150 [33:39<01:38, 14.04s/it] 96%|█████████▌| 144/150 [33:53<01:23, 13.91s/it] 97%|█████████▋| 145/150 [34:07<01:09, 13.89s/it] 97%|█████████▋| 146/150 [34:21<00:56, 14.07s/it] 98%|█████████▊| 147/150 [34:36<00:43, 14.43s/it] 99%|█████████▊| 148/150 [34:52<00:29, 14.67s/it] 99%|█████████▉| 149/150 [35:07<00:14, 14.86s/it]100%|██████████| 150/150 [35:23<00:00, 15.10s/it]100%|██████████| 150/150 [35:23<00:00, 14.15s/it]
+Total communication distance is 20.91 nodes
+Total communication distance of random mapping is 21.98 nodes
+link_balancing: 4.58 us
+link_balancing_computation: 21.03 us
+link_balancing_latency: 25.61 us
+link_balancing_speedup:1.14
+node_link_balancing_speedup:2.30
+penBLAS blas_thread_init: pthread_create failed for thread 39 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 40 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 41 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 42 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 43 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 44 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 45 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 46 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+OpenBLAS blas_thread_init: pthread_create failed for thread 47 of 48: Resource temporarily unavailable
+OpenBLAS blas_thread_init: ensure that your address space and process count limits are big enough (ulimit -a)
+OpenBLAS blas_thread_init: or set a smaller OPENBLAS_NUM_THREADS to fit into what you have available
+OpenBLAS blas_thread_init: RLIMIT_NPROC 4096 current, 1542362 max
+/data/home/haochenhuang/deployment/node_allocation.py:66: TqdmMonitorWarning: tqdm:disabling monitor support (monitor_interval = 0) due to:
+can't start new thread
+  for k in tqdm(range(2, self.e+1)):
+Begin to group pruning:
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:03<00:15,  3.78s/it]100%|██████████| 5/5 [00:28<00:00,  5.86s/it]100%|██████████| 5/5 [00:28<00:00,  5.74s/it]
+EP_communication: 3.82 us
+EP_computation: 55.08 us
+EP_latency: 58.90 us
+Set parameter LicenseID to value 2632967
+Begin to add constraint for expert placement...
+Begin to add constraint for computation node-balance...
+Begin to add constraint for communication node-balance...
+Set parameter TimeLimit to value 600
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  600
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 150080 rows, 153858 columns and 1190016 nonzeros
+Model fingerprint: 0x6c582f7e
+Variable types: 4098 continuous, 149760 integer (149760 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+Presolve removed 64 rows and 0 columns (presolve time = 5s)...
+Presolve removed 64 rows and 0 columns
+Presolve time: 7.38s
+Presolved: 150016 rows, 153858 columns, 1185792 nonzeros
+Variable types: 4098 continuous, 149760 integer (149760 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.1768076e-05   0.000000e+00   0.000000e+00     16s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+     188 DPushes remaining with DInf 0.0000000e+00                16s
+       0 DPushes remaining with DInf 0.0000000e+00                16s
+
+    4032 PPushes remaining with PInf 0.0000000e+00                16s
+       0 PPushes remaining with PInf 0.0000000e+00                16s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00     16s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4158    2.0132659e-05   0.000000e+00   0.000000e+00     16s
+    4158    2.0132659e-05   0.000000e+00   0.000000e+00     16s
+
+Root relaxation: objective 2.013266e-05, 4158 iterations, 4.61 seconds (3.25 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00002    0 29225          -    0.00002      -     -   41s
+H    0     0                       0.0000668    0.00002  69.9%     -   45s
+     0     0    0.00002    0 33077    0.00007    0.00002  67.3%     -   96s
+     0     0    0.00002    0 36564    0.00007    0.00002  67.3%     -  126s
+     0     0    0.00002    0 44577    0.00007    0.00002  67.1%     -  198s
+     0     0    0.00002    0 54374    0.00007    0.00002  67.1%     -  353s
+     0     0          -    0         0.00007    0.00002  67.1%     -  600s
+
+Cutting planes:
+  Cover: 27266
+  Implied bound: 5
+  Clique: 643
+  MIR: 71
+  Flow cover: 220
+  Zero half: 55
+  RLT: 48
+  Relax-and-lift: 7
+  PSD: 456
+
+Explored 1 nodes (83501 simplex iterations) in 600.12 seconds (262.07 work units)
+Thread count was 8 (of 48 available processors)
+
+Solution count 1: 6.68057e-05 
+
+Time limit reached
+Best objective 6.680574806576e-05, best bound 2.200319821122e-05, gap 67.0639%
+node_balancing_communication: 5.35 us
+node_balancing_computation: 20.13 us
+node_balancing_latency: 25.48 us
+node_balancing_speedup:2.31
+  0%|          | 0/150 [00:00<?, ?it/s]  1%|          | 1/150 [00:19<47:47, 19.25s/it]  1%|▏         | 2/150 [00:38<48:11, 19.53s/it]  2%|▏         | 3/150 [00:57<46:42, 19.06s/it]  3%|▎         | 4/150 [01:14<44:33, 18.31s/it]  3%|▎         | 5/150 [01:32<43:25, 17.97s/it]  4%|▍         | 6/150 [01:49<42:54, 17.88s/it]  5%|▍         | 7/150 [02:06<41:56, 17.59s/it]  5%|▌         | 8/150 [02:23<41:18, 17.46s/it]  6%|▌         | 9/150 [02:41<41:24, 17.62s/it]  7%|▋         | 10/150 [02:59<41:15, 17.68s/it]  7%|▋         | 11/150 [03:21<44:09, 19.06s/it]  8%|▊         | 12/150 [03:43<45:20, 19.72s/it]  9%|▊         | 13/150 [04:00<43:44, 19.16s/it]  9%|▉         | 14/150 [04:19<42:43, 18.85s/it] 10%|█         | 15/150 [04:37<41:47, 18.57s/it] 11%|█         | 16/150 [04:53<40:12, 18.01s/it] 11%|█▏        | 17/150 [05:10<39:15, 17.71s/it] 12%|█▏        | 18/150 [05:26<37:53, 17.23s/it] 13%|█▎        | 19/150 [05:43<36:58, 16.93s/it] 13%|█▎        | 20/150 [05:59<36:12, 16.71s/it] 14%|█▍        | 21/150 [06:15<35:42, 16.61s/it] 15%|█▍        | 22/150 [06:31<35:13, 16.51s/it] 15%|█▌        | 23/150 [06:48<34:53, 16.49s/it] 16%|█▌        | 24/150 [07:04<34:35, 16.47s/it] 17%|█▋        | 25/150 [07:20<33:49, 16.24s/it] 17%|█▋        | 26/150 [07:36<33:24, 16.16s/it] 18%|█▊        | 27/150 [07:51<32:38, 15.92s/it] 19%|█▊        | 28/150 [08:07<32:17, 15.88s/it] 19%|█▉        | 29/150 [08:23<32:04, 15.90s/it] 20%|██        | 30/150 [08:39<31:50, 15.92s/it] 21%|██        | 31/150 [08:57<32:30, 16.39s/it] 21%|██▏       | 32/150 [09:14<32:39, 16.61s/it] 22%|██▏       | 33/150 [09:31<32:49, 16.83s/it] 23%|██▎       | 34/150 [09:48<32:43, 16.93s/it] 23%|██▎       | 35/150 [10:06<32:44, 17.09s/it] 24%|██▍       | 36/150 [10:23<32:47, 17.26s/it] 25%|██▍       | 37/150 [10:41<32:56, 17.50s/it] 25%|██▌       | 38/150 [10:59<32:42, 17.52s/it] 26%|██▌       | 39/150 [11:17<32:39, 17.65s/it] 27%|██▋       | 40/150 [11:34<32:19, 17.63s/it] 27%|██▋       | 41/150 [11:52<32:10, 17.71s/it] 28%|██▊       | 42/150 [12:10<31:49, 17.68s/it] 29%|██▊       | 43/150 [12:28<31:53, 17.88s/it] 29%|██▉       | 44/150 [12:47<32:14, 18.25s/it] 30%|███       | 45/150 [13:07<32:31, 18.58s/it] 31%|███       | 46/150 [13:26<32:37, 18.82s/it] 31%|███▏      | 47/150 [13:45<32:21, 18.84s/it] 32%|███▏      | 48/150 [14:04<32:12, 18.95s/it] 33%|███▎      | 49/150 [14:23<31:56, 18.98s/it] 33%|███▎      | 50/150 [14:42<31:35, 18.96s/it] 34%|███▍      | 51/150 [15:02<31:55, 19.35s/it] 35%|███▍      | 52/150 [15:23<32:05, 19.64s/it] 35%|███▌      | 53/150 [15:43<31:53, 19.72s/it] 36%|███▌      | 54/150 [16:03<31:40, 19.80s/it] 37%|███▋      | 55/150 [16:23<31:32, 19.92s/it] 37%|███▋      | 56/150 [16:43<31:21, 20.02s/it] 38%|███▊      | 57/150 [17:02<30:36, 19.75s/it] 39%|███▊      | 58/150 [17:21<29:57, 19.54s/it] 39%|███▉      | 59/150 [17:40<29:11, 19.25s/it] 40%|████      | 60/150 [17:58<28:28, 18.98s/it] 41%|████      | 61/150 [18:17<28:06, 18.95s/it] 41%|████▏     | 62/150 [18:35<27:31, 18.77s/it] 42%|████▏     | 63/150 [18:54<26:57, 18.60s/it] 43%|████▎     | 64/150 [19:12<26:29, 18.48s/it] 43%|████▎     | 65/150 [19:30<26:08, 18.46s/it] 44%|████▍     | 66/150 [19:48<25:38, 18.32s/it] 45%|████▍     | 67/150 [20:07<25:38, 18.53s/it] 45%|████▌     | 68/150 [20:27<25:45, 18.85s/it] 46%|████▌     | 69/150 [20:47<26:03, 19.30s/it] 47%|████▋     | 70/150 [21:09<26:37, 19.97s/it] 47%|████▋     | 71/150 [21:31<27:07, 20.60s/it] 48%|████▊     | 72/150 [21:52<26:50, 20.64s/it] 49%|████▊     | 73/150 [22:13<26:39, 20.77s/it] 49%|████▉     | 74/150 [22:34<26:26, 20.88s/it] 50%|█████     | 75/150 [22:56<26:27, 21.17s/it] 51%|█████     | 76/150 [23:17<26:15, 21.29s/it] 51%|█████▏    | 77/150 [23:39<25:56, 21.32s/it] 52%|█████▏    | 78/150 [23:59<25:17, 21.07s/it] 53%|█████▎    | 79/150 [24:19<24:31, 20.72s/it] 53%|█████▎    | 80/150 [24:39<23:49, 20.42s/it] 54%|█████▍    | 81/150 [24:57<22:43, 19.76s/it] 55%|█████▍    | 82/150 [25:16<22:08, 19.53s/it] 55%|█████▌    | 83/150 [25:36<21:58, 19.68s/it] 56%|█████▌    | 84/150 [25:56<21:45, 19.78s/it] 57%|█████▋    | 85/150 [26:16<21:28, 19.82s/it] 57%|█████▋    | 86/150 [26:35<20:55, 19.62s/it] 58%|█████▊    | 87/150 [26:54<20:25, 19.46s/it] 59%|█████▊    | 88/150 [27:13<19:54, 19.27s/it] 59%|█████▉    | 89/150 [27:32<19:33, 19.24s/it] 60%|██████    | 90/150 [27:51<19:01, 19.02s/it] 61%|██████    | 91/150 [28:09<18:38, 18.95s/it] 61%|██████▏   | 92/150 [28:29<18:28, 19.11s/it] 62%|██████▏   | 93/150 [28:48<18:16, 19.23s/it] 63%|██████▎   | 94/150 [29:07<17:46, 19.04s/it] 63%|██████▎   | 95/150 [29:24<17:01, 18.57s/it] 64%|██████▍   | 96/150 [29:42<16:23, 18.21s/it] 65%|██████▍   | 97/150 [30:00<16:00, 18.11s/it] 65%|██████▌   | 98/150 [30:18<15:43, 18.14s/it] 66%|██████▌   | 99/150 [30:36<15:20, 18.05s/it] 67%|██████▋   | 100/150 [30:53<14:48, 17.77s/it] 67%|██████▋   | 101/150 [31:10<14:21, 17.59s/it] 68%|██████▊   | 102/150 [31:27<13:55, 17.41s/it] 69%|██████▊   | 103/150 [31:44<13:27, 17.19s/it] 69%|██████▉   | 104/150 [32:00<12:59, 16.94s/it] 70%|███████   | 105/150 [32:17<12:39, 16.87s/it] 71%|███████   | 106/150 [32:34<12:20, 16.84s/it] 71%|███████▏  | 107/150 [32:51<12:07, 16.92s/it] 72%|███████▏  | 108/150 [33:08<12:00, 17.15s/it] 73%|███████▎  | 109/150 [33:26<11:48, 17.27s/it] 73%|███████▎  | 110/150 [33:44<11:39, 17.49s/it] 74%|███████▍  | 111/150 [34:02<11:30, 17.70s/it] 75%|███████▍  | 112/150 [34:21<11:22, 17.96s/it] 75%|███████▌  | 113/150 [34:40<11:15, 18.25s/it] 76%|███████▌  | 114/150 [34:59<11:05, 18.48s/it] 77%|███████▋  | 115/150 [35:18<10:51, 18.62s/it] 77%|███████▋  | 116/150 [35:37<10:40, 18.85s/it] 78%|███████▊  | 117/150 [35:56<10:26, 18.99s/it] 79%|███████▊  | 118/150 [36:16<10:17, 19.29s/it] 79%|███████▉  | 119/150 [36:36<09:59, 19.35s/it] 80%|████████  | 120/150 [36:55<09:38, 19.27s/it] 81%|████████  | 121/150 [37:14<09:19, 19.28s/it] 81%|████████▏ | 122/150 [37:34<09:02, 19.37s/it] 82%|████████▏ | 123/150 [37:51<08:28, 18.84s/it] 83%|████████▎ | 124/150 [38:09<08:00, 18.47s/it] 83%|████████▎ | 125/150 [38:29<07:54, 18.97s/it] 84%|████████▍ | 126/150 [38:49<07:40, 19.19s/it] 85%|████████▍ | 127/150 [39:08<07:22, 19.24s/it] 85%|████████▌ | 128/150 [39:27<06:59, 19.09s/it] 86%|████████▌ | 129/150 [39:46<06:41, 19.12s/it] 87%|████████▋ | 130/150 [40:05<06:21, 19.09s/it] 87%|████████▋ | 131/150 [40:24<06:03, 19.11s/it] 88%|████████▊ | 132/150 [40:43<05:43, 19.10s/it] 89%|████████▊ | 133/150 [41:01<05:19, 18.79s/it] 89%|████████▉ | 134/150 [41:19<04:56, 18.51s/it] 90%|█████████ | 135/150 [41:38<04:39, 18.63s/it] 91%|█████████ | 136/150 [41:57<04:22, 18.78s/it] 91%|█████████▏| 137/150 [42:16<04:04, 18.78s/it] 92%|█████████▏| 138/150 [42:35<03:45, 18.77s/it] 93%|█████████▎| 139/150 [42:53<03:25, 18.64s/it] 93%|█████████▎| 140/150 [43:10<03:01, 18.15s/it] 94%|█████████▍| 141/150 [43:27<02:40, 17.82s/it] 95%|█████████▍| 142/150 [43:44<02:21, 17.63s/it] 95%|█████████▌| 143/150 [44:01<02:00, 17.25s/it] 96%|█████████▌| 144/150 [44:17<01:42, 17.10s/it] 97%|█████████▋| 145/150 [44:34<01:24, 16.99s/it] 97%|█████████▋| 146/150 [44:50<01:06, 16.72s/it] 98%|█████████▊| 147/150 [45:06<00:49, 16.55s/it] 99%|█████████▊| 148/150 [45:22<00:32, 16.13s/it] 99%|█████████▉| 149/150 [45:36<00:15, 15.70s/it]100%|██████████| 150/150 [45:51<00:00, 15.53s/it]100%|██████████| 150/150 [45:51<00:00, 18.35s/it]
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/deployment/simulator.py", line 140, in <module>
+    main()
+  File "/data/home/haochenhuang/deployment/simulator.py", line 110, in main
+    np.savez_compressed(file_path, arr1=P, arr2=M)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 789, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 103, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/zipfile.py", line 1253, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/data/home/haochenhuang/deployment/results/20_TFLOPS_25_GBPS/arrays_20_TFLOPS_25_GBPS_in_layer_21.npz'
+Exception ignored in atexit callback: <bound method TMonitor.exit of <TMonitor(Thread-1, initial daemon)>>
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/tqdm/_monitor.py", line 44, in exit
+    self.join()
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/threading.py", line 1091, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started

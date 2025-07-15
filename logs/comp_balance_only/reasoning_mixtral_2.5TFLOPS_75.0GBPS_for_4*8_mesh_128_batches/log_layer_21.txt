@@ -1,0 +1,68 @@
+computation throughput (TFLOPS): 2.50
+communication bandwidth (GB/s): 75.00
+Begin to sampling activation data...
+  0%|          | 0/32 [00:00<?, ?it/s] 12%|█▎        | 4/32 [00:00<00:00, 35.99it/s] 25%|██▌       | 8/32 [00:00<00:00, 35.50it/s] 38%|███▊      | 12/32 [00:00<00:00, 32.32it/s] 50%|█████     | 16/32 [00:00<00:00, 32.28it/s] 62%|██████▎   | 20/32 [00:00<00:00, 29.85it/s] 75%|███████▌  | 24/32 [00:00<00:00, 27.88it/s] 88%|████████▊ | 28/32 [00:00<00:00, 29.12it/s] 97%|█████████▋| 31/32 [00:01<00:00, 28.92it/s]100%|██████████| 32/32 [00:01<00:00, 30.20it/s]
+results saved at /data/home/haochenhuang/deployment/results/comp_balance_only/reasoning_mixtral_2.5_TFLOPS_75.0_GBPS_for_4*8_mesh_128_batches/arrays_2.5_TFLOPS_75.0_GBPS_in_layer_21.npz
+TP_communication: 55.92 us
+TP_computation: 375.99 us
+TP_latency: 431.91 us
+EP_communication: 19.56 us
+EP_computation: 520.38 us
+EP_latency: 539.94 us
+TP_communication_dynamic: 55.92 us
+TP_computation_dynamic: 375.81 us
+TP_latency_dynamic: 431.73 us
+EP_communication_dynamic: 16.38 us
+EP_computation_dynamic: 551.97 us
+EP_latency_dynamic: 568.35 us
+Set parameter LicenseID to value 2632967
+Set parameter TimeLimit to value 60
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  60
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 12 rows, 17 columns and 50 nonzeros
+Model fingerprint: 0xe4cf21e9
+Variable types: 1 continuous, 16 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0093148
+Presolve removed 11 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 9 columns, 9 nonzeros
+Variable types: 1 continuous, 8 integer (8 binary)
+Found heuristic solution: objective 0.0062238
+
+Root relaxation: interrupted, 0 iterations, 0.00 seconds (0.00 work units)
+
+Explored 1 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 8 (of 48 available processors)
+
+Solution count 2: 0.00622376 0.00931485 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 6.223758953135e-03, best bound 6.015822306083e-03, gap 3.3410%
+Comp Balance Finished.
+comp_balancing_communication: 57.57 us
+comp_balancing_computation: 388.98 us
+comp_balancing_latency: 446.56 us
+comp_balancing_speedup_EP:1.21
+comp_balancing_speedup_TP:0.97
+comp_balancing_communication_dynamic: 5.24 us
+comp_balancing_computation_dynamic: 411.04 us
+comp_balancing_latency_dynamic: 416.28 us
+comp_balancing_speedup_EP_dynamic:1.37
+comp_balancing_speedup_TP_dynamic:1.04

@@ -1,0 +1,491 @@
+computation throughput (TFLOPS): 10.00
+communication bandwidth (GB/s): 25.00
+Begin to sampling activation data...
+  0%|          | 0/28 [00:00<?, ?it/s] 14%|█▍        | 4/28 [00:00<00:00, 29.68it/s] 25%|██▌       | 7/28 [00:00<00:00, 28.74it/s] 36%|███▌      | 10/28 [00:00<00:00, 28.11it/s] 46%|████▋     | 13/28 [00:00<00:00, 26.60it/s] 57%|█████▋    | 16/28 [00:00<00:00, 20.48it/s] 68%|██████▊   | 19/28 [00:00<00:00, 18.15it/s] 75%|███████▌  | 21/28 [00:01<00:00, 17.06it/s] 82%|████████▏ | 23/28 [00:01<00:00, 16.25it/s] 89%|████████▉ | 25/28 [00:01<00:00, 15.59it/s] 96%|█████████▋| 27/28 [00:01<00:00, 14.96it/s]100%|██████████| 28/28 [00:01<00:00, 18.31it/s]
+Begin to sampling communication latency...
+  0%|          | 0/192 [00:00<?, ?it/s]  1%|          | 1/192 [00:01<03:47,  1.19s/it]  1%|          | 2/192 [00:02<03:40,  1.16s/it]  2%|▏         | 3/192 [00:03<03:14,  1.03s/it]  2%|▏         | 4/192 [00:04<03:28,  1.11s/it]  3%|▎         | 5/192 [00:05<03:36,  1.16s/it]  3%|▎         | 6/192 [00:06<03:01,  1.03it/s]  4%|▎         | 7/192 [00:07<02:57,  1.04it/s]  4%|▍         | 8/192 [00:08<03:18,  1.08s/it]  5%|▍         | 9/192 [00:09<03:26,  1.13s/it]  5%|▌         | 10/192 [00:10<03:10,  1.05s/it]  6%|▌         | 11/192 [00:11<02:45,  1.09it/s]  6%|▋         | 12/192 [00:11<02:28,  1.21it/s]  7%|▋         | 13/192 [00:12<02:15,  1.32it/s]  7%|▋         | 14/192 [00:13<02:06,  1.40it/s]  8%|▊         | 15/192 [00:13<02:00,  1.46it/s]  8%|▊         | 16/192 [00:14<01:56,  1.51it/s]  9%|▉         | 17/192 [00:14<01:53,  1.54it/s]  9%|▉         | 18/192 [00:15<01:51,  1.56it/s] 10%|▉         | 19/192 [00:16<01:50,  1.56it/s] 10%|█         | 20/192 [00:16<01:49,  1.57it/s] 11%|█         | 21/192 [00:17<01:48,  1.58it/s] 11%|█▏        | 22/192 [00:18<01:47,  1.58it/s] 12%|█▏        | 23/192 [00:18<01:47,  1.57it/s] 12%|█▎        | 24/192 [00:19<01:46,  1.58it/s] 13%|█▎        | 25/192 [00:20<01:56,  1.43it/s] 14%|█▎        | 26/192 [00:20<01:53,  1.47it/s] 14%|█▍        | 27/192 [00:21<01:51,  1.48it/s] 15%|█▍        | 28/192 [00:22<01:50,  1.49it/s] 15%|█▌        | 29/192 [00:22<01:49,  1.49it/s] 16%|█▌        | 30/192 [00:23<01:47,  1.51it/s] 16%|█▌        | 31/192 [00:24<01:46,  1.51it/s] 17%|█▋        | 32/192 [00:24<01:48,  1.47it/s] 17%|█▋        | 33/192 [00:26<02:15,  1.17it/s] 18%|█▊        | 34/192 [00:27<03:01,  1.15s/it] 18%|█▊        | 35/192 [00:29<03:23,  1.30s/it] 19%|█▉        | 36/192 [00:31<03:57,  1.52s/it] 19%|█▉        | 37/192 [00:33<04:23,  1.70s/it] 20%|█▉        | 38/192 [00:36<04:49,  1.88s/it] 20%|██        | 39/192 [00:38<04:58,  1.95s/it] 21%|██        | 40/192 [00:40<05:07,  2.02s/it] 21%|██▏       | 41/192 [00:42<04:57,  1.97s/it] 22%|██▏       | 42/192 [00:43<04:34,  1.83s/it] 22%|██▏       | 43/192 [00:45<04:14,  1.71s/it] 23%|██▎       | 44/192 [00:46<04:01,  1.63s/it] 23%|██▎       | 45/192 [00:47<03:18,  1.35s/it] 24%|██▍       | 46/192 [00:48<03:30,  1.44s/it] 24%|██▍       | 47/192 [00:50<03:28,  1.43s/it] 25%|██▌       | 48/192 [00:51<03:26,  1.43s/it] 26%|██▌       | 49/192 [00:52<02:54,  1.22s/it] 26%|██▌       | 50/192 [00:53<02:56,  1.24s/it] 27%|██▋       | 51/192 [00:54<02:42,  1.15s/it] 27%|██▋       | 52/192 [00:55<02:23,  1.02s/it] 28%|██▊       | 53/192 [00:56<02:13,  1.04it/s] 28%|██▊       | 54/192 [00:57<02:11,  1.05it/s] 29%|██▊       | 55/192 [00:58<02:05,  1.09it/s] 29%|██▉       | 56/192 [00:59<02:05,  1.08it/s] 30%|██▉       | 57/192 [01:00<02:27,  1.09s/it] 30%|███       | 58/192 [01:01<02:27,  1.10s/it] 31%|███       | 59/192 [01:02<02:11,  1.01it/s] 31%|███▏      | 60/192 [01:03<02:01,  1.09it/s] 32%|███▏      | 61/192 [01:03<01:53,  1.15it/s] 32%|███▏      | 62/192 [01:04<01:47,  1.21it/s] 33%|███▎      | 63/192 [01:05<01:46,  1.22it/s] 33%|███▎      | 64/192 [01:06<01:45,  1.21it/s] 34%|███▍      | 65/192 [01:07<01:42,  1.24it/s] 34%|███▍      | 66/192 [01:07<01:39,  1.26it/s] 35%|███▍      | 67/192 [01:08<01:38,  1.27it/s] 35%|███▌      | 68/192 [01:09<01:36,  1.28it/s] 36%|███▌      | 69/192 [01:10<01:35,  1.29it/s] 36%|███▋      | 70/192 [01:10<01:34,  1.29it/s] 37%|███▋      | 71/192 [01:11<01:34,  1.28it/s] 38%|███▊      | 72/192 [01:12<01:34,  1.26it/s] 38%|███▊      | 73/192 [01:13<01:34,  1.26it/s] 39%|███▊      | 74/192 [01:14<01:33,  1.26it/s] 39%|███▉      | 75/192 [01:14<01:33,  1.26it/s] 40%|███▉      | 76/192 [01:15<01:32,  1.25it/s] 40%|████      | 77/192 [01:16<01:47,  1.07it/s] 41%|████      | 78/192 [01:17<01:41,  1.12it/s] 41%|████      | 79/192 [01:18<01:38,  1.15it/s] 42%|████▏     | 80/192 [01:19<01:35,  1.17it/s] 42%|████▏     | 81/192 [01:20<01:34,  1.18it/s] 43%|████▎     | 82/192 [01:21<01:54,  1.04s/it] 43%|████▎     | 83/192 [01:23<02:14,  1.23s/it] 44%|████▍     | 84/192 [01:25<02:26,  1.36s/it] 44%|████▍     | 85/192 [01:26<02:37,  1.47s/it] 45%|████▍     | 86/192 [01:28<02:43,  1.54s/it] 45%|████▌     | 87/192 [01:29<02:34,  1.47s/it] 46%|████▌     | 88/192 [01:30<02:15,  1.30s/it] 46%|████▋     | 89/192 [01:32<02:26,  1.42s/it] 47%|████▋     | 90/192 [01:33<02:24,  1.42s/it] 47%|████▋     | 91/192 [01:35<02:32,  1.51s/it] 48%|████▊     | 92/192 [01:38<03:01,  1.82s/it] 48%|████▊     | 93/192 [01:40<03:11,  1.94s/it] 49%|████▉     | 94/192 [01:42<03:21,  2.06s/it] 49%|████▉     | 95/192 [01:45<03:35,  2.22s/it] 50%|█████     | 96/192 [01:47<03:38,  2.28s/it] 51%|█████     | 97/192 [01:50<03:42,  2.34s/it] 51%|█████     | 98/192 [01:51<03:23,  2.17s/it] 52%|█████▏    | 99/192 [01:53<03:05,  1.99s/it] 52%|█████▏    | 100/192 [01:54<02:51,  1.86s/it] 53%|█████▎    | 101/192 [01:56<02:31,  1.67s/it] 53%|█████▎    | 102/192 [01:57<02:30,  1.67s/it] 54%|█████▎    | 103/192 [01:59<02:21,  1.59s/it] 54%|█████▍    | 104/192 [02:00<02:18,  1.57s/it] 55%|█████▍    | 105/192 [02:01<02:06,  1.46s/it] 55%|█████▌    | 106/192 [02:03<02:00,  1.41s/it] 56%|█████▌    | 107/192 [02:04<01:46,  1.26s/it] 56%|█████▋    | 108/192 [02:05<01:36,  1.15s/it] 57%|█████▋    | 109/192 [02:05<01:29,  1.07s/it] 57%|█████▋    | 110/192 [02:06<01:23,  1.02s/it] 58%|█████▊    | 111/192 [02:07<01:20,  1.01it/s] 58%|█████▊    | 112/192 [02:08<01:17,  1.04it/s] 59%|█████▉    | 113/192 [02:09<01:14,  1.05it/s] 59%|█████▉    | 114/192 [02:10<01:13,  1.06it/s] 60%|█████▉    | 115/192 [02:11<01:11,  1.07it/s] 60%|██████    | 116/192 [02:12<01:10,  1.07it/s] 61%|██████    | 117/192 [02:13<01:09,  1.07it/s] 61%|██████▏   | 118/192 [02:14<01:08,  1.07it/s] 62%|██████▏   | 119/192 [02:15<01:08,  1.07it/s] 62%|██████▎   | 120/192 [02:16<01:07,  1.07it/s] 63%|██████▎   | 121/192 [02:17<01:06,  1.06it/s] 64%|██████▎   | 122/192 [02:18<01:06,  1.06it/s] 64%|██████▍   | 123/192 [02:19<01:05,  1.05it/s] 65%|██████▍   | 124/192 [02:19<01:05,  1.04it/s] 65%|██████▌   | 125/192 [02:20<01:04,  1.04it/s] 66%|██████▌   | 126/192 [02:21<01:04,  1.03it/s] 66%|██████▌   | 127/192 [02:22<01:03,  1.03it/s] 67%|██████▋   | 128/192 [02:23<01:02,  1.03it/s] 67%|██████▋   | 129/192 [02:24<01:01,  1.03it/s] 68%|██████▊   | 130/192 [02:26<01:06,  1.08s/it] 68%|██████▊   | 131/192 [02:27<01:03,  1.05s/it] 69%|██████▉   | 132/192 [02:28<01:01,  1.03s/it] 69%|██████▉   | 133/192 [02:29<00:59,  1.01s/it] 70%|██████▉   | 134/192 [02:30<00:58,  1.00s/it] 70%|███████   | 135/192 [02:31<00:56,  1.00it/s] 71%|███████   | 136/192 [02:32<00:55,  1.00it/s] 71%|███████▏  | 137/192 [02:33<00:54,  1.00it/s] 72%|███████▏  | 138/192 [02:34<00:54,  1.00s/it] 72%|███████▏  | 139/192 [02:35<00:52,  1.00it/s] 73%|███████▎  | 140/192 [02:36<00:52,  1.00s/it] 73%|███████▎  | 141/192 [02:37<00:51,  1.01s/it] 74%|███████▍  | 142/192 [02:38<00:50,  1.01s/it] 74%|███████▍  | 143/192 [02:39<00:49,  1.02s/it] 75%|███████▌  | 144/192 [02:40<00:49,  1.02s/it] 76%|███████▌  | 145/192 [02:41<00:48,  1.03s/it] 76%|███████▌  | 146/192 [02:42<00:47,  1.04s/it] 77%|███████▋  | 147/192 [02:43<00:46,  1.04s/it] 77%|███████▋  | 148/192 [02:44<00:45,  1.04s/it] 78%|███████▊  | 149/192 [02:45<00:44,  1.04s/it] 78%|███████▊  | 150/192 [02:46<00:48,  1.15s/it] 79%|███████▊  | 151/192 [02:47<00:45,  1.12s/it] 79%|███████▉  | 152/192 [02:48<00:44,  1.10s/it] 80%|███████▉  | 153/192 [02:50<00:42,  1.09s/it] 80%|████████  | 154/192 [02:51<00:41,  1.08s/it] 81%|████████  | 155/192 [02:52<00:39,  1.08s/it] 81%|████████▏ | 156/192 [02:53<00:39,  1.09s/it] 82%|████████▏ | 157/192 [02:54<00:38,  1.09s/it] 82%|████████▏ | 158/192 [02:55<00:36,  1.09s/it] 83%|████████▎ | 159/192 [02:56<00:35,  1.08s/it] 83%|████████▎ | 160/192 [02:57<00:34,  1.09s/it] 84%|████████▍ | 161/192 [02:58<00:33,  1.09s/it] 84%|████████▍ | 162/192 [02:59<00:32,  1.09s/it] 85%|████████▍ | 163/192 [03:00<00:31,  1.09s/it] 85%|████████▌ | 164/192 [03:02<00:30,  1.10s/it] 86%|████████▌ | 165/192 [03:03<00:29,  1.10s/it] 86%|████████▋ | 166/192 [03:04<00:28,  1.10s/it] 87%|████████▋ | 167/192 [03:05<00:30,  1.20s/it] 88%|████████▊ | 168/192 [03:06<00:29,  1.24s/it] 88%|████████▊ | 169/192 [03:08<00:27,  1.20s/it] 89%|████████▊ | 170/192 [03:09<00:25,  1.18s/it] 89%|████████▉ | 171/192 [03:10<00:24,  1.18s/it] 90%|████████▉ | 172/192 [03:11<00:23,  1.18s/it] 90%|█████████ | 173/192 [03:12<00:22,  1.17s/it] 91%|█████████ | 174/192 [03:13<00:20,  1.15s/it] 91%|█████████ | 175/192 [03:14<00:19,  1.15s/it] 92%|█████████▏| 176/192 [03:16<00:18,  1.15s/it] 92%|█████████▏| 177/192 [03:17<00:20,  1.36s/it] 93%|█████████▎| 178/192 [03:20<00:22,  1.61s/it] 93%|█████████▎| 179/192 [03:22<00:23,  1.83s/it] 94%|█████████▍| 180/192 [03:25<00:24,  2.06s/it] 94%|█████████▍| 181/192 [03:27<00:24,  2.20s/it] 95%|█████████▍| 182/192 [03:30<00:22,  2.29s/it] 95%|█████████▌| 183/192 [03:31<00:18,  2.07s/it] 96%|█████████▌| 184/192 [03:32<00:14,  1.80s/it] 96%|█████████▋| 185/192 [03:34<00:11,  1.62s/it] 97%|█████████▋| 186/192 [03:35<00:08,  1.49s/it] 97%|█████████▋| 187/192 [03:36<00:07,  1.46s/it] 98%|█████████▊| 188/192 [03:38<00:06,  1.57s/it] 98%|█████████▊| 189/192 [03:40<00:05,  1.71s/it] 99%|█████████▉| 190/192 [03:43<00:03,  1.95s/it] 99%|█████████▉| 191/192 [03:45<00:02,  2.13s/it]100%|██████████| 192/192 [03:48<00:00,  2.25s/it]100%|██████████| 192/192 [03:48<00:00,  1.19s/it]
+The parameter gamma is 0.33
+intercept is 0.00, r_value is 0.94, p_value is 0.00, std_err is 0.01 
+results saved at /data/home/haochenhuang/deployment/results/reasoning_qwen_10.0_TFLOPS_25.0_GBPS_for_4*8_mesh_128_batches/arrays_10.0_TFLOPS_25.0_GBPS_in_layer_9.npz
+TP_communication: 146.80 us
+TP_computation: 58.72 us
+TP_latency: 205.52 us
+EP_communication: 17.81 us
+EP_computation: 95.85 us
+EP_latency: 113.67 us
+TP_communication_dynamic: 146.80 us
+TP_computation_dynamic: 58.72 us
+TP_latency_dynamic: 205.52 us
+EP_communication_dynamic: 24.37 us
+EP_computation_dynamic: 95.42 us
+EP_latency_dynamic: 119.79 us
+Set parameter LicenseID to value 2632967
+Begin to add constraint for expert placement...
+Begin to add constraint for computation node-balance...
+Begin to add constraint for communication node-balance...
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  1800
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 274464 rows, 276322 columns and 2734592 nonzeros
+Model fingerprint: 0x6e8c6e0b
+Variable types: 2050 continuous, 274272 integer (274272 binary)
+Coefficient statistics:
+  Matrix range     [2e-09, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 1e+00]
+
+Warning: Completing partial solution with 272224 unfixed non-continuous variables out of 274272
+User MIP start produced solution with objective 0.000109925 (4.01s)
+Loaded user MIP start with objective 0.000109925
+Processed MIP start in 4.05 seconds (0.33 work units)
+
+Presolve removed 32 rows and 0 columns (presolve time = 5s)...
+Presolve removed 32 rows and 0 columns (presolve time = 10s)...
+Presolve removed 32 rows and 0 columns (presolve time = 15s)...
+Presolve removed 32 rows and 0 columns
+Presolve time: 16.52s
+Presolved: 274432 rows, 276322 columns, 2732352 nonzeros
+Variable types: 2050 continuous, 274272 integer (274272 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.0224133e-05   0.000000e+00   0.000000e+00     42s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+     123 DPushes remaining with DInf 0.0000000e+00                42s
+       0 DPushes remaining with DInf 0.0000000e+00                42s
+
+    1984 PPushes remaining with PInf 0.0000000e+00                42s
+       0 PPushes remaining with PInf 0.0000000e+00                42s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 3.4695528e-18     42s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    2077    5.8720256e-05   0.000000e+00   0.000000e+00     42s
+    2077    5.8720256e-05   0.000000e+00   0.000000e+00     43s
+
+Root relaxation: objective 5.872026e-05, 2077 iterations, 20.49 seconds (18.72 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00006    0 95924    0.00011    0.00006  46.6%     -   56s
+H    0     0                       0.0000823    0.00006  28.6%     -   56s
+H    0     0                       0.0000804    0.00006  26.9%     -   72s
+     0     0    0.00006    0 100177    0.00008    0.00006  25.0%     -  277s
+     0     0    0.00006    0 114777    0.00008    0.00006  25.0%     -  545s
+     0     0    0.00006    0 118379    0.00008    0.00006  25.0%     -  896s
+     0     0    0.00006    0 113180    0.00008    0.00006  23.6%     - 1161s
+     0     0    0.00006    0 103010    0.00008    0.00006  22.6%     - 1670s
+     0     0    0.00006    0 102980    0.00008    0.00006  22.6%     - 1800s
+
+Cutting planes:
+  Cover: 21082
+  Clique: 5166
+  MIR: 9203
+  StrongCG: 12
+  Zero half: 321
+  Relax-and-lift: 1
+
+Explored 1 nodes (452898 simplex iterations) in 1800.26 seconds (744.17 work units)
+Thread count was 8 (of 48 available processors)
+
+Solution count 2: 8.03681e-05 0.000109925 
+
+Time limit reached
+Warning: max constraint violation (1.0296e-06) exceeds tolerance
+Best objective 8.036808135220e-05, best bound 6.224272283482e-05, gap 22.5529%
+Node Balance Finished.
+node_balancing_communication: 28.78 us
+node_balancing_computation: 59.46 us
+node_balancing_latency: 88.23 us
+node_balancing_speedup_EP:1.29
+node_balancing_speedup_TP:2.33
+node_balancing_communication_dynamic: 34.69 us
+node_balancing_computation_dynamic: 87.10 us
+node_balancing_latency_dynamic: 121.79 us
+node_balancing_speedup_EP_dynamic:0.98
+node_balancing_speedup_TP_dynamic:1.69
+Iteration No: 1 started. Evaluating function at provided point.
+Iteration No: 1 ended. Evaluation done at provided point.
+Time taken: 247.6656
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 265.5375
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 263.8040
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 216.8739
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 237.1567
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 237.2246
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 246.5992
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 247.8070
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 226.4934
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 230.8235
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 11 started. Evaluating function at random point.
+Iteration No: 11 ended. Evaluation done at random point.
+Time taken: 251.6652
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 12 started. Searching for the next optimal point.
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 234.5231
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 13 started. Searching for the next optimal point.
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 247.6334
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 14 started. Searching for the next optimal point.
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 245.8393
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 15 started. Searching for the next optimal point.
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 241.3829
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 16 started. Searching for the next optimal point.
+Iteration No: 16 ended. Search finished for the next optimal point.
+Time taken: 238.7031
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 17 started. Searching for the next optimal point.
+Iteration No: 17 ended. Search finished for the next optimal point.
+Time taken: 239.1564
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 18 started. Searching for the next optimal point.
+Iteration No: 18 ended. Search finished for the next optimal point.
+Time taken: 217.8481
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 19 started. Searching for the next optimal point.
+Iteration No: 19 ended. Search finished for the next optimal point.
+Time taken: 247.3368
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 20 started. Searching for the next optimal point.
+Iteration No: 20 ended. Search finished for the next optimal point.
+Time taken: 252.6904
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 21 started. Searching for the next optimal point.
+Iteration No: 21 ended. Search finished for the next optimal point.
+Time taken: 245.9789
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 22 started. Searching for the next optimal point.
+Iteration No: 22 ended. Search finished for the next optimal point.
+Time taken: 218.9565
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 23 started. Searching for the next optimal point.
+Iteration No: 23 ended. Search finished for the next optimal point.
+Time taken: 253.0401
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 24 started. Searching for the next optimal point.
+Iteration No: 24 ended. Search finished for the next optimal point.
+Time taken: 227.5571
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 25 started. Searching for the next optimal point.
+Iteration No: 25 ended. Search finished for the next optimal point.
+Time taken: 256.9946
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 26 started. Searching for the next optimal point.
+Iteration No: 26 ended. Search finished for the next optimal point.
+Time taken: 235.0142
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 27 started. Searching for the next optimal point.
+Iteration No: 27 ended. Search finished for the next optimal point.
+Time taken: 273.1875
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 28 started. Searching for the next optimal point.
+Iteration No: 28 ended. Search finished for the next optimal point.
+Time taken: 206.9906
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 29 started. Searching for the next optimal point.
+Iteration No: 29 ended. Search finished for the next optimal point.
+Time taken: 249.6545
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 30 started. Searching for the next optimal point.
+Iteration No: 30 ended. Search finished for the next optimal point.
+Time taken: 235.1616
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 31 started. Searching for the next optimal point.
+Iteration No: 31 ended. Search finished for the next optimal point.
+Time taken: 241.2643
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 32 started. Searching for the next optimal point.
+Iteration No: 32 ended. Search finished for the next optimal point.
+Time taken: 236.0697
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 33 started. Searching for the next optimal point.
+Iteration No: 33 ended. Search finished for the next optimal point.
+Time taken: 250.1203
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 34 started. Searching for the next optimal point.
+Iteration No: 34 ended. Search finished for the next optimal point.
+Time taken: 209.9999
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 35 started. Searching for the next optimal point.
+Iteration No: 35 ended. Search finished for the next optimal point.
+Time taken: 203.3708
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 36 started. Searching for the next optimal point.
+Iteration No: 36 ended. Search finished for the next optimal point.
+Time taken: 242.2937
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 37 started. Searching for the next optimal point.
+Iteration No: 37 ended. Search finished for the next optimal point.
+Time taken: 249.3150
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 38 started. Searching for the next optimal point.
+Iteration No: 38 ended. Search finished for the next optimal point.
+Time taken: 221.7002
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 39 started. Searching for the next optimal point.
+Iteration No: 39 ended. Search finished for the next optimal point.
+Time taken: 227.8757
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 40 started. Searching for the next optimal point.
+Iteration No: 40 ended. Search finished for the next optimal point.
+Time taken: 236.4607
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 41 started. Searching for the next optimal point.
+Iteration No: 41 ended. Search finished for the next optimal point.
+Time taken: 245.6330
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 42 started. Searching for the next optimal point.
+Iteration No: 42 ended. Search finished for the next optimal point.
+Time taken: 251.9055
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 43 started. Searching for the next optimal point.
+Iteration No: 43 ended. Search finished for the next optimal point.
+Time taken: 248.6905
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 44 started. Searching for the next optimal point.
+Iteration No: 44 ended. Search finished for the next optimal point.
+Time taken: 214.8383
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 45 started. Searching for the next optimal point.
+Iteration No: 45 ended. Search finished for the next optimal point.
+Time taken: 237.9309
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 46 started. Searching for the next optimal point.
+Iteration No: 46 ended. Search finished for the next optimal point.
+Time taken: 247.6151
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 47 started. Searching for the next optimal point.
+Iteration No: 47 ended. Search finished for the next optimal point.
+Time taken: 231.9836
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 48 started. Searching for the next optimal point.
+Iteration No: 48 ended. Search finished for the next optimal point.
+Time taken: 265.3293
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 49 started. Searching for the next optimal point.
+Iteration No: 49 ended. Search finished for the next optimal point.
+Time taken: 260.8931
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 50 started. Searching for the next optimal point.
+Iteration No: 50 ended. Search finished for the next optimal point.
+Time taken: 262.3546
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 51 started. Searching for the next optimal point.
+Iteration No: 51 ended. Search finished for the next optimal point.
+Time taken: 265.6274
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 52 started. Searching for the next optimal point.
+Iteration No: 52 ended. Search finished for the next optimal point.
+Time taken: 267.1908
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 53 started. Searching for the next optimal point.
+Iteration No: 53 ended. Search finished for the next optimal point.
+Time taken: 246.4197
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 54 started. Searching for the next optimal point.
+Iteration No: 54 ended. Search finished for the next optimal point.
+Time taken: 280.1873
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 55 started. Searching for the next optimal point.
+Iteration No: 55 ended. Search finished for the next optimal point.
+Time taken: 275.9108
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 56 started. Searching for the next optimal point.
+Iteration No: 56 ended. Search finished for the next optimal point.
+Time taken: 253.9385
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 57 started. Searching for the next optimal point.
+Iteration No: 57 ended. Search finished for the next optimal point.
+Time taken: 259.5960
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 58 started. Searching for the next optimal point.
+Iteration No: 58 ended. Search finished for the next optimal point.
+Time taken: 281.0829
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 59 started. Searching for the next optimal point.
+Iteration No: 59 ended. Search finished for the next optimal point.
+Time taken: 262.1842
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 60 started. Searching for the next optimal point.
+Iteration No: 60 ended. Search finished for the next optimal point.
+Time taken: 267.8682
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 61 started. Searching for the next optimal point.
+Iteration No: 61 ended. Search finished for the next optimal point.
+Time taken: 234.1918
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 62 started. Searching for the next optimal point.
+Iteration No: 62 ended. Search finished for the next optimal point.
+Time taken: 273.6785
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 63 started. Searching for the next optimal point.
+Iteration No: 63 ended. Search finished for the next optimal point.
+Time taken: 277.8384
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 64 started. Searching for the next optimal point.
+Iteration No: 64 ended. Search finished for the next optimal point.
+Time taken: 233.2808
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 65 started. Searching for the next optimal point.
+Iteration No: 65 ended. Search finished for the next optimal point.
+Time taken: 254.2203
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 66 started. Searching for the next optimal point.
+Iteration No: 66 ended. Search finished for the next optimal point.
+Time taken: 268.1275
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 67 started. Searching for the next optimal point.
+Iteration No: 67 ended. Search finished for the next optimal point.
+Time taken: 254.0686
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 68 started. Searching for the next optimal point.
+Iteration No: 68 ended. Search finished for the next optimal point.
+Time taken: 237.1671
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 69 started. Searching for the next optimal point.
+Iteration No: 69 ended. Search finished for the next optimal point.
+Time taken: 244.8498
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Iteration No: 70 started. Searching for the next optimal point.
+Iteration No: 70 ended. Search finished for the next optimal point.
+Time taken: 229.8986
+Function value obtained: 0.0000
+Current minimum: 0.0000
+Total communication distance is 15.28 nodes
+Total communication distance of random mapping is 14.87 nodes
+link_balancing: 30.11 us
+link_balancing_computation: 59.46 us
+link_balancing_latency: 89.57 us
+link_balancing_speedup:0.96
+node_link_balancing_speedup:1.27
+link_balancing_dynamic: 36.99 us
+link_balancing_computation_dynamic: 87.10 us
+link_balancing_latency_dynamic: 124.09 us
+link_balancing_speedup_dynamic:0.94
+node_link_balancing_speedup_EP_dynamic:0.97
+node_link_balancing_speedup_TP_dynamic:1.66

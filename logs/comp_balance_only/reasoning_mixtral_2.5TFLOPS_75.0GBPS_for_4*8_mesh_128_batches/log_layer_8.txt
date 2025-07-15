@@ -1,0 +1,68 @@
+computation throughput (TFLOPS): 2.50
+communication bandwidth (GB/s): 75.00
+Begin to sampling activation data...
+  0%|          | 0/32 [00:00<?, ?it/s]  9%|▉         | 3/32 [00:00<00:01, 28.44it/s] 19%|█▉        | 6/32 [00:00<00:01, 23.33it/s] 28%|██▊       | 9/32 [00:00<00:00, 23.32it/s] 38%|███▊      | 12/32 [00:00<00:00, 22.54it/s] 47%|████▋     | 15/32 [00:00<00:00, 23.33it/s] 56%|█████▋    | 18/32 [00:00<00:00, 23.36it/s] 66%|██████▌   | 21/32 [00:00<00:00, 22.78it/s] 75%|███████▌  | 24/32 [00:01<00:00, 22.42it/s] 84%|████████▍ | 27/32 [00:01<00:00, 23.13it/s] 94%|█████████▍| 30/32 [00:01<00:00, 24.55it/s]100%|██████████| 32/32 [00:01<00:00, 23.40it/s]
+results saved at /data/home/haochenhuang/deployment/results/comp_balance_only/reasoning_mixtral_2.5_TFLOPS_75.0_GBPS_for_4*8_mesh_128_batches/arrays_2.5_TFLOPS_75.0_GBPS_in_layer_8.npz
+TP_communication: 55.92 us
+TP_computation: 375.99 us
+TP_latency: 431.91 us
+EP_communication: 29.81 us
+EP_computation: 815.79 us
+EP_latency: 845.61 us
+TP_communication_dynamic: 55.92 us
+TP_computation_dynamic: 375.81 us
+TP_latency_dynamic: 431.73 us
+EP_communication_dynamic: 23.05 us
+EP_computation_dynamic: 845.57 us
+EP_latency_dynamic: 868.62 us
+Set parameter LicenseID to value 2632967
+Set parameter TimeLimit to value 60
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  60
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 12 rows, 17 columns and 50 nonzeros
+Model fingerprint: 0x73295150
+Variable types: 1 continuous, 16 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [8e-04, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0068239
+Presolve removed 11 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 9 columns, 9 nonzeros
+Variable types: 1 continuous, 8 integer (8 binary)
+Found heuristic solution: objective 0.0060165
+
+Root relaxation: interrupted, 0 iterations, 0.00 seconds (0.00 work units)
+
+Explored 1 nodes (0 simplex iterations) in 0.03 seconds (0.00 work units)
+Thread count was 8 (of 48 available processors)
+
+Solution count 2: 0.00601654 0.00682391 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 6.016539329004e-03, best bound 6.015822306083e-03, gap 0.0119%
+Comp Balance Finished.
+comp_balancing_communication: 57.30 us
+comp_balancing_computation: 376.03 us
+comp_balancing_latency: 433.33 us
+comp_balancing_speedup_EP:1.95
+comp_balancing_speedup_TP:1.00
+comp_balancing_communication_dynamic: 4.81 us
+comp_balancing_computation_dynamic: 378.75 us
+comp_balancing_latency_dynamic: 383.55 us
+comp_balancing_speedup_EP_dynamic:2.26
+comp_balancing_speedup_TP_dynamic:1.13

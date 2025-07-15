@@ -1,0 +1,77 @@
+computation throughput (TFLOPS): 10.00
+communication bandwidth (GB/s): 25.00
+Begin to group pruning:
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:03<00:12,  3.06s/it]100%|██████████| 5/5 [00:29<00:00,  6.10s/it]100%|██████████| 5/5 [00:29<00:00,  5.92s/it]
+results saved at /data/home/haochenhuang/deployment/results/reasoning_ds_10.0_TFLOPS_25.0_GBPS_for_128_batches/arrays_10.0_TFLOPS_25.0_GBPS_in_layer_24.npz
+EP_communication: 26.51 us
+EP_computation: 117.82 us
+EP_latency: 144.34 us
+Set parameter LicenseID to value 2632967
+Begin to add constraint for expert placement...
+Begin to add constraint for computation node-balance...
+Begin to add constraint for communication node-balance...
+Set parameter TimeLimit to value 1100
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 8
+Set parameter Heuristics to value 0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  1100
+MIPGap  0.05
+Heuristics  0.1
+Threads  8
+
+Optimize a model with 137728 rows, 141506 columns and 1091200 nonzeros
+Model fingerprint: 0x4dd6703b
+Variable types: 4098 continuous, 137408 integer (137408 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+00]
+Presolve removed 64 rows and 0 columns (presolve time = 5s)...
+Presolve removed 64 rows and 0 columns
+Presolve time: 5.76s
+Presolved: 137664 rows, 141506 columns, 1086976 nonzeros
+Variable types: 4098 continuous, 137408 integer (137408 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.1934982e-05   0.000000e+00   0.000000e+00     11s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+     188 DPushes remaining with DInf 0.0000000e+00                11s
+       0 DPushes remaining with DInf 0.0000000e+00                11s
+
+    4032 PPushes remaining with PInf 0.0000000e+00                11s
+      15 PPushes remaining with PInf 0.0000000e+00                11s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00     11s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4143    4.0265318e-05   1.567525e-01   0.000000e+00     11s
+    4152    4.0904450e-05   0.000000e+00   0.000000e+00     11s
+    4152    4.0904450e-05   0.000000e+00   0.000000e+00     11s
+
+Root relaxation: objective 4.090445e-05, 4152 iterations, 2.48 seconds (2.72 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00004    0 26907          -    0.00004      -     -   23s
+H    0     0                       0.0000864    0.00004  52.6%     -   25s
+     0     0    0.00004    0 29619    0.00009    0.00004  51.5%     -   53s
+     0     0    0.00004    0 31354    0.00009    0.00004  50.6%     -  130s
+     0     0    0.00004    0 30994    0.00009    0.00004  50.0%     -  214s
+     0     0    0.00004    0 35618    0.00009    0.00004  49.1%     -  310s

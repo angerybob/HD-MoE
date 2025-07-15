@@ -1,0 +1,22 @@
+nohup: ignoring input
+Output to data/mt_bench/model_answer/101.jsonl
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+  0%|          | 0/29 [00:00<?, ?it/s]  3%|▎         | 1/29 [04:39<2:10:15, 279.13s/it]  7%|▋         | 2/29 [11:54<2:46:56, 370.97s/it]  7%|▋         | 2/29 [16:01<3:36:21, 480.79s/it] 10%|█         | 3/29 [23:30<3:23:44, 470.17s/it]
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/FastChat/fastchat/llm_judge/gen_model_answer.py", line 309, in <module>
+    run_eval(
+  File "/data/home/haochenhuang/FastChat/fastchat/llm_judge/gen_model_answer.py", line 60, in run_eval
+    get_answers_func(
+  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/home/haochenhuang/FastChat/fastchat/llm_judge/gen_model_answer.py", line 93, in get_model_answers
+    model, tokenizer = load_model(
+  File "/data/home/haochenhuang/FastChat/fastchat/model/model_adapter.py", line 321, in load_model
+    "8-bit quantization is not supported for multi-gpu inference."
+  File "/data/home/haochenhuang/FastChat/fastchat/model/model_adapter.py", line 154, in load_compress_model
+    return model, tokenizer
+  File "/data/home/haochenhuang/FastChat/fastchat/model/compression.py", line 195, in load_compress_model
+    compressed_state_dict[name] = compress(
+  File "/data/home/haochenhuang/FastChat/fastchat/model/compression.py", line 264, in compress
+    data = data.clamp_(-B, B).round_().to(torch.int8)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 47.53 GiB of which 14.44 MiB is free. Including non-PyTorch memory, this process has 8.64 GiB memory in use. Process 72821 has 38.87 GiB memory in use. Of the allocated memory 7.52 GiB is allocated by PyTorch, and 839.94 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

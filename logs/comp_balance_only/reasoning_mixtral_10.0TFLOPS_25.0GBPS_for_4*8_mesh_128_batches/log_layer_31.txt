@@ -1,0 +1,17 @@
+computation throughput (TFLOPS): 10.00
+communication bandwidth (GB/s): 25.00
+Begin to sampling activation data...
+  0%|          | 0/32 [00:00<?, ?it/s]  9%|▉         | 3/32 [00:00<00:00, 29.98it/s] 22%|██▏       | 7/32 [00:00<00:00, 31.16it/s] 34%|███▍      | 11/32 [00:00<00:00, 28.71it/s] 50%|█████     | 16/32 [00:00<00:00, 32.17it/s] 62%|██████▎   | 20/32 [00:00<00:00, 28.62it/s] 75%|███████▌  | 24/32 [00:00<00:00, 30.98it/s] 88%|████████▊ | 28/32 [00:00<00:00, 33.17it/s]100%|██████████| 32/32 [00:00<00:00, 32.61it/s]
+results saved at /data/home/haochenhuang/deployment/results/comp_balance_only/reasoning_mixtral_10.0_TFLOPS_25.0_GBPS_for_4*8_mesh_128_batches/arrays_10.0_TFLOPS_25.0_GBPS_in_layer_31.npz
+TP_communication: 167.77 us
+TP_computation: 94.00 us
+TP_latency: 261.77 us
+EP_communication: 73.83 us
+EP_computation: 135.79 us
+EP_latency: 209.62 us
+Traceback (most recent call last):
+  File "/data/home/haochenhuang/deployment/gen_comp_balance.py", line 237, in <module>
+    main()
+  File "/data/home/haochenhuang/deployment/gen_comp_balance.py", line 182, in main
+    random_samples = random.sample(data[str(layer_id+1)], batch)
+KeyError: '32'

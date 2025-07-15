@@ -1,0 +1,35 @@
+nohup: ignoring input
+Output to data/mt_bench/model_answer/10001.jsonl
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+DeepseekV2ForCausalLM has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:15<00:46, 15.57s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:33<00:33, 16.89s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:50<00:17, 17.22s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:02<00:00, 15.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:02<00:00, 15.72s/it]
+  0%|          | 0/5 [00:00<?, ?it/s]/data/home/haochenhuang/transformers/src/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/home/haochenhuang/transformers/src/transformers/generation/configuration_utils.py:634: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+ 20%|██        | 1/5 [01:15<05:03, 75.76s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+ 40%|████      | 2/5 [02:45<04:12, 84.15s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+ 60%|██████    | 3/5 [04:20<02:58, 89.15s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+ 80%|████████  | 4/5 [05:06<01:11, 71.94s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+100%|██████████| 5/5 [06:06<00:00, 67.78s/it]100%|██████████| 5/5 [06:06<00:00, 73.37s/it]
