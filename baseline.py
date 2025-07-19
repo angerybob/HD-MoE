@@ -1,5 +1,3 @@
-import sys
-sys.path.append("/data/home/haochenhuang/deployment") 
 from node_allocation import MoE3DPNMOptimizer
 import numpy as np
 import json
@@ -62,7 +60,6 @@ def generate_random_placement(D, mesh_shape):
         placement[d, x, y] = 1
     return placement
 
-#file_path = '/data/home/haochenhuang/deployment/results/30TFLOPS_20GBPS/arrays_30_TFLOPS_20_GBPS_in_layer_0.npz'
 
 batch=128
 mesh_shape=(8,8)
@@ -70,9 +67,9 @@ D=mesh_shape[0]*mesh_shape[1]
 E,e,SE,h,IS,mlp_first,num_layers=64,6,0,2048,1408,True,26  #DeepSeekMoE  
 
 try:
-    with open('/data/home/haochenhuang/deployment/experts_reasoning_ds.json', 'r', encoding='utf-8') as f:
+    with open('expert_trace/ds/experts_reasoning_ds.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
-    with open('/data/home/haochenhuang/deployment/experts_reasoning_ds.json', 'r', encoding='utf-8') as f1:
+    with open('expert_trace/ds/experts_reasoning_ds.json', 'r', encoding='utf-8') as f1:
         sample = json.load(f1)
 except FileNotFoundError:
     print("文件未找到，请检查文件路径和文件名。")
@@ -81,7 +78,11 @@ P_tp=np.ones((optimizer.layer,optimizer.E,optimizer.D))/optimizer.D
 P_ep=EP_deployment(optimizer.layer,optimizer.E,optimizer.D)
 
 optimizer.X,optimizer.Y=mesh_shape
+
+# 指定具体层
 layer_id=11
+
+
 tp_comp=0
 tp_comm=0
 tp_comp_dynamic=0
@@ -97,7 +98,7 @@ comm_node_dynamic=0
 comm_link=0
 comm_link_dynamic=0
 
-file_path = f'/data/home/haochenhuang/deployment/results/10.0_TFLOPS_25.0_GBPS_for_128_batches/arrays_10.0_TFLOPS_25.0_GBPS_in_layer_{layer_id:.0f}.npz'
+file_path = f'results/10.0_TFLOPS_25.0_GBPS_for_128_batches/arrays_10.0_TFLOPS_25.0_GBPS_in_layer_{layer_id:.0f}.npz'
 loaded_arrays = np.load(file_path)
 
 # 访问加载的数组

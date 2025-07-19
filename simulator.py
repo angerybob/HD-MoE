@@ -1,5 +1,3 @@
-import sys
-sys.path.append("/data/home/haochenhuang/deployment") 
 from node_allocation import MoE3DPNMOptimizer
 import numpy as np
 import json
@@ -89,27 +87,26 @@ def main():
     print(f"communication bandwidth (GB/s): {BW:.2f}")
     if args.model=="mixtral":
         E,e,SE,h,IS,mlp_first,num_layers=8,2,0,4096,14336,False,32 #Mixtral
-        data_path="/data/home/haochenhuang/deployment/evaluation/experts_reasoning_mixtral.json"
+        data_path="expert_trace/mixtral/experts_reasoning_mixtral.json"
     elif args.model=="ds":
         E,e,SE,h,IS,mlp_first,num_layers=64,6,0,2048,1408,True,26  #DeepSeekMoE 
-        data_path='/data/home/haochenhuang/deployment/experts_reasoning_ds.json' 
+        data_path='expert_trace/ds/experts_reasoning_ds.json' 
     elif args.model=="qwen":
         E,e,SE,h,IS,mlp_first,num_layers=64,8,0,3584,2560,False,28 #Qwen2
-        data_path="/data/home/haochenhuang/deployment/evaluation/experts_reasoning_qwen.json"
+        data_path="expert_trace/qwen/experts_reasoning_qwen.json"
     #pdb.set_trace()
     mesh_shape = eval(args.mesh_shape)
     #mesh_shape=(8,8)
     
     D=mesh_shape[0]*mesh_shape[1]
     
-    #data_path="/data/home/haochenhuang/deployment/evaluation/experts_reasoning_mixtral.json"
     try:
         with open(data_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except FileNotFoundError:
         print("文件未找到，请检查文件路径和文件名。")
     optimizer = MoE3DPNMOptimizer(E=E,e=e, SE=SE,h=h,IS=IS,B=batch, D=D,BW=BW*1e9, comp=comp*1e12, num_layers=num_layers,mlp_first=mlp_first,routing_trace=data)
-    folder_path = Path(f'/data/home/haochenhuang/deployment/results/reasoning_{args.model}_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{mesh_shape[0]:.0f}*{mesh_shape[1]:.0f}_mesh_{optimizer.B:.0f}_batches')
+    folder_path = Path(f'results/reasoning_{args.model}_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{mesh_shape[0]:.0f}*{mesh_shape[1]:.0f}_mesh_{optimizer.B:.0f}_batches')
 
     assert folder_path.exists() and folder_path.is_dir()
     P_ep=EP_deployment(optimizer.layer,optimizer.E,optimizer.D)
@@ -119,8 +116,8 @@ def main():
     x=[]
     y=[]
     print("Begin to sampling communication latency...")
-    #ref = f'/data/home/haochenhuang/deployment/results/reasoning_{args.model}_10.0_TFLOPS_25.0_GBPS_for_8*8_mesh_128_batches/arrays_10.0_TFLOPS_25.0_GBPS_in_layer_{layer_id:.0f}.npz'
-    #loaded_arrays = np.load(ref)
+
+    
 
     # 访问加载的数组
     #P_init = loaded_arrays['arr1']
@@ -145,149 +142,139 @@ def main():
     print(f"intercept is {intercept:.2f}, r_value is {r_value:.2f}, p_value is {p_value:.2f}, std_err is {std_err:.2f} ")
     
     
-    
-    #slope=5
-    
-
-    # 绘制图形
-    plt.figure(figsize=(8, 3))
-
-    # 1. 绘制原始散点
-    plt.scatter(x, y, color='blue', label='Communication Samples', s=50, alpha=0.7)
-
-    # 2. 绘制拟合直线
-    x_fit = np.linspace(min(x), max(x), 100)  # 生成拟合直线的x值
-    y_fit = slope * x_fit + intercept          # 计算对应的y值
-    plt.plot(x_fit, y_fit, 'r-', linewidth=2, label=f'Regressed Line: y = {slope:.2f}x + {intercept:.2f}')
-
-    # 3. 添加图例和标签
-    plt.legend(fontsize=12)
-    plt.xlabel('Node Communication', fontsize=14)
-    plt.ylabel('Schedule Communication', fontsize=14)
-    plt.title('Regress Results', fontsize=16)
-
-    # 4. 添加网格和调整边距
-    plt.grid(True, linestyle='--', alpha=0.5)
-    plt.tight_layout()
-
-    plt.savefig(f'/data/home/haochenhuang/deployment/communication2.png')
-    plt.close()
-    
-    pdb.set_trace()
-    
+    draw=False
 
     
-    P=np.ones((optimizer.layer,optimizer.E,optimizer.D))/optimizer.D
+    if draw: # 只画拟合曲线
+        plt.figure(figsize=(8, 3))
+        # 1. 绘制原始散点
+        plt.scatter(x, y, color='blue', label='Communication Samples', s=50, alpha=0.7)
+        # 2. 绘制拟合直线
+        x_fit = np.linspace(min(x), max(x), 100)  # 生成拟合直线的x值
+        y_fit = slope * x_fit + intercept          # 计算对应的y值
+        plt.plot(x_fit, y_fit, 'r-', linewidth=2, label=f'Regressed Line: y = {slope:.2f}x + {intercept:.2f}')
+        # 3. 添加图例和标签
+        plt.legend(fontsize=12)
+        plt.xlabel('Node Communication', fontsize=14)
+        plt.ylabel('Schedule Communication', fontsize=14)
+        plt.title('Regress Results', fontsize=16)
+        # 4. 添加网格和调整边距
+        plt.grid(True, linestyle='--', alpha=0.5)
+        plt.tight_layout()
+        plt.savefig(f'evaluation/figs/communication2.png')
+        plt.close()
+        
     
-    
-    file_path = f'/data/home/haochenhuang/deployment/results/reasoning_{args.model}_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{mesh_shape[0]:.0f}*{mesh_shape[1]:.0f}_mesh_{optimizer.B:.0f}_batches/arrays_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_in_layer_{layer_id}.npz'
-    #np.savez_compressed(file_path, arr1=P, arr2=M_rand)
-    print(f"results saved at "+file_path)
-    
-    P_tp=np.ones((optimizer.layer,optimizer.E,optimizer.D))/optimizer.D
-    
-    
-    optimizer.X,optimizer.Y=mesh_shape
-    #layer_id=1
-    Z_tp=P_tp[layer_id]>0
-    Z_ep=P_ep[layer_id]>0
-    #M_rand=generate_random_placement(optimizer.D, mesh_shape)
-    optimizer.M=M_rand
-    ep_comp=optimizer.compute_time(P_ep)[layer_id]
-    ep_comm,link=optimizer.comm_time_acc(M_rand,P_ep,layer_id)
-    ep_comm*=2
-    tp_comp=optimizer.compute_time(P_tp)[layer_id]
-    tp_comm=2*optimizer.comm_time(P_tp)[layer_id]
-    print(f"TP_communication: {tp_comm*1e6:.2f} us")
-    print(f"TP_computation: {tp_comp*1e6:.2f} us")
-    print(f"TP_latency: {(tp_comp+tp_comm)*1e6:.2f} us")
-    print(f"EP_communication: {ep_comm*1e6:.2f} us")
-    print(f"EP_computation: {ep_comp*1e6:.2f} us")
-    print(f"EP_latency: {(ep_comp+ep_comm)*1e6:.2f} us")
-    comp_map=np.zeros((optimizer.E))
-    random_samples = random.sample(data[str(layer_id+optimizer.mlp_first)], batch)
-    for sublist in random_samples:
-        comp_map[sublist]+=2*optimizer.h*optimizer.IS
-    tp_comp_dynamic=optimizer.compute_time_dynamic(P_tp,comp_map)[layer_id]
-    tp_comm_dynamic=2*optimizer.comm_time_dynamic(P_tp,random_samples)[layer_id]
+    # 开始优化
+    else:
+        # TP, EP策略评估
+        P=np.ones((optimizer.layer,optimizer.E,optimizer.D))/optimizer.D
+        
+        
+        file_path = f'results/reasoning_{args.model}_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{mesh_shape[0]:.0f}*{mesh_shape[1]:.0f}_mesh_{optimizer.B:.0f}_batches/arrays_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_in_layer_{layer_id}.npz'
+        print(f"results saved at "+file_path)
+        
+        P_tp=np.ones((optimizer.layer,optimizer.E,optimizer.D))/optimizer.D
+
+        optimizer.X,optimizer.Y=mesh_shape
+
+        Z_tp=P_tp[layer_id]>0
+        Z_ep=P_ep[layer_id]>0
+        #M_rand=generate_random_placement(optimizer.D, mesh_shape)
+        optimizer.M=M_rand
+        ep_comp=optimizer.compute_time(P_ep)[layer_id]
+        ep_comm,link=optimizer.comm_time_acc(M_rand,P_ep,layer_id)
+        ep_comm*=2
+        tp_comp=optimizer.compute_time(P_tp)[layer_id]
+        tp_comm=2*optimizer.comm_time(P_tp)[layer_id]
+        print(f"TP_communication: {tp_comm*1e6:.2f} us")
+        print(f"TP_computation: {tp_comp*1e6:.2f} us")
+        print(f"TP_latency: {(tp_comp+tp_comm)*1e6:.2f} us")
+        print(f"EP_communication: {ep_comm*1e6:.2f} us")
+        print(f"EP_computation: {ep_comp*1e6:.2f} us")
+        print(f"EP_latency: {(ep_comp+ep_comm)*1e6:.2f} us")
+        comp_map=np.zeros((optimizer.E))
+        random_samples = random.sample(data[str(layer_id+optimizer.mlp_first)], batch)
+        for sublist in random_samples:
+            comp_map[sublist]+=2*optimizer.h*optimizer.IS
+        tp_comp_dynamic=optimizer.compute_time_dynamic(P_tp,comp_map)[layer_id]
+        tp_comm_dynamic=2*optimizer.comm_time_dynamic(P_tp,random_samples)[layer_id]
 
 
-    ep_comp_dynamic=optimizer.compute_time_dynamic(P_ep,comp_map)[layer_id]
-    ep_comm_dynamic=2*optimizer.comm_time_acc_dynamic(M_rand,P_ep,layer_id,random_samples)
-    
-    print(f"TP_communication_dynamic: {tp_comm_dynamic*1e6:.2f} us")
-    print(f"TP_computation_dynamic: {tp_comp_dynamic*1e6:.2f} us")
-    print(f"TP_latency_dynamic: {(tp_comp_dynamic+tp_comm_dynamic)*1e6:.2f} us")
+        ep_comp_dynamic=optimizer.compute_time_dynamic(P_ep,comp_map)[layer_id]
+        ep_comm_dynamic=2*optimizer.comm_time_acc_dynamic(M_rand,P_ep,layer_id,random_samples)
+        
+        print(f"TP_communication_dynamic: {tp_comm_dynamic*1e6:.2f} us")
+        print(f"TP_computation_dynamic: {tp_comp_dynamic*1e6:.2f} us")
+        print(f"TP_latency_dynamic: {(tp_comp_dynamic+tp_comm_dynamic)*1e6:.2f} us")
 
-    print(f"EP_communication_dynamic: {ep_comm_dynamic*1e6:.2f} us")
-    print(f"EP_computation_dynamic: {ep_comp_dynamic*1e6:.2f} us")
-    print(f"EP_latency_dynamic: {(ep_comp_dynamic+ep_comm_dynamic)*1e6:.2f} us")
+        print(f"EP_communication_dynamic: {ep_comm_dynamic*1e6:.2f} us")
+        print(f"EP_computation_dynamic: {ep_comp_dynamic*1e6:.2f} us")
+        print(f"EP_latency_dynamic: {(ep_comp_dynamic+ep_comm_dynamic)*1e6:.2f} us")
 
-    P=optimizer.ilp_solver_gurobi(l=layer_id,gamma=slope,time_limit=1800)
-    print("Node Balance Finished.")
-    comp=optimizer.compute_time(P)[layer_id]
-    comm_node,link=optimizer.comm_time_acc(M_rand,P,layer_id)
-    comm_node*=2
-    print(f"node_balancing_communication: {comm_node*1e6:.2f} us")
-    print(f"node_balancing_computation: {comp*1e6:.2f} us")
-    print(f"node_balancing_latency: {(comp+comm_node)*1e6:.2f} us")
-    print(f"node_balancing_speedup_EP:{(ep_comp+ep_comm)/(comp+comm_node):.2f}")
-    print(f"node_balancing_speedup_TP:{(tp_comp+tp_comm)/(comp+comm_node):.2f}")
-    
-    
-    comp_dynamic=optimizer.compute_time_dynamic(P,comp_map)[layer_id]
-    comm_node_dynamic=2*optimizer.comm_time_acc_dynamic(M_rand,P,layer_id,random_samples)
-    print(f"node_balancing_communication_dynamic: {comm_node_dynamic*1e6:.2f} us")
-    print(f"node_balancing_computation_dynamic: {comp_dynamic*1e6:.2f} us")
-    print(f"node_balancing_latency_dynamic: {(comp_dynamic+comm_node_dynamic)*1e6:.2f} us")
-    print(f"node_balancing_speedup_EP_dynamic:{(ep_comp_dynamic+ep_comm_dynamic)/(comp_dynamic+comm_node_dynamic):.2f}")
-    print(f"node_balancing_speedup_TP_dynamic:{(tp_comp_dynamic+tp_comm_dynamic)/(comp_dynamic+comm_node_dynamic):.2f}")
-    #pdb.set_trace()
-    Z=P>0
-    #M_init=generate_random_placement(optimizer.D, mesh_shape)
-    M_init=M_rand
-    #M=optimizer.optimize_placement_with_gurobi(Z,mesh_shape,layer_id,time_limit=360)
-    max_iter=70
-    M, cost_history =optimizer.optimize_placement_bo(M_init,Z,layer_id,max_iter=max_iter)
+        # 离线线性规划优化专家分配
+        P=optimizer.ilp_solver_gurobi(l=layer_id,gamma=slope,time_limit=1800)
+        print("Node Balance Finished.")
+        comp=optimizer.compute_time(P)[layer_id]
+        comm_node,link=optimizer.comm_time_acc(M_rand,P,layer_id)
+        comm_node*=2
+        print(f"node_balancing_communication: {comm_node*1e6:.2f} us")
+        print(f"node_balancing_computation: {comp*1e6:.2f} us")
+        print(f"node_balancing_latency: {(comp+comm_node)*1e6:.2f} us")
+        print(f"node_balancing_speedup_EP:{(ep_comp+ep_comm)/(comp+comm_node):.2f}")
+        print(f"node_balancing_speedup_TP:{(tp_comp+tp_comm)/(comp+comm_node):.2f}")
+        
+        
+        comp_dynamic=optimizer.compute_time_dynamic(P,comp_map)[layer_id]
+        comm_node_dynamic=2*optimizer.comm_time_acc_dynamic(M_rand,P,layer_id,random_samples)
+        print(f"node_balancing_communication_dynamic: {comm_node_dynamic*1e6:.2f} us")
+        print(f"node_balancing_computation_dynamic: {comp_dynamic*1e6:.2f} us")
+        print(f"node_balancing_latency_dynamic: {(comp_dynamic+comm_node_dynamic)*1e6:.2f} us")
+        print(f"node_balancing_speedup_EP_dynamic:{(ep_comp_dynamic+ep_comm_dynamic)/(comp_dynamic+comm_node_dynamic):.2f}")
+        print(f"node_balancing_speedup_TP_dynamic:{(tp_comp_dynamic+tp_comm_dynamic)/(comp_dynamic+comm_node_dynamic):.2f}")
+        Z=P>0
 
-    #file_path = f'/data/home/haochenhuang/deployment/results/{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{optimizer.B:.0f}_batches/arrays_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_in_layer_{layer_id}.npz'
-    
-    np.savez_compressed(file_path, arr1=P, arr2=M)
+        M_init=M_rand
 
-    optimizer.M=M
-    comm_link,link=optimizer.comm_time_acc(M,P,layer_id)
-    comm_link*=2
+        # 贝叶斯优化物理节点映射
+        max_iter=70 # 贝叶斯优化的最大迭代次数
+        
+        M, cost_history =optimizer.optimize_placement_bo(M_init,Z,layer_id,max_iter=max_iter)
 
-    dis=optimizer.evaluate_placement(M,Z,layer_id)
-    print(f"Total communication distance is {dis:.2f} nodes")
-    #M_rand=generate_random_placement(optimizer.D, mesh_shape)
-    dis_rand=optimizer.evaluate_placement(M_rand,Z,layer_id)
-    print(f"Total communication distance of random mapping is {dis_rand:.2f} nodes")
+        # 保存优化结果       
+        np.savez_compressed(file_path, arr1=P, arr2=M)
 
-    print(f"link_balancing: {comm_link*1e6:.2f} us")
-    print(f"link_balancing_computation: {comp*1e6:.2f} us")
-    print(f"link_balancing_latency: {(comp+comm_link)*1e6:.2f} us")
-    print(f"link_balancing_speedup:{(comm_node)/(comm_link):.2f}")
-    print(f"node_link_balancing_speedup:{(ep_comp+ep_comm)/(comp+comm_link):.2f}")
-    #S_tp=P_tp[layer_id][:, np.newaxis, :]*M_rand
-    #S_ep=P_ep[layer_id][:, np.newaxis, :]*M_rand
-    #dis_rand=optimizer.evaluate_placement(M_rand,Z_tp,layer_id)
-    comm_link_dynamic=2*optimizer.comm_time_acc_dynamic(M,P,layer_id,random_samples)
-    print(f"link_balancing_dynamic: {comm_link_dynamic*1e6:.2f} us")
-    print(f"link_balancing_computation_dynamic: {comp_dynamic*1e6:.2f} us")
-    print(f"link_balancing_latency_dynamic: {(comp_dynamic+comm_link_dynamic)*1e6:.2f} us")
-    print(f"link_balancing_speedup_dynamic:{(comm_node_dynamic)/(comm_link_dynamic):.2f}")
-    print(f"node_link_balancing_speedup_EP_dynamic:{(ep_comp_dynamic+ep_comm_dynamic)/(comp_dynamic+comm_link_dynamic):.2f}")
-    print(f"node_link_balancing_speedup_TP_dynamic:{(tp_comp_dynamic+tp_comm_dynamic)/(comp_dynamic+comm_link_dynamic):.2f}")
-    
-    plt.figure(figsize=(10, 6))
-    plt.plot(cost_history, color='blue', linewidth=1)
-    plt.xlabel("Iteration", fontsize=12)
-    plt.ylabel("Schedule Time", fontsize=12)
-    plt.title("Bayesian Optimization", fontsize=14)
-    plt.grid(True, linestyle='--', alpha=0.7)
-    plt.savefig(f'/data/home/haochenhuang/deployment/results/reasoning_{args.model}_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{mesh_shape[0]:.0f}*{mesh_shape[1]:.0f}_mesh_{optimizer.B:.0f}_batches/BO_{max_iter}_in_layer_{layer_id}.png')
-    plt.close()
+        optimizer.M=M
+        comm_link,link=optimizer.comm_time_acc(M,P,layer_id)
+        comm_link*=2
+
+        dis=optimizer.evaluate_placement(M,Z,layer_id)
+
+        
+        # 初步评估优化结果
+        print(f"link_balancing: {comm_link*1e6:.2f} us")
+        print(f"link_balancing_computation: {comp*1e6:.2f} us")
+        print(f"link_balancing_latency: {(comp+comm_link)*1e6:.2f} us")
+        print(f"link_balancing_speedup:{(comm_node)/(comm_link):.2f}")
+        print(f"node_link_balancing_speedup:{(ep_comp+ep_comm)/(comp+comm_link):.2f}")
+
+        
+        comm_link_dynamic=2*optimizer.comm_time_acc_dynamic(M,P,layer_id,random_samples)
+        print(f"link_balancing_dynamic: {comm_link_dynamic*1e6:.2f} us")
+        print(f"link_balancing_computation_dynamic: {comp_dynamic*1e6:.2f} us")
+        print(f"link_balancing_latency_dynamic: {(comp_dynamic+comm_link_dynamic)*1e6:.2f} us")
+        print(f"link_balancing_speedup_dynamic:{(comm_node_dynamic)/(comm_link_dynamic):.2f}")
+        print(f"node_link_balancing_speedup_EP_dynamic:{(ep_comp_dynamic+ep_comm_dynamic)/(comp_dynamic+comm_link_dynamic):.2f}")
+        print(f"node_link_balancing_speedup_TP_dynamic:{(tp_comp_dynamic+tp_comm_dynamic)/(comp_dynamic+comm_link_dynamic):.2f}")
+        
+        plt.figure(figsize=(10, 6))
+        plt.plot(cost_history, color='blue', linewidth=1)
+        plt.xlabel("Iteration", fontsize=12)
+        plt.ylabel("Schedule Time", fontsize=12)
+        plt.title("Bayesian Optimization", fontsize=14)
+        plt.grid(True, linestyle='--', alpha=0.7)
+        plt.savefig(f'results/reasoning_{args.model}_{optimizer.comp*1e-12:.1f}_TFLOPS_{optimizer.BW*1e-9:.1f}_GBPS_for_{mesh_shape[0]:.0f}*{mesh_shape[1]:.0f}_mesh_{optimizer.B:.0f}_batches/BO_{max_iter}_in_layer_{layer_id}.png')
+        plt.close()
     
 if __name__ == "__main__":
     main()

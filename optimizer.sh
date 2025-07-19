@@ -8,9 +8,9 @@ batch=128
 mesh_shapeX=4
 mesh_shapeY=8
 model="qwen"
-LOG_DIR="/data/home/haochenhuang/deployment/logs/reasoning_${model}_${comp}TFLOPS_${BW}GBPS_for_${mesh_shapeX}*${mesh_shapeY}_mesh_${batch}_batches"              # 日志目录
-SCRIPT_PATH="/data/home/haochenhuang/deployment/simulator.py"
-result_DIR="/data/home/haochenhuang/deployment/results/reasoning_${model}_${comp}_TFLOPS_${BW}_GBPS_for_${mesh_shapeX}*${mesh_shapeY}_mesh_${batch}_batches"
+LOG_DIR="logs/reasoning_${model}_${comp}TFLOPS_${BW}GBPS_for_${mesh_shapeX}*${mesh_shapeY}_mesh_${batch}_batches"              # 日志目录
+SCRIPT_PATH="simulator.py"
+result_DIR="results/reasoning_${model}_${comp}_TFLOPS_${BW}_GBPS_for_${mesh_shapeX}*${mesh_shapeY}_mesh_${batch}_batches"
 # 创建日志目录
 mkdir -p "$LOG_DIR"
 mkdir -p "$result_DIR"

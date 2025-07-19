@@ -1,130 +1,0 @@
-/data/home/haochenhuang/deployment/node_allocation.py:66: TqdmMonitorWarning: tqdm:disabling monitor support (monitor_interval = 0) due to:
-can't start new thread
-  for k in tqdm(range(2, self.e+1)):
-Begin to group pruning:
-  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:03<00:14,  3.65s/it]100%|██████████| 5/5 [00:27<00:00,  5.60s/it]100%|██████████| 5/5 [00:27<00:00,  5.48s/it]
-EP_communication: 7.99 us
-EP_computation: 43.60 us
-EP_latency: 51.59 us
-Set parameter LicenseID to value 2632967
-Begin to add constraint for expert placement...
-Begin to add constraint for computation node-balance...
-Begin to add constraint for communication node-balance...
-Set parameter TimeLimit to value 600
-Set parameter MIPGap to value 0.05
-Set parameter Threads to value 8
-Set parameter Heuristics to value 0.1
-Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
-
-CPU model: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
-Thread count: 48 physical cores, 48 logical processors, using up to 8 threads
-
-Non-default parameters:
-TimeLimit  600
-MIPGap  0.05
-Heuristics  0.1
-Threads  8
-
-Optimize a model with 120576 rows, 124354 columns and 953984 nonzeros
-Model fingerprint: 0x722cf4be
-Variable types: 4098 continuous, 120256 integer (120256 binary)
-Coefficient statistics:
-  Matrix range     [7e-09, 1e+00]
-  Objective range  [1e+00, 2e+00]
-  Bounds range     [1e+00, 1e+00]
-  RHS range        [3e-01, 1e+00]
-Presolve removed 64 rows and 0 columns (presolve time = 5s)...
-Presolve removed 64 rows and 0 columns
-Presolve time: 6.34s
-Presolved: 120512 rows, 124354 columns, 949760 nonzeros
-Variable types: 4098 continuous, 120256 integer (120256 binary)
-
-Root simplex log...
-
-Iteration    Objective       Primal Inf.    Dual Inf.      Time
-       0    2.1768076e-05   0.000000e+00   0.000000e+00     11s
-
-Use crossover to convert LP symmetric solution to basic solution...
-
-Root crossover log...
-
-     188 DPushes remaining with DInf 0.0000000e+00                11s
-       0 DPushes remaining with DInf 0.0000000e+00                11s
-
-    4032 PPushes remaining with PInf 0.0000000e+00                11s
-       0 PPushes remaining with PInf 0.0000000e+00                11s
-
-  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00     11s
-
-
-Root simplex log...
-
-Iteration    Objective       Primal Inf.    Dual Inf.      Time
-    4158    2.0132659e-05   0.000000e+00   0.000000e+00     11s
-    4158    2.0132659e-05   0.000000e+00   0.000000e+00     12s
-
-Root relaxation: objective 2.013266e-05, 4158 iterations, 2.65 seconds (2.03 work units)
-
-    Nodes    |    Current Node    |     Objective Bounds      |     Work
- Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-
-     0     0    0.00002    0 21471          -    0.00002      -     -   20s
-H    0     0                       0.0000592    0.00002  66.0%     -   22s
-     0     0    0.00002    0 23028    0.00006    0.00002  63.2%     -   46s
-     0     0    0.00002    0 23778    0.00006    0.00002  63.1%     -   72s
-     0     0    0.00002    0 26940    0.00006    0.00002  63.0%     -  116s
-     0     0    0.00002    0 27864    0.00006    0.00002  63.0%     -  157s
-     0     0    0.00002    0 34978    0.00006    0.00002  62.9%     -  234s
-     0     0    0.00002    0 34977    0.00006    0.00002  62.9%     -  276s
-H    0     0                       0.0000540    0.00002  59.3%     -  301s
-H    0     0                       0.0000521    0.00002  55.4%     -  326s
-H    0     0                       0.0000507    0.00002  54.1%     -  326s
-H    0     0                       0.0000494    0.00002  52.9%     -  326s
-H    0     0                       0.0000458    0.00002  49.2%     -  326s
-     0     2    0.00002    0 34977    0.00005    0.00002  49.2%     -  418s
-     1     2 infeasible    1         0.00005    0.00002  49.2% 23688  426s
-     3     2    0.00004    2 14788    0.00005    0.00003  27.4%  9139  431s
-     5     2    0.00004    3 16598    0.00005    0.00004  16.5%  5984  436s
-
-Cutting planes:
-  Cover: 19694
-  Implied bound: 3
-  Clique: 289
-  MIR: 116
-  Flow cover: 106
-  Zero half: 40
-  Relax-and-lift: 4
-
-Explored 9 nodes (138663 simplex iterations) in 439.23 seconds (236.95 work units)
-Thread count was 8 (of 48 available processors)
-
-Solution count 6: 4.58202e-05 4.94184e-05 5.06907e-05 ... 5.91542e-05
-
-Optimal solution found (tolerance 5.00e-02)
-Best objective 4.582015248783e-05, best bound 4.582015248783e-05, gap 0.0000%
-node_balancing_communication: 6.66 us
-node_balancing_computation: 21.89 us
-node_balancing_latency: 28.54 us
-node_balancing_speedup:1.81
-  0%|          | 0/150 [00:00<?, ?it/s]  1%|          | 1/150 [00:10<26:45, 10.78s/it]  1%|▏         | 2/150 [00:20<24:50, 10.07s/it]  2%|▏         | 3/150 [00:31<25:31, 10.42s/it]  3%|▎         | 4/150 [00:41<24:59, 10.27s/it]  3%|▎         | 5/150 [00:51<25:01, 10.35s/it]  4%|▍         | 6/150 [01:02<25:15, 10.52s/it]  5%|▍         | 7/150 [01:12<24:53, 10.45s/it]  5%|▌         | 8/150 [01:24<25:51, 10.93s/it]  6%|▌         | 9/150 [01:35<25:23, 10.81s/it]  7%|▋         | 10/150 [01:45<24:24, 10.46s/it]  7%|▋         | 11/150 [01:54<23:39, 10.21s/it]  8%|▊         | 12/150 [02:04<23:22, 10.16s/it]  9%|▊         | 13/150 [02:14<23:12, 10.17s/it]  9%|▉         | 14/150 [02:25<23:06, 10.20s/it] 10%|█         | 15/150 [02:35<23:00, 10.23s/it] 11%|█         | 16/150 [02:46<23:26, 10.50s/it] 11%|█▏        | 17/150 [02:56<23:06, 10.42s/it] 12%|█▏        | 18/150 [03:06<22:08, 10.06s/it] 13%|█▎        | 19/150 [03:16<22:17, 10.21s/it] 13%|█▎        | 20/150 [03:26<22:09, 10.22s/it] 14%|█▍        | 21/150 [03:36<21:46, 10.13s/it] 15%|█▍        | 22/150 [03:47<22:04, 10.35s/it] 15%|█▌        | 23/150 [03:56<21:14, 10.04s/it] 16%|█▌        | 24/150 [04:05<20:23,  9.71s/it] 17%|█▋        | 25/150 [04:16<20:41,  9.93s/it] 17%|█▋        | 26/150 [04:26<20:36,  9.97s/it] 18%|█▊        | 27/150 [04:35<20:03,  9.78s/it] 19%|█▊        | 28/150 [04:45<19:37,  9.65s/it] 19%|█▉        | 29/150 [04:54<19:20,  9.59s/it] 20%|██        | 30/150 [05:04<19:22,  9.68s/it] 21%|██        | 31/150 [05:13<19:05,  9.62s/it] 21%|██▏       | 32/150 [05:24<19:18,  9.82s/it] 22%|██▏       | 33/150 [05:35<19:46, 10.14s/it] 23%|██▎       | 34/150 [05:46<20:15, 10.48s/it] 23%|██▎       | 35/150 [05:57<20:27, 10.67s/it] 24%|██▍       | 36/150 [06:07<19:47, 10.41s/it] 25%|██▍       | 37/150 [06:17<19:12, 10.20s/it] 25%|██▌       | 38/150 [06:27<18:57, 10.16s/it] 26%|██▌       | 39/150 [06:37<19:12, 10.38s/it] 27%|██▋       | 40/150 [06:47<18:36, 10.15s/it] 27%|██▋       | 41/150 [06:58<18:43, 10.31s/it] 28%|██▊       | 42/150 [07:06<17:41,  9.83s/it] 29%|██▊       | 43/150 [07:15<16:59,  9.52s/it] 29%|██▉       | 44/150 [07:25<16:59,  9.62s/it] 30%|███       | 45/150 [07:34<16:31,  9.44s/it] 31%|███       | 46/150 [07:43<16:13,  9.36s/it] 31%|███▏      | 47/150 [07:53<16:02,  9.35s/it] 32%|███▏      | 48/150 [08:02<15:51,  9.33s/it] 33%|███▎      | 49/150 [08:11<15:39,  9.30s/it] 33%|███▎      | 50/150 [08:20<15:22,  9.22s/it] 34%|███▍      | 51/150 [08:29<15:08,  9.18s/it] 35%|███▍      | 52/150 [08:38<14:46,  9.05s/it] 35%|███▌      | 53/150 [08:47<14:39,  9.07s/it] 36%|███▌      | 54/150 [08:56<14:37,  9.15s/it] 37%|███▋      | 55/150 [09:05<14:16,  9.02s/it] 37%|███▋      | 56/150 [09:14<13:57,  8.91s/it] 38%|███▊      | 57/150 [09:23<13:41,  8.83s/it] 39%|███▊      | 58/150 [09:31<13:34,  8.86s/it] 39%|███▉      | 59/150 [09:40<13:23,  8.82s/it] 40%|████      | 60/150 [09:49<13:16,  8.85s/it] 41%|████      | 61/150 [09:58<13:03,  8.80s/it] 41%|████▏     | 62/150 [10:06<12:44,  8.68s/it] 42%|████▏     | 63/150 [10:15<12:28,  8.60s/it] 43%|████▎     | 64/150 [10:23<12:15,  8.55s/it] 43%|████▎     | 65/150 [10:32<12:08,  8.57s/it] 44%|████▍     | 66/150 [10:40<11:54,  8.51s/it] 45%|████▍     | 67/150 [10:48<11:42,  8.46s/it] 45%|████▌     | 68/150 [10:57<11:36,  8.49s/it] 46%|████▌     | 69/150 [11:05<11:27,  8.49s/it] 47%|████▋     | 70/150 [11:14<11:27,  8.59s/it] 47%|████▋     | 71/150 [11:23<11:14,  8.54s/it] 48%|████▊     | 72/150 [11:31<11:05,  8.53s/it] 49%|████▊     | 73/150 [11:40<10:55,  8.52s/it] 49%|████▉     | 74/150 [11:48<10:41,  8.45s/it] 50%|█████     | 75/150 [11:56<10:31,  8.43s/it] 51%|█████     | 76/150 [12:05<10:19,  8.38s/it] 51%|█████▏    | 77/150 [12:13<10:07,  8.32s/it] 52%|█████▏    | 78/150 [12:21<10:06,  8.43s/it] 53%|█████▎    | 79/150 [12:30<10:01,  8.47s/it] 53%|█████▎    | 80/150 [12:39<09:56,  8.53s/it] 54%|█████▍    | 81/150 [12:47<09:53,  8.61s/it] 55%|█████▍    | 82/150 [12:56<09:45,  8.62s/it] 55%|█████▌    | 83/150 [13:05<09:45,  8.74s/it] 56%|█████▌    | 84/150 [13:14<09:31,  8.67s/it] 57%|█████▋    | 85/150 [13:22<09:22,  8.65s/it] 57%|█████▋    | 86/150 [13:31<09:12,  8.64s/it] 58%|█████▊    | 87/150 [13:39<09:00,  8.58s/it] 59%|█████▊    | 88/150 [13:48<08:52,  8.59s/it] 59%|█████▉    | 89/150 [13:56<08:42,  8.57s/it] 60%|██████    | 90/150 [14:05<08:32,  8.54s/it] 61%|██████    | 91/150 [14:14<08:27,  8.60s/it] 61%|██████▏   | 92/150 [14:22<08:21,  8.64s/it] 62%|██████▏   | 93/150 [14:31<08:13,  8.65s/it] 63%|██████▎   | 94/150 [14:40<08:06,  8.69s/it] 63%|██████▎   | 95/150 [14:49<08:03,  8.79s/it] 64%|██████▍   | 96/150 [14:58<07:56,  8.83s/it] 65%|██████▍   | 97/150 [15:06<07:42,  8.72s/it] 65%|██████▌   | 98/150 [15:15<07:33,  8.71s/it] 66%|██████▌   | 99/150 [15:24<07:21,  8.67s/it] 67%|██████▋   | 100/150 [15:32<07:09,  8.59s/it] 67%|██████▋   | 101/150 [15:40<06:59,  8.57s/it] 68%|██████▊   | 102/150 [15:49<06:47,  8.49s/it] 69%|██████▊   | 103/150 [15:57<06:37,  8.45s/it] 69%|██████▉   | 104/150 [16:05<06:26,  8.40s/it] 70%|███████   | 105/150 [16:14<06:14,  8.33s/it] 71%|███████   | 106/150 [16:22<06:10,  8.41s/it] 71%|███████▏  | 107/150 [16:31<06:06,  8.52s/it] 72%|███████▏  | 108/150 [16:39<05:54,  8.44s/it] 73%|███████▎  | 109/150 [16:48<05:44,  8.41s/it] 73%|███████▎  | 110/150 [16:56<05:35,  8.39s/it] 74%|███████▍  | 111/150 [17:04<05:28,  8.41s/it] 75%|███████▍  | 112/150 [17:13<05:19,  8.41s/it] 75%|███████▌  | 113/150 [17:21<05:13,  8.48s/it] 76%|███████▌  | 114/150 [17:30<05:06,  8.52s/it] 77%|███████▋  | 115/150 [17:38<04:57,  8.50s/it] 77%|███████▋  | 116/150 [17:47<04:53,  8.64s/it] 78%|███████▊  | 117/150 [17:56<04:47,  8.71s/it] 79%|███████▊  | 118/150 [18:05<04:40,  8.76s/it] 79%|███████▉  | 119/150 [18:14<04:32,  8.80s/it] 80%|████████  | 120/150 [18:23<04:26,  8.89s/it] 81%|████████  | 121/150 [18:32<04:19,  8.95s/it] 81%|████████▏ | 122/150 [18:41<04:11,  8.97s/it] 82%|████████▏ | 123/150 [18:50<03:58,  8.85s/it] 83%|████████▎ | 124/150 [18:58<03:44,  8.64s/it] 83%|████████▎ | 125/150 [19:06<03:33,  8.54s/it] 84%|████████▍ | 126/150 [19:14<03:22,  8.42s/it] 85%|████████▍ | 127/150 [19:23<03:11,  8.32s/it] 85%|████████▌ | 128/150 [19:31<03:01,  8.23s/it] 86%|████████▌ | 129/150 [19:38<02:50,  8.13s/it] 87%|████████▋ | 130/150 [19:46<02:41,  8.07s/it] 87%|████████▋ | 131/150 [19:55<02:34,  8.14s/it] 88%|████████▊ | 132/150 [20:03<02:25,  8.08s/it] 89%|████████▊ | 133/150 [20:10<02:16,  8.02s/it] 89%|████████▉ | 134/150 [20:19<02:08,  8.05s/it] 90%|█████████ | 135/150 [20:27<02:01,  8.10s/it] 91%|█████████ | 136/150 [20:35<01:53,  8.14s/it] 91%|█████████▏| 137/150 [20:43<01:46,  8.22s/it] 92%|█████████▏| 138/150 [20:52<01:38,  8.23s/it] 93%|█████████▎| 139/150 [21:00<01:30,  8.26s/it] 93%|█████████▎| 140/150 [21:09<01:23,  8.33s/it] 94%|█████████▍| 141/150 [21:17<01:14,  8.31s/it] 95%|█████████▍| 142/150 [21:25<01:07,  8.38s/it] 95%|█████████▌| 143/150 [21:34<00:58,  8.36s/it] 96%|█████████▌| 144/150 [21:42<00:49,  8.30s/it] 97%|█████████▋| 145/150 [21:50<00:41,  8.24s/it] 97%|█████████▋| 146/150 [21:58<00:33,  8.28s/it] 98%|█████████▊| 147/150 [22:07<00:24,  8.26s/it] 99%|█████████▊| 148/150 [22:15<00:16,  8.22s/it] 99%|█████████▉| 149/150 [22:23<00:08,  8.15s/it]100%|██████████| 150/150 [22:31<00:00,  8.10s/it]100%|██████████| 150/150 [22:31<00:00,  9.01s/it]
-Traceback (most recent call last):
-  File "/data/home/haochenhuang/deployment/simulator.py", line 140, in <module>
-    main()
-  File "/data/home/haochenhuang/deployment/simulator.py", line 110, in main
-    np.savez_compressed(file_path, arr1=P, arr2=M)
-  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
-    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
-  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 789, in _savez
-    zipf = zipfile_factory(file, mode="w", compression=compression)
-  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 103, in zipfile_factory
-    return zipfile.ZipFile(file, *args, **kwargs)
-  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/zipfile.py", line 1253, in __init__
-    self.fp = io.open(file, filemode)
-FileNotFoundError: [Errno 2] No such file or directory: '/data/home/haochenhuang/deployment/results/20_TFLOPS_25_GBPS/arrays_20_TFLOPS_25_GBPS_in_layer_4.npz'
-Exception ignored in atexit callback: <bound method TMonitor.exit of <TMonitor(Thread-1, initial daemon)>>
-Traceback (most recent call last):
-  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/site-packages/tqdm/_monitor.py", line 44, in exit
-    self.join()
-  File "/data/home/haochenhuang/.conda/envs/ep2/lib/python3.10/threading.py", line 1091, in join
-    raise RuntimeError("cannot join thread before it is started")
-RuntimeError: cannot join thread before it is started
