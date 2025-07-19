@@ -60,7 +60,7 @@ nohup optimizer.sh > script.log 2>&1 &
   batch=128          # 批次大小
   model="qwen"       # 模型类型（如"qwen"、"mixtral"等）
   ```
-
+  脚本中for循环的层数也要根据模型具体配置修改 
 
 ### 3. 评估部署策略（Evaluate Deployment Strategy）
 
