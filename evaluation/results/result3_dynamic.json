@@ -1,0 +1,409 @@
+[
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 128
+        },
+        "TP": {
+            "communication_us": 727.01,
+            "computation_us": 1439.49,
+            "latency_us": 2166.5
+        },
+        "EP": {
+            "communication_us": 90.33,
+            "computation_us": 2798.23,
+            "latency_us": 2888.56
+        },
+        "link_balancing": {
+            "communication_us": 167.06,
+            "computation_us": 2214.01,
+            "latency_us": 2381.07
+        },
+        "pre_broadcasting": {
+            "communication_us": 158.11,
+            "computation_us": 2113.18,
+            "latency_us": 2271.29,
+            "speedup_vs_TP": 0.95,
+            "speedup_vs_EP": 1.27,
+            "speedup_vs_link_balancing": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 64
+        },
+        "TP": {
+            "communication_us": 363.51,
+            "computation_us": 719.74,
+            "latency_us": 1083.25
+        },
+        "EP": {
+            "communication_us": 53.3,
+            "computation_us": 1550.21,
+            "latency_us": 1603.52
+        },
+        "link_balancing": {
+            "communication_us": 95.08,
+            "computation_us": 1252.61,
+            "latency_us": 1347.69
+        },
+        "pre_broadcasting": {
+            "communication_us": 89.13,
+            "computation_us": 1195.58,
+            "latency_us": 1284.71,
+            "speedup_vs_TP": 0.84,
+            "speedup_vs_EP": 1.25,
+            "speedup_vs_link_balancing": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 32
+        },
+        "TP": {
+            "communication_us": 181.75,
+            "computation_us": 359.87,
+            "latency_us": 541.62
+        },
+        "EP": {
+            "communication_us": 31.4,
+            "computation_us": 779.72,
+            "latency_us": 811.12
+        },
+        "link_balancing": {
+            "communication_us": 51.77,
+            "computation_us": 696.78,
+            "latency_us": 748.55
+        },
+        "pre_broadcasting": {
+            "communication_us": 57.51,
+            "computation_us": 655.94,
+            "latency_us": 713.45,
+            "speedup_vs_TP": 0.76,
+            "speedup_vs_EP": 1.14,
+            "speedup_vs_link_balancing": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 90.88,
+            "computation_us": 179.94,
+            "latency_us": 270.81
+        },
+        "EP": {
+            "communication_us": 22.72,
+            "computation_us": 440.61,
+            "latency_us": 463.33
+        },
+        "link_balancing": {
+            "communication_us": 35.5,
+            "computation_us": 399.29,
+            "latency_us": 434.79
+        },
+        "pre_broadcasting": {
+            "communication_us": 32.44,
+            "computation_us": 335.61,
+            "latency_us": 368.05,
+            "speedup_vs_TP": 0.74,
+            "speedup_vs_EP": 1.26,
+            "speedup_vs_link_balancing": 1.18
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 8
+        },
+        "TP": {
+            "communication_us": 45.44,
+            "computation_us": 89.97,
+            "latency_us": 135.41
+        },
+        "EP": {
+            "communication_us": 16.6,
+            "computation_us": 276.82,
+            "latency_us": 293.43
+        },
+        "link_balancing": {
+            "communication_us": 23.16,
+            "computation_us": 288.25,
+            "latency_us": 311.41
+        },
+        "pre_broadcasting": {
+            "communication_us": 19.66,
+            "computation_us": 271.71,
+            "latency_us": 291.37,
+            "speedup_vs_TP": 0.46,
+            "speedup_vs_EP": 1.01,
+            "speedup_vs_link_balancing": 1.07
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 4
+        },
+        "TP": {
+            "communication_us": 22.72,
+            "computation_us": 44.98,
+            "latency_us": 67.7
+        },
+        "EP": {
+            "communication_us": 12.78,
+            "computation_us": 166.09,
+            "latency_us": 178.87
+        },
+        "link_balancing": {
+            "communication_us": 18.13,
+            "computation_us": 158.85,
+            "latency_us": 176.99
+        },
+        "pre_broadcasting": {
+            "communication_us": 16.77,
+            "computation_us": 145.48,
+            "latency_us": 162.25,
+            "speedup_vs_TP": 0.42,
+            "speedup_vs_EP": 1.1,
+            "speedup_vs_link_balancing": 1.09
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 2.5,
+            "BW_GBPS": 75.0,
+            "batch": 1
+        },
+        "TP": {
+            "communication_us": 5.68,
+            "computation_us": 11.25,
+            "latency_us": 16.93
+        },
+        "EP": {
+            "communication_us": 8.79,
+            "computation_us": 71.51,
+            "latency_us": 80.31
+        },
+        "link_balancing": {
+            "communication_us": 9.94,
+            "computation_us": 70.2,
+            "latency_us": 80.14
+        },
+        "pre_broadcasting": {
+            "communication_us": 10.1,
+            "computation_us": 71.26,
+            "latency_us": 81.36,
+            "speedup_vs_TP": 0.21,
+            "speedup_vs_EP": 0.99,
+            "speedup_vs_link_balancing": 0.99
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 1
+        },
+        "TP": {
+            "communication_us": 8.52,
+            "computation_us": 5.62,
+            "latency_us": 14.14
+        },
+        "EP": {
+            "communication_us": 14.25,
+            "computation_us": 35.76,
+            "latency_us": 50.01
+        },
+        "link_balancing": {
+            "communication_us": 16.38,
+            "computation_us": 39.59,
+            "latency_us": 55.97
+        },
+        "pre_broadcasting": {
+            "communication_us": 15.32,
+            "computation_us": 38.2,
+            "latency_us": 53.52,
+            "speedup_vs_TP": 0.26,
+            "speedup_vs_EP": 0.93,
+            "speedup_vs_link_balancing": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 4
+        },
+        "TP": {
+            "communication_us": 34.08,
+            "computation_us": 22.49,
+            "latency_us": 56.57
+        },
+        "EP": {
+            "communication_us": 19.58,
+            "computation_us": 81.89,
+            "latency_us": 101.47
+        },
+        "link_balancing": {
+            "communication_us": 26.46,
+            "computation_us": 80.43,
+            "latency_us": 106.89
+        },
+        "pre_broadcasting": {
+            "communication_us": 25.56,
+            "computation_us": 70.17,
+            "latency_us": 95.73,
+            "speedup_vs_TP": 0.59,
+            "speedup_vs_EP": 1.06,
+            "speedup_vs_link_balancing": 1.12
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 8
+        },
+        "TP": {
+            "communication_us": 68.16,
+            "computation_us": 44.98,
+            "latency_us": 113.14
+        },
+        "EP": {
+            "communication_us": 25.4,
+            "computation_us": 136.11,
+            "latency_us": 161.5
+        },
+        "link_balancing": {
+            "communication_us": 38.91,
+            "computation_us": 116.69,
+            "latency_us": 155.6
+        },
+        "pre_broadcasting": {
+            "communication_us": 36.7,
+            "computation_us": 111.27,
+            "latency_us": 147.97,
+            "speedup_vs_TP": 0.76,
+            "speedup_vs_EP": 1.09,
+            "speedup_vs_link_balancing": 1.05
+        }
+    },
+    {
+        "config": {
+            "mesh_shape": [
+                4,
+                8
+            ],
+            "model": "ds",
+            "dataset": "reasoning",
+            "sample": "roleplay",
+            "comp_TFLOPS": 5.0,
+            "BW_GBPS": 50.0,
+            "batch": 16
+        },
+        "TP": {
+            "communication_us": 136.31,
+            "computation_us": 89.97,
+            "latency_us": 226.28
+        },
+        "EP": {
+            "communication_us": 33.91,
+            "computation_us": 204.16,
+            "latency_us": 238.07
+        },
+        "link_balancing": {
+            "communication_us": 50.87,
+            "computation_us": 194.26,
+            "latency_us": 245.14
+        },
+        "pre_broadcasting": {
+            "communication_us": 48.17,
+            "computation_us": 184.06,
+            "latency_us": 232.22,
+            "speedup_vs_TP": 0.97,
+            "speedup_vs_EP": 1.03,
+            "speedup_vs_link_balancing": 1.06
+        }
+    }
+]
