@@ -230,5 +230,6 @@ axs[1, 1].tick_params(axis='both', which='major', labelsize=24)
 # 调整子图间距
 plt.tight_layout()
 plt.subplots_adjust(hspace=0.6)
-plt.savefig('evaluation/figs/motivation/motivation.pdf')
-print("Figure saved at evaluation/figs/motivation/motivation.pdf")
+save_dir = 'evaluation/figs/motivation/motivation.png'
+plt.savefig(save_dir)
+print(f"Figure saved at {save_dir}")

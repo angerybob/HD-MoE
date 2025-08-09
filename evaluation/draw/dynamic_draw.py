@@ -33,7 +33,7 @@ plt.rcParams.update({
 })
 size=25
 # 创建图表
-fig, ax1 = plt.subplots(figsize=(10, 6))
+fig, ax1 = plt.subplots(figsize=(10, 5))
 
 # 设置柱状图（static_deployment 和 dynamic_deployment 延迟）
 x = np.arange(len(samples))

@@ -4,7 +4,7 @@ import json
 import pdb
 
 # 数据加载
-with open("evaluation/results/result_e2e.json", "r") as file:
+with open("evaluation/results/result2_e2e.json", "r") as file:
     data = json.load(file)
 
 # 定义硬件配置和批次大小
@@ -70,7 +70,7 @@ for entry in data:
 
 # 绘制图形
 plt.rcParams.update({"font.size": 22, "axes.labelweight": "normal", "axes.labelsize": 30, "legend.frameon": True, "lines.linewidth": 3})
-fig, axs = plt.subplots(len(mesh_shapes),len(models), figsize=(18, 14))
+fig, axs = plt.subplots(len(mesh_shapes),len(models), figsize=(18, 11))
 
 # 设置颜色
 colors = ["#4E79A7", "#F28E2B", "#E15759", "#59A14F"]
@@ -92,7 +92,7 @@ for row, mesh_shape in enumerate(mesh_shapes):
         ax.bar(x + 2 * width, [batch_throughput[b]['node_link_balancing'] for b in batch_sizes], width, color=colors[3], edgecolor="black")
 
         ax.set_xlabel("Batch Size")
-        ax.set_ylabel("TBT Lat. (ms)")
+        ax.set_ylabel("TBT (ms)")
         ax.set_title(f"{model} - {mesh_shape[0]}*{mesh_shape[1]} mesh")
         ax.set_xticks(x)
         ax.set_xticklabels(batch_sizes)

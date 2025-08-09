@@ -13,8 +13,7 @@ mesh_shapes = [(4, 8)]  # 只考虑部分网格形状示例
 models = ["mixtral", "deepseek"]  # 模型类型
 hardware_configs = [
     {"comp_TFLOPS": 2.5, "BW_GBPS": 75.0},
-    {"comp_TFLOPS": 5.0, "BW_GBPS": 50.0},
-    {"comp_TFLOPS": 10.0, "BW_GBPS": 25.0}
+    {"comp_TFLOPS": 10, "BW_GBPS": 25.0},
 ]
 
 # 提取吞吐率（batch / latency）和加速比（compute_balancing的speedup）
@@ -72,7 +71,7 @@ for entry in data:
 
 # 绘制图形
 plt.rcParams.update({"font.size": 22, "axes.labelweight": "normal", "axes.labelsize": 30, "legend.frameon": True, "lines.linewidth": 3})
-fig, axs = plt.subplots(len(hardware_configs),len(models), figsize=(18, 11))
+fig, axs = plt.subplots(len(hardware_configs),len(models), figsize=(18, 8))
 
 # 设置颜色
 colors = ["#4E79A7", "#F28E2B", "#E15759", "#59A14F"]
@@ -94,7 +93,7 @@ for row, hardware in enumerate(hardware_configs):
         ax.bar(x + 2 * width, [batch_throughput[b]['node_link_balancing'] for b in batch_sizes], width, color=colors[3], edgecolor="black")
 
         ax.set_xlabel("Batch Size")
-        ax.set_ylabel("TBT (ms)")
+        ax.set_ylabel("TBT Lat. (ms)")
         ax.set_title(f"{model} - {hardware['comp_TFLOPS']} TFLOPS, {hardware['BW_GBPS']} GB/s")
         ax.set_xticks(x)
         ax.set_xticklabels(batch_sizes)
@@ -117,7 +116,7 @@ for row, hardware in enumerate(hardware_configs):
 # 显示图形
 plt.tight_layout()
 
-save_dir = "evaluation/figs/TBT/throughput_comparison.pdf"
-plt.savefig(save_dir)
-print(f"Figure saved at {save_dir}")
+
+plt.savefig("evaluation/figs/TBT/throughput_comparison1.pdf")
+print("Figure saved at evaluation/figs/TBT/throughput_comparison1.pdf")
 

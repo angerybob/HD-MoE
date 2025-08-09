@@ -85,7 +85,7 @@ plt.rcParams.update({
 })
 size=25
 # 创建图表：两个模型放在一行
-fig, axs = plt.subplots(1, 2, figsize=(18, 5))
+fig, axs = plt.subplots(1, 2, figsize=(18, 4))
 
 # 设置颜色
 colors = ["#4E79A7", "#F28E2B", "#E15759", "#59A14F"]

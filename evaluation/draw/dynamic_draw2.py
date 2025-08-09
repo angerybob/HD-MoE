@@ -33,7 +33,7 @@ plt.rcParams.update({
 })
 size=25
 # 创建图表
-fig, ax1 = plt.subplots(figsize=(10, 6))
+fig, ax1 = plt.subplots(figsize=(10, 5))
 
 # 设置柱状图（static_deployment 和 dynamic_deployment 延迟）
 x = np.arange(len(samples))
@@ -44,7 +44,7 @@ ax1.bar(x + width/2, dynamic_latencies, width, label="Dynamic Deployment", color
 ax1.set_xlabel("Sample", fontsize=size)
 ax1.set_ylabel("Latency (ms)", fontsize=size)
 ax1.set_xticks(x)
-ax1.set_xticklabels(samples, rotation=45, ha="right")
+ax1.set_xticklabels(samples, rotation=45, ha="center")
 ax1.set_ylim([6.8, 12.5]) 
 
 # 设置折线图（加速比）
