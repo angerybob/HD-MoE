@@ -75,7 +75,7 @@ except FileNotFoundError:
     print("文件未找到，请检查文件路径和文件名。")
     sys.exit(1) # Exit if data not found
 
-optimizer = MoE3DPNMOptimizer(E=E,e=e, SE=SE,h=h,IS=IS,B=batch, D=D,BW=75*1e9, comp=2.5*1e12, num_layers=num_layers,mlp_first=mlp_first,routing_trace=data)
+optimizer = MoE3DPNMOptimizer(E=E,e=e, h=h,IS=IS,B=batch, D=D,BW=75*1e9, comp=2.5*1e12, num_layers=num_layers,mlp_first=mlp_first,routing_trace=data)
 P_tp=np.ones((optimizer.layer,optimizer.E,optimizer.D))/optimizer.D
 P_ep=EP_deployment(optimizer.layer,optimizer.E,optimizer.D)
 
@@ -143,12 +143,12 @@ for layer_id in tqdm(range(optimizer.layer)):
                 for sublist in random_samples_next:
                     comp_map_next[sublist] += 2 * optimizer.h * optimizer.IS
                 
-                compute_load_next = np.sum(p_copy * comp_map_next[None,:,None], axis=1)
+                
 
                 for _ in range(k):
                     prio, e = optimizer.priority_detection(p_copy, next_layer_id, next_samples)
                     p_copy[next_layer_id, e, :] = 0
-                    
+                    compute_load_next = np.sum(p_copy * comp_map_next[None,:,None], axis=1)
                     for sublist in random_samples_next:
                         if e in sublist:
                             activate_node = []
@@ -205,7 +205,7 @@ if os.path.exists(file_path):
     try:
         with open(file_path, "r") as f:
             old_data = json.load(f)
-        combined_data = old_data + new_data
+        combined_data = new_data
     except json.JSONDecodeError:
         print(f"Warning: Could not decode existing JSON from {file_path}. Overwriting.")
         combined_data = new_data

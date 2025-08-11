@@ -4,13 +4,13 @@ import json
 import pdb
 
 # 数据加载
-with open("evaluation/results/result2_e2e.json", "r") as file:
+with open("evaluation/results/result3_e2e.json", "r") as file:
     data = json.load(file)
 
 # 定义硬件配置和批次大小
 batch_sizes = [16, 32, 64, 128]
 mesh_shapes = [(4,4),(4, 8),(8,8)]  # 只考虑部分网格形状示例
-models = ["mixtral", "deepseek"]  # 模型类型
+models = ["mixtral", "deepseek", "qwen"]  # 模型类型
 hardware_configs = [
     {"comp_TFLOPS": 5.0, "BW_GBPS": 50.0}
 ]
@@ -93,11 +93,16 @@ for row, mesh_shape in enumerate(mesh_shapes):
 
         ax.set_xlabel("Batch Size")
         ax.set_ylabel("TBT (ms)")
-        ax.set_title(f"{model} - {mesh_shape[0]}*{mesh_shape[1]} mesh")
+        ax.set_title(f"{model} - {mesh_shape[0]}*{mesh_shape[1]} mesh",fontsize=22)
         ax.set_xticks(x)
         ax.set_xticklabels(batch_sizes)
         #ax.legend(loc="upper left", fontsize=20)
-        ax.set_ylim([0.5*min([batch_throughput[b]['node_link_balancing'] for b in batch_sizes]), 1.5*max([batch_throughput[b]['TP'] for b in batch_sizes])]) 
+        combined_list = (
+            [batch_throughput[b]['EP'] for b in batch_sizes] + 
+            [batch_throughput[b]['TP'] for b in batch_sizes]
+        )
+        max_value = max(combined_list)
+        ax.set_ylim([0.5*min([batch_throughput[b]['node_link_balancing'] for b in batch_sizes]), 1.1*max_value]) 
 
         # 绘制加速比的折线图
         ax2 = ax.twinx()
@@ -110,11 +115,17 @@ for row, mesh_shape in enumerate(mesh_shapes):
         ax2.plot(x + 2 * width, speedup_compute, color=colors[2], linestyle="--", marker="^", label="Speedup Compute", markersize=8)
         #pdb.set_trace()
         ax2.set_ylabel("Speedup")
-        ax2.set_ylim([0.8, 1.6]) 
+        combined_list = (
+            speedup_tp + 
+            speedup_ep
+        )
+        max_value = max(combined_list)
+        ax2.set_ylim([0.8, 1.1*max_value]) 
 
 # 显示图形
 plt.tight_layout()
 
 
 plt.savefig("evaluation/figs/TBT/throughput_comparison_mesh.pdf")
-
+plt.savefig("evaluation/figs/TBT/throughput_comparison_mesh.png")
+print("Figure saved at evaluation/figs/TBT/throughput_comparison_mesh.png")
