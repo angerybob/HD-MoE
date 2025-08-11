@@ -32,7 +32,6 @@ class MoE3DPNMOptimizer:
         self.R_cc = (self.BW * self.IS * self.e) / (2 * self.D * self.comp)
         # 专家激活频率
         self.f = np.zeros((self.layer, self.E))
-        self.f[:][self.E-self.SE:]=1  
         for layer_id in range(self.layer):
             for sub_list in routing_trace[str([layer_id,layer_id+1][self.mlp_first])]:
                 # 遍历子列表中的每个数字
@@ -82,7 +81,7 @@ class MoE3DPNMOptimizer:
             fg_pruning[k][layer_id]={}
             for sub_list in routing_trace[str([layer_id,layer_id+1][self.mlp_first])]:
                 temp_list=list(sorted(list(sub_list)))
-                temp_list.extend(list(range(self.E-self.SE,self.E)))
+
                                
                 list_key=str(temp_list)
                 #pdb.set_trace()
