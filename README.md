@@ -33,6 +33,7 @@ git clone git@github.com:angerybob/HD-MoE.git
 # 进入仓库目录
 cd HD-MoE
 # 安装依赖
+pip install torch==2.6.0 torchaudio==2.6.0 torchvision==0.21.0
 pip install -r requirements.txt
 ```
 
@@ -142,7 +143,8 @@ python evaluation/draw/dynamic_draw2.py
 @article{hdmoe,
   title={HD-MoE: Hybrid and Dynamic Parallelism for Mixture-of-Expert LLMs with 3D Near-Memory Processing},
   author={Haochen Huang, Shuzhang Zhong, Zhe Zhang, Shuangchen Li, Dimin Niu, Hongzhong Zheng, Runsheng Wang and Meng Li},
-  journal={ICCAD'2025},
+  booktitle={Proceedings of the 44th IEEE/ACM International Conference on Computer-Aided Design},
+  pages={1--9},
   year={2025}
 }
 ```
