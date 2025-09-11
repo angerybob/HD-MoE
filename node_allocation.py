@@ -65,18 +65,12 @@ class MoE3DPNMOptimizer:
         fg_pruning={}
         k=self.e
         print("Begin to sampling activation data...")
-        '''for k in tqdm(range(2, self.e+1)):
-            #print(k)
-            if k==2 or k==self.e:'''
+
         fg[k] = {}
         fg_pruning[k] = {}
-        #print((1.5*(k//2)+0.5*math.ceil(k/2))//2)
-        #threshold = len(list(combinations(range(self.E), int((1.5*(k//2)+0.5*math.ceil(k/2))//2)))) / len(list(combinations(range(self.E), k)))
-        #pdb.set_trace()
-        #threshold = (1.5*len(list(combinations(range(self.E), int(k//2))))+0.5*len(list(combinations(range(self.E), math.ceil(k/2)))))/2 / len(list(combinations(range(self.E), k)))
-        #threshold = (len(list(combinations(range(self.E), k//2))) / len(list(combinations(range(self.E), k))))*len(routing_trace["1"])
+
         for layer_id in tqdm(range(self.layer)):
-            #print(layer_id)
+
             fg[k][layer_id]={}
             fg_pruning[k][layer_id]={}
             for sub_list in routing_trace[str([layer_id,layer_id+1][self.mlp_first])]:
@@ -484,10 +478,9 @@ class MoE3DPNMOptimizer:
             model.Params.MIPGap = 0.05           # 允许5%的优化间隙
             model.Params.Threads = 8             # 使用多线程
             model.Params.Heuristics = 0.1
-            #model.Params.Progress = 1
-            #model.setParam("Progress", 1)
+
             # 7. 优化求解
-            #pdb.set_trace()
+
             model.optimize()
 
             # 8. 提取结果

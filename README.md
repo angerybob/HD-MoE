@@ -1,144 +1,145 @@
-# HD-MoE: Hybrid and Dynamic Parallelism for MoE LLMs on 3D Near-Memory Processing
+# HD-MoE: Hybrid and Dynamic Parallelism for MoE LLMs on 3D Near-Memory Processing  
 
-This repository contains the implementation of **HD-MoE**, a hybrid and dynamic parallelism framework designed to optimize MoE (Mixture-of-Experts) LLM inference on 3D Near-Memory Processing (3D NMP) architectures. This work has been accepted by the **2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)**. HD-MoE achieves significant speedups over traditional parallelism strategies by balancing computation load, minimizing communication overhead, and adapting to dynamic expert activation patterns.
-
-
-## Overview
-
-Large Language Models (LLMs) with Mixture-of-Expert (MoE) architectures offer superior performance with reduced computation costs but face challenges in memory bandwidth and efficient parallelization. 3D Near-Memory Processing (3D NMP) architectures address memory-bound issues with high-bandwidth memory stacking, but their distributed nature introduces new mapping and scheduling challenges.
-
-HD-MoE tackles these challenges through:
-- **Offline Hybrid Parallel Mapping**: Combines Tensor Parallelism (TP) and Expert Parallelism (EP) to balance computation and communication.
-- **Online Dynamic Scheduling**: Adapts to real-time expert activation patterns to optimize resource utilization.
-
-Experimental results show HD-MoE achieves 1.1×–1.8× speedup over TP, 1.1×–1.5× over EP, and 1.0×–1.4× over hybrid TP-EP baselines.
+This repository contains the implementation of **HD-MoE**, a hybrid and dynamic parallelism framework designed to optimize Mixture-of-Experts (MoE) Large Language Model (LLM) inference on 3D Near-Memory Processing (3D NMP) architectures. This work has been accepted by the **2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)**. HD-MoE achieves significant speedups over traditional parallelism strategies by balancing computation load, minimizing communication overhead, and adapting to dynamic expert activation patterns.  
 
 
-## Quick Start
+## Overview  
 
-### 1. 环境搭建（Environment Setup）
+Large Language Models (LLMs) with Mixture-of-Expert (MoE) architectures deliver superior performance while reducing computation costs. However, they face critical challenges related to memory bandwidth limitations and inefficient parallelization. 3D Near-Memory Processing (3D NMP) architectures address memory-bound bottlenecks through high-bandwidth memory stacking, but their distributed nature introduces new challenges in mapping and scheduling.  
 
-#### 创建并激活conda环境
+HD-MoE tackles these challenges through two core components:  
+- **Offline Hybrid Parallel Mapping**: Combines Tensor Parallelism (TP) and Expert Parallelism (EP) to balance computation workload and communication overhead.  
+- **Online Dynamic Scheduling**: Adapts to real-time expert activation patterns to optimize resource utilization dynamically.  
+
+Experimental results demonstrate that HD-MoE achieves a 1.1×–1.8× speedup over standalone TP, a 1.1×–1.5× speedup over standalone EP, and a 1.0×–1.4× speedup over hybrid TP-EP baselines.  
+
+
+## Quick Start  
+
+### 1. Environment Setup  
+
+#### Create and Activate a Conda Environment  
 ```bash
-# 创建环境
+# Create environment
 conda create -n hdmoe python=3.10
-# 激活环境
+# Activate environment
 conda activate hdmoe
 ```
 
-#### 克隆仓库并安装依赖
+#### Clone the Repository and Install Dependencies  
 ```bash
-# 克隆仓库
+# Clone the repository
 git clone git@github.com:angerybob/HD-MoE.git
-# 进入仓库目录
+# Navigate to the repository directory
 cd HD-MoE
-# 安装依赖
+# Install dependencies
 pip install torch==2.6.0 torchaudio==2.6.0 torchvision==0.21.0
 pip install -r requirements.txt
 ```
 
 
-### 2. 生成部署策略（Generate Deployment Strategy）
+### 2. Generate Deployment Strategy  
 
-通过优化脚本生成针对特定硬件和模型的部署策略，后台运行并输出日志：
+Run the optimization script to generate a deployment strategy tailored to specific hardware and model configurations. Execute the script in the background and log outputs:  
 ```bash
 nohup optimizer.sh > script.log 2>&1 &
 ```
 
-- **输出位置**：
-  - 部署策略结果：`results/` 文件夹
-  - 每层输出日志：`logs/` 文件夹
+- **Output Locations**:  
+  - Deployment strategy results: `results/` folder  
+  - Per-layer output logs: `logs/` folder  
 
-- **参数配置**：
-  可在 `optimizer.sh` 中修改以下配置以适配不同场景：
+- **Parameter Configuration**:  
+  Modify the following settings in `optimizer.sh` to adapt to different scenarios:  
   ```bash
-  # 硬件配置
-  comp=10.0          # 算力（TFLOPS）
-  BW=25.0            # 带宽（GB/s）
-  mesh_shapeX=4      # 2D mesh X维度尺寸
-  mesh_shapeY=8      # 2D mesh Y维度尺寸
-  # 任务配置
-  batch=128          # 批次大小
-  model="qwen"       # 模型类型（如"qwen"、"mixtral"等）
-  ```
-  脚本中for循环的层数也要根据模型具体配置修改 
+  # Hardware configuration
+  comp=10.0          # Computational power (TFLOPS)
+  BW=25.0            # Bandwidth (GB/s)
+  mesh_shapeX=4      # 2D mesh size (X-dimension)
+  mesh_shapeY=8      # 2D mesh size (Y-dimension)
+  # Task configuration
+  batch=128          # Batch size
+  model="qwen"       # Model type (e.g., "qwen", "mixtral")
+  ```  
+  Additionally, adjust the number of layers in the `for` loop within the script to match the specific configuration of your target model.  
 
-### 3. 评估部署策略（Evaluate Deployment Strategy）
 
-使用评估脚本验证部署策略的性能，支持端到端 latency、消融实验和动态调度评估：
+### 3. Evaluate Deployment Strategy  
 
-#### 评估命令
+Use the evaluation scripts to validate the performance of the generated deployment strategy. Supported evaluations include end-to-end latency, ablation studies, and dynamic scheduling assessment.  
+
+#### Evaluation Commands  
 ```bash
-# 评估端到端TBT latency（对应文章中时间间隔指标）
+# Evaluate end-to-end TBT latency (corresponds to the time interval metric in the paper)
 python evaluation/scripts/e2e.py
 
-# 消融实验（验证各模块作用）
+# Ablation study (validate the impact of individual modules)
 python evaluation/scripts/ablation.py
 
-# 动态调度策略评估
+# Evaluate dynamic scheduling strategy
 python evaluation/scripts/dynamic.py
 ```
 
-- **评估结果位置**：`evaluation/results/` 文件夹
-- **评估前配置**：需在对应脚本中修改硬件配置（算力、带宽等）、模型类型及数据集，确保与生成的部署策略匹配。
+- **Evaluation Result Location**: `evaluation/results/` folder  
+- **Pre-Evaluation Configuration**: Before running evaluations, modify hardware settings (computational power, bandwidth, etc.), model type, and dataset in the corresponding scripts to ensure alignment with the generated deployment strategy.  
 
 
-### 4. 结果可视化（Visualization）
+### 4. Result Visualization  
 
-通过绘图脚本将评估结果可视化，生成与论文对应的关键图表：
+Use the plotting scripts to visualize evaluation results and generate key figures consistent with those in the paper:  
 
 ```bash
-# 绘制不同硬件配置下的端到端加速比（对应Fig. 8）
+# Plot end-to-end speedups across different hardware configurations (corresponds to Fig. 8)
 python evaluation/draw/draw.py
 
-# 绘制不同mesh尺寸下的性能（对应Fig. 9）
+# Plot performance across different mesh sizes (corresponds to Fig. 9)
 python evaluation/draw/draw_mesh.py
 
-# 绘制节点平衡优化的加速比（对应Fig. 10）
+# Plot speedups from node balance optimization (corresponds to Fig. 10)
 python evaluation/draw/ablation_draw.py
 
-# 绘制节点平衡对计算延迟的优化（对应Fig. 11）
+# Plot optimization of computation latency via node balance (corresponds to Fig. 11)
 python evaluation/draw/ablation2_draw.py
 
-# 绘制节点级资源利用平衡（对应Fig. 12）
+# Plot node-level resource utilization balance (corresponds to Fig. 12)
 python evaluation/draw/balance.py
 
-# 绘制链路平衡优化的加速比（对应Fig. 13）
+# Plot speedups from link balance optimization (corresponds to Fig. 13)
 python evaluation/draw/ablation3_draw.py
 
-# 绘制链路级资源利用平衡（对应Fig. 14）
+# Plot link-level resource utilization balance (corresponds to Fig. 14)
 python evaluation/draw/balance2.py
 
-# 绘制动态调度策略性能（对应Fig. 15 (a)）
+# Plot dynamic scheduling strategy performance (corresponds to Fig. 15 (a))
 python evaluation/draw/dynamic_draw.py
 
-# 绘制不同预广播专家数量下的动态调度性能（对应Fig. 15 (b)）
+# Plot dynamic scheduling performance with different pre-broadcast expert counts (corresponds to Fig. 15 (b))
 python evaluation/draw/dynamic_draw2.py
 ```
 
-- **图表输出位置**：`evaluation/figs/` 文件夹
+- **Figure Output Location**: `evaluation/figs/` folder  
 
 
-## 核心模块说明（Core Modules）
+## Core Modules  
 
-- **`node_allocation.py`**：实现 `MoE3DPNMOptimizer` 类，封装了文章中提出的Node-Link Balance优化算法。
+- **`node_allocation.py`**: Implements the `MoE3DPNMOptimizer` class, which encapsulates the Node-Link Balance optimization algorithm proposed in the paper.  
 
-- **`simulator.py`**：主要优化流程实现，模拟3D NMP架构下的MoE推理过程，包含计算与通信开销建模。
+- **`simulator.py`**: Implements the core optimization workflow, simulating MoE inference on 3D NMP architectures (including computation and communication overhead modeling).  
 
-- **`baseline.py`**：提供基线策略（TP、EP、混合TP-EP）的实现，用于快速对比优化结果。
+- **`baseline.py`**: Provides implementations of baseline strategies (TP, EP, hybrid TP-EP) for quick performance comparison with HD-MoE.  
 
-- **`expert_trace/`**：存储不同模型（如Mixtral、DeepSeek等）的专家激活统计数据，用于部署策略的生成与优化。
-
-
-## 支持的模型与数据集（Supported Models & Datasets）
-
-- **模型**：支持MoE架构模型（如Qwen、Mixtral、DeepSeek等），可通过 `expert_trace/` 中的专家激活数据扩展新模型。
-- **数据集**：默认使用MT Bench数据集（广泛用于LLM性能评估），可在评估脚本中替换为其他数据集。
+- **`expert_trace/`**: Stores expert activation statistics for different models (e.g., Mixtral, DeepSeek), which are used to generate and optimize deployment strategies.  
 
 
-## Citation
+## Supported Models & Datasets  
 
-若使用本仓库代码，请引用相关工作：
+- **Models**: Supports MoE-architecture LLMs (e.g., Qwen, Mixtral, DeepSeek). New models can be integrated by adding their expert activation data to the `expert_trace/` directory.  
+- **Datasets**: Uses the MT Bench dataset by default (a widely adopted benchmark for LLM performance evaluation). Other datasets can be substituted in the evaluation scripts.  
+
+
+## Citation  
+
+If you use the code in this repository, please cite the associated work:  
 ```bibtex
 @article{hdmoe,
   title={HD-MoE: Hybrid and Dynamic Parallelism for Mixture-of-Expert LLMs with 3D Near-Memory Processing},
@@ -147,9 +148,9 @@ python evaluation/draw/dynamic_draw2.py
   pages={1--9},
   year={2025}
 }
-```
+```  
 
 
-## License
+## License  
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
