@@ -17,24 +17,23 @@ from scipy.optimize import linear_sum_assignment
 
 class MoE3DPNMOptimizer:
     def __init__(self, routing_trace, E=64, e=6, h=2048,IS=1408, B=128, D=64, BW=25e9, comp=10e12, num_layers=26, mlp_first=True):
-        # 参数初始化
-        self.E = E         # 专家数量
-        self.e = e
-        self.h = h          # 隐藏层维度
-        self.IS=IS
-        self.B = B          # Batch size
-        self.D = D          # 3D PNM设备维度
-        self.BW = BW        # 带宽 (Bytes/s)
-        self.comp = comp    # 计算能力 (FLOP/s)
+        # Parameter initialization
+        self.E = E         # Number of experts
+        self.e = e         # Number of active experts per token
+        self.h = h         # Hidden layer dimension
+        self.IS = IS       # Intermediate dimension (for MLP layers)
+        self.B = B         # Batch size
+        self.D = D         # Number of 3D PNM devices
+        self.BW = BW       # Bandwidth (Bytes/s)
+        self.comp = comp   # Computational capacity (FLOP/s)
         self.layer = num_layers # number of moe layers
         self.mlp_first=mlp_first
         self.routing_trace=routing_trace
         self.R_cc = (self.BW * self.IS * self.e) / (2 * self.D * self.comp)
-        # 专家激活频率
+        # Expert activation frequency matrix (layers × experts)
         self.f = np.zeros((self.layer, self.E))
         for layer_id in range(self.layer):
             for sub_list in routing_trace[str([layer_id,layer_id+1][self.mlp_first])]:
-                # 遍历子列表中的每个数字
                 for num in sub_list:
                     self.f[layer_id][num]+=1
         self.f=self.f/len(routing_trace[str(1)])
@@ -46,12 +45,13 @@ class MoE3DPNMOptimizer:
 
         
     def _find_optimal_aggregator(self):
-        """为简化实现，默认选择中心节点作为聚合点"""
-        # 实际实现应基于专家分布，这里简化为几何中心
+        """Simplified implementation: select central node as aggregator
+        Actual implementation should be based on expert distribution; simplified to geometric center here"""
         x_center = np.mean([d[0] for d in self.M])
         y_center = np.mean([d[1] for d in self.M])
         min_dist = float('inf')
         best_d = 0
+        # Find device closest to geometric center (Manhattan distance)
         for d, (x, y) in enumerate(self.M):
             dist = abs(x - x_center) + abs(y - y_center)
             if dist < min_dist:
@@ -60,7 +60,8 @@ class MoE3DPNMOptimizer:
         return best_d
     
     def _generate_co_activation(self,routing_trace):
-        """生成专家共激活频率矩阵"""
+        """Generate expert co-activation frequency matrix
+        fg[k][layer_id][expert_group] = frequency of k experts being activated together"""
         fg = {}
         fg_pruning={}
         k=self.e
@@ -83,35 +84,32 @@ class MoE3DPNMOptimizer:
                     fg[k][layer_id][list_key] += 1
                 else:
                     fg[k][layer_id][list_key] = 1
-            # 计算所有 value 的和
-            #total_sum = sum(fg[k][layer_id].values())
-            # pruning
-            #if layer_id>6:
-                #pdb.set_trace()
 
-            # 归一化
             for key in fg[k][layer_id]:
-                fg[k][layer_id][key] /= len(routing_trace[str([layer_id,layer_id+1][self.mlp_first])])
-                '''if k==self.e:
-                    fg_pruning[k][layer_id][key] = fg[k][layer_id][key] 
-                elif fg[k][layer_id][key]>threshold:
-                    fg_pruning[k][layer_id][key] = fg[k][layer_id][key]'''        
+                fg[k][layer_id][key] /= len(routing_trace[str([layer_id,layer_id+1][self.mlp_first])])    
             #pdb.set_trace()
         return fg
 
-    # ----------------- 性能分析模型 -----------------
+    # ----------------- Performance Analysis Models -----------------
     def compute_time(self, P):
-        """计算时间 t_comp"""
+        """Calculate computation time (t_comp)
+        P: Expert-device placement matrix (layers × experts × devices)
+        Returns: Per-layer computation time (max over all devices)"""
+        # Compute total computation load per device (sum over experts)
+        # Formula: sum(P * activation_freq * batch_size * 2 * hidden_dim * intermediate_dim)
         compute_load = np.sum(P * self.f[:,:, None] * self.B * 2 * self.h*self.IS, axis=1)
         return np.max(compute_load / self.comp, axis=1)
     
     def compute_time_dynamic(self, P,comp_map):
+        """Dynamic computation time calculation (with dynamic compute load mapping)
+        comp_map: Dynamic computation load per expert (e.g., from real-time activation)"""
         compute_load = np.sum(P * comp_map[None,:,None], axis=1)
         return np.max(compute_load / self.comp, axis=1)
 
     def comm_time(self, P):
-        """通信时间近似 t_comm"""
-
+        """Approximate communication time (t_comm)
+        Returns: Per-layer communication time (max over all devices)"""
+        # Initialize communication load per layer per device
         single_comm = np.zeros((self.layer,self.D))
 
         for layer_id, layer_fg in self.fg[self.e].items():

@@ -1,5 +1,7 @@
 # HD-MoE: Hybrid and Dynamic Parallelism for MoE LLMs on 3D Near-Memory Processing  
 
+For the full technical details, please refer to our paper: [HD-MoE](https://arxiv.org/abs/2509.09420)
+
 This repository contains the implementation of **HD-MoE**, a hybrid and dynamic parallelism framework designed to optimize Mixture-of-Experts (MoE) Large Language Model (LLM) inference on 3D Near-Memory Processing (3D NMP) architectures. This work has been accepted by the **2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)**. HD-MoE achieves significant speedups over traditional parallelism strategies by balancing computation load, minimizing communication overhead, and adapting to dynamic expert activation patterns.  
 
 
@@ -141,12 +143,14 @@ python evaluation/draw/dynamic_draw2.py
 
 If you use the code in this repository, please cite the associated work:  
 ```bibtex
-@article{hdmoe,
-  title={HD-MoE: Hybrid and Dynamic Parallelism for Mixture-of-Expert LLMs with 3D Near-Memory Processing},
-  author={Haochen Huang, Shuzhang Zhong, Zhe Zhang, Shuangchen Li, Dimin Niu, Hongzhong Zheng, Runsheng Wang and Meng Li},
-  booktitle={Proceedings of the 44th IEEE/ACM International Conference on Computer-Aided Design},
-  pages={1--9},
-  year={2025}
+@misc{huang2025hdmoehybriddynamicparallelism,
+      title={HD-MoE: Hybrid and Dynamic Parallelism for Mixture-of-Expert LLMs with 3D Near-Memory Processing}, 
+      author={Haochen Huang and Shuzhang Zhong and Zhe Zhang and Shuangchen Li and Dimin Niu and Hongzhong Zheng and Runsheng Wang and Meng Li},
+      year={2025},
+      eprint={2509.09420},
+      archivePrefix={arXiv},
+      primaryClass={cs.PF},
+      url={https://arxiv.org/abs/2509.09420}, 
 }
 ```  
 
