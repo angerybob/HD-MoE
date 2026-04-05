@@ -1,6 +1,8 @@
 # HD-MoE: Hybrid and Dynamic Parallelism for MoE LLMs on 3D Near-Memory Processing  
 
-For the full technical details, please refer to our paper: [HD-MoE](https://arxiv.org/abs/2509.09420)
+For full technical details, please refer to our paper: 
+[arXiv version](https://arxiv.org/abs/2509.09420) | 
+[ICCAD (IEEE) version](https://ieeexplore.ieee.org/abstract/document/11240984)
 
 This repository contains the implementation of **HD-MoE**, a hybrid and dynamic parallelism framework designed to optimize Mixture-of-Experts (MoE) Large Language Model (LLM) inference on 3D Near-Memory Processing (3D NMP) architectures. This work has been accepted by the **2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)**. HD-MoE achieves significant speedups over traditional parallelism strategies by balancing computation load, minimizing communication overhead, and adapting to dynamic expert activation patterns.  
 
@@ -143,15 +145,16 @@ python evaluation/draw/dynamic_draw2.py
 
 If you use the code in this repository, please cite the associated work:  
 ```bibtex
-@misc{huang2025hdmoehybriddynamicparallelism,
-      title={HD-MoE: Hybrid and Dynamic Parallelism for Mixture-of-Expert LLMs with 3D Near-Memory Processing}, 
-      author={Haochen Huang and Shuzhang Zhong and Zhe Zhang and Shuangchen Li and Dimin Niu and Hongzhong Zheng and Runsheng Wang and Meng Li},
-      year={2025},
-      eprint={2509.09420},
-      archivePrefix={arXiv},
-      primaryClass={cs.PF},
-      url={https://arxiv.org/abs/2509.09420}, 
-}
+@INPROCEEDINGS{11240984,
+  author={Huang, Haochen and Zhong, Shuzhang and Zhang, Zhe and Li, Shuangchen and Niu, Dimin and Zheng, Hongzhong and Wang, Runsheng and Li, Meng},
+  booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, 
+  title={HD-MoE: Hybrid and Dynamic Parallelism for Mixture-of-Expert LLMs with 3D Near-Memory Processing}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-9},
+  keywords={Costs;Three-dimensional displays;Tensors;Computational modeling;Memory management;Bandwidth;Parallel processing;Dynamic scheduling;Distance measurement;Computational efficiency;Automated Deployment;Mixture-of-Experts;3D Near-Memory Processing},
+  doi={10.1109/ICCAD66269.2025.11240984}}
 ```  
 
 
