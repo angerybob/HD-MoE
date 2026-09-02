@@ -4,6 +4,8 @@ For full technical details, please refer to our paper:
 [arXiv version](https://arxiv.org/abs/2509.09420) | 
 [ICCAD (IEEE) version](https://ieeexplore.ieee.org/abstract/document/11240984)
 
+> **Journal extension:** [HDA-MoE](https://github.com/angerybob/HDA-MoE), the extended version of this work, has been accepted by **IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)**. It adds hardware-aware gating, expanded system modeling, and broader evaluation across MoE models and interconnect topologies.
+
 This repository contains the implementation of **HD-MoE**, a hybrid and dynamic parallelism framework designed to optimize Mixture-of-Experts (MoE) Large Language Model (LLM) inference on 3D Near-Memory Processing (3D NMP) architectures. This work has been accepted by the **2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)**. HD-MoE achieves significant speedups over traditional parallelism strategies by balancing computation load, minimizing communication overhead, and adapting to dynamic expert activation patterns.  
 
 
